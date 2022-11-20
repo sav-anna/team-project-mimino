@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'Times New Roman Cyr';
+  src: url(../fonts/TimesNRCyrMT-Bold.woff2) format('woff2'),
+    url(../fonts/TimesNRCyrMT-Bold.woff) format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Times New Roman Cyr';
+  src: url(../fonts/TimesNRCyrMT.woff2) format('woff2'),
+    url(../fonts/TimesNRCyrMT.woff) format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Film P3';
+  src: url(../fonts/FilmP3Bold.woff2) format('woff2'),
+    url(../fonts/FilmP3Bold.woff) format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@import './utils/common';
+@import './utils/variables';
+@import './utils/mixin';
+
+@import './footer';
