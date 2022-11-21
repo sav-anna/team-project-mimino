@@ -1,5 +1,6 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 body {
+  background-color: var(--white-color);
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 16px;
@@ -29,6 +30,9 @@ ul {
   margin: 0;
   padding: 0;
 }
+a {
+  text-decoration: none;
+}
 
 .visually-hidden {
   position: absolute;
@@ -41,4 +45,30 @@ ul {
   clip: rect(0, 0, 0, 0);
   clip-path: inset(50%);
   margin: -1px;
+}
+.section {
+  background-color: var(--primary-bg-color);
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  @media screen and (min-width: $mobile) {
+    width: 414px;
+  }
+  @media screen and (min-width: $tablet) {
+    width: 1024px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 1280px;
+  }
+}
+
+.tagline {
+  color: var(--tagline-color);
+  font-family: 'Times New Roman', serif;
+  font-size: 32px;
+  line-height: calc(37px / 32px);
 }

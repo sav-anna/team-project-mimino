@@ -1,0 +1,3 @@
+.header__logo {
+  @include logo($size: 40px, $color: var(--white-color));
+}
