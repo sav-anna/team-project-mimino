@@ -23,8 +23,31 @@
   font-style: normal;
   font-display: swap;
 }
-@import './utils/common';
 @import './utils/variables';
+@import './utils/breakpoints';
+@import './utils/placeholders';
+@import './utils/base';
 @import './utils/mixin';
 
 @import './footer';
+@import './header';
+@import './hotel-double-room';
+@import './hotel-hero';
+@import './hotel-luxe-room';
+@import './hotel-triple-room';
+@import './main-contacts';
+@import './main-details-hotel';
+@import './main-details-restaurant';
+@import './main-hero';
+@import './main-hotel';
+@import './main-restaurant';
+@import './restaurant-hero';
+@import './restaurant-kitchen';
+@import './restaurant-menu';
+@import './room-amenities';
+@import './room-hero';
+@import './components/button';
+@import './components/price-modal';
+@import './components/_room-modal.html';
+@import './components/socials';
+@import './components/table-modal';
