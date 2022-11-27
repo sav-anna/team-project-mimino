@@ -1,7 +1,7 @@
 .btn {
   cursor: pointer;
   padding: 14px 24px;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: var(--btn-bcg);
   color: var(--brand-color);
   border: 2px solid var(--white-color);
   border-radius: 25px;
@@ -14,7 +14,8 @@
   transition: background-color 250ms var(--distribution-time);
 
   &:hover,
-  &:focus {
+  &:focus,
+  &:active {
     background-color: var(--white-color);
   }
 }
