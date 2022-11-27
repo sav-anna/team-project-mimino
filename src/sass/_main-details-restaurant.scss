@@ -51,6 +51,10 @@
 }
 
 .details-restaurant__container {
+  @media screen and (max-width: 1023px) {
+    padding-left: 40px;
+  }
+
   @media screen and (min-width: 1280px) {
     padding-right: 52px;
   }
@@ -126,7 +130,6 @@
 
 .details-restaurant__slider-box {
   @media screen and (max-width: 1023px) {
-    margin-left: 25px;
     margin-bottom: 80px;
   }
   
