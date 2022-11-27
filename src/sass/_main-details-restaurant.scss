@@ -50,6 +50,12 @@
   }
 }
 
+.details-restaurant__container {
+  @media screen and (min-width: 1280px) {
+    padding-right: 52px;
+  }
+}
+
 .details-restaurant__content {
   @media screen and (max-width: 1023px) {
     max-width: 259px;
@@ -58,9 +64,14 @@
 
   @media screen and (min-width: 1024px) {
     max-width: 610px;
-    margin-left: auto;
+    margin-left: 231px;
   }
+
+    @media screen and (min-width: 1280px) {
+      margin-left: 253px;
+    }
 }
+
 
 .details-restaurant__logo {
   @include logo($size: 40px, $color: var(--white-color));
@@ -114,15 +125,18 @@
 }
 
 .details-restaurant__slider-box {
-display: flex;
-gap: 34px;
-}
-
-.details-restaurant__slider {
   @media screen and (max-width: 1023px) {
-    display: block;
     margin-left: 25px;
     margin-bottom: 80px;
+  }
+  
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    gap: 34px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    gap: 86px;
   }
 }
 
@@ -148,20 +162,12 @@ gap: 34px;
   gap: 16px;
 }
 
-// .btn.details-restaurant__btn {
-//   padding: 14px 32px;
-
-//   @media screen and (min-width: 1024px) and (max-width: 1279px) {
-//     background-color: var(--black-color);
-//   }
-// }
-
-.btn.btn--bg {
+.btn--bg {
   @media screen and (min-width: 1024px) and (max-width: 1279px) {
       background-color: var(--black-color);
     }
 }
 
-.btn.btn--padding {
+.btn--padding {
 padding: 14px 32px;
 }
