@@ -1,0 +1,67 @@
+<!-- Модальне вікно -->
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button class="modal__btn" type="button" data-modal-close>
+      <svg class="modal-btn__svg" width="24px" height="24px">
+        <use href="./images/svg/symbol-defs.svg#icon-close"></use>
+      </svg>
+    </button>
+  </div>
+</div>
+<!-- Форма даних -->
+<form class="form" name="book-room" autocomplete="off">
+  <p class="form__title">Забронювати номер</p>
+  <div>
+    <input
+      id="personal-name"
+      class="form__input"
+      type="text"
+      name="personal-name"
+      minlength="6"
+      maxlength="20"
+      pattern="^[Є-ЯҐа-їґ]+\s[Є-ЯҐа-їґ]+$"
+      title="Введіть ім'я та прізвище кирилицею, допускаються малі та великі літери"
+      placeholder="Ваше ім’я"
+      required
+    />
+    <label for="personal-name" class="form__label"
+      >На кого забронювати номер?</label
+    >
+  </div>
+  <div>
+    <input
+      id="personal-phone"
+      class="form__input"
+      type="tel"
+      name="personal-phone"
+      pattern="^\+[0-9]{12}"
+      title="+380..."
+      placeholder="+38 (___) ___-__-__"
+      required
+    />
+    <label for="personal-phone" class="form__label">Номер телефону</label>
+  </div>
+  <div>
+    <input class="form__input" id="room" placeholder="Двомісний люкс" />
+    <label for="room" class="form__label">Категорія номеру</label>
+  </div>
+  <div>
+    <input
+      class="form__input"
+      id="arrival-date"
+      type="date"
+      placeholder="Сьогодні"
+    />
+    <label for="arrival-date" class="form__label">Дата заїзду</label>
+  </div>
+  <div>
+    <input
+      class="form__input"
+      id="departure-date"
+      type="date"
+      placeholder="Сьогодні"
+    />
+    <label for="departure-date" class="form__label">Дата виїзду</label>
+  </div>
+  <button class="btn-modal" type="submit">Оформити бронювання</button>
+</form>
