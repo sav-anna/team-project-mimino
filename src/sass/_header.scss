@@ -79,3 +79,12 @@
     fill: var(--brand-color);
   }
 }
+.room-hero .header {
+  background: linear-gradient(
+    180deg,
+    #000000 0%,
+    rgba(0, 0, 0, 0.55) 54.17%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  padding-bottom: 73px;
+}
