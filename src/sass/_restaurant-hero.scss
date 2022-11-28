@@ -50,32 +50,25 @@
 }
 
 .restaurant-hero__container {
+  position: relative;
+  padding-top: 126px;
   padding-bottom: 20px;
+  text-align: center;
 
   @media screen and (min-width: $tablet) {
+    padding-top: 88px;
     padding-bottom: 15px;
   }
   @media screen and (min-width: $desktop) {
-    padding-bottom: 65px;
-  }
-}
-
-.restaurant-hero__container {
-  position: relative;
-  text-align: center;
-  padding-top: 126px;
-  @media screen and (min-width: $tablet) {
-    padding-top: 88px;
-  }
-  @media screen and (min-width: $desktop) {
     padding-top: 64px;
+    padding-bottom: 64px;
   }
 }
 
 .restaurant-hero__address {
   position: absolute;
   top: 0;
-  right: 0;
+  right: 15px;
   display: flex;
   align-items: center;
   text-align: start;
@@ -103,7 +96,7 @@
 }
 
 .restaurant-hero__title {
-  margin-bottom: 24px;
+  margin-bottom: 20px;
   font-family: 'Film P3', sans-serif;
   font-size: 96px;
   line-height: 1.1;
@@ -120,7 +113,7 @@
 }
 
 .restaurant-hero__title-second {
-  margin-bottom: 40px;
+  margin-bottom: 44px;
   font-weight: 600;
   font-size: 16px;
   color: var(--white-color);
