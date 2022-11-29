@@ -1,0 +1,143 @@
+.restaurant-kitchen {
+  max-width: 414px;
+  margin: 0 auto;
+  padding-top: 12px;
+  min-height: 1191px;
+  @media screen and (min-width: $tablet) {
+    max-width: 1024px;
+    min-height: 1238px;
+    padding-top: 0;
+    position: relative;
+    left: 0;
+    right: 0;
+  }
+  @media screen and (min-width: $desktop) {
+    max-width: 1280px;
+    min-height: 1275px;
+  }
+
+  &__wrap {
+    margin-bottom: 32px;
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      align-items: center;
+      gap: 26px;
+      position: absolute;
+      top: -32px;
+    }
+    @media screen and (min-width: $desktop) {
+      gap: 32px;
+      top: -33px;
+    }
+  }
+
+  &__text {
+    margin-bottom: 28px;
+  }
+
+  &__text-subtitle {
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.15;
+    color: var(--tagline-color);
+    margin-bottom: 12px;
+    @media screen and (min-width: $tablet) {
+      font-size: 32px;
+      line-height: 37px;
+    }
+  }
+  &__text-title {
+    font-family: 'Film P3';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.075;
+    letter-spacing: 0.3em;
+    color: var(--title-color);
+    margin-bottom: 12px;
+    @media screen and (min-width: $tablet) {
+      font-size: 64px;
+      line-height: 1.078;
+      margin-bottom: 24px;
+    }
+    @media screen and (min-width: $desktop) {
+      color: #828282;
+    }
+  }
+  &__text-description {
+    max-width: 258px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color);
+    margin-bottom: 28px;
+    @media screen and (min-width: $tablet) {
+      max-width: 439px;
+      font-size: 16px;
+      line-height: 1.25;
+      margin-bottom: 0;
+    }
+    @media screen and (min-width: $desktop) {
+      max-width: 518px;
+    }
+  }
+  &__img1 {
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+    width: 244px;
+    margin-left: auto;
+    @media screen and (min-width: $tablet) {
+      width: 400px;
+    }
+    @media screen and (min-width: $desktop) {
+      width: 460px;
+    }
+  }
+}
+
+.main-restaurant__about {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  @media screen and (min-width: $tablet) {
+    position: absolute;
+    top: 476px;
+    gap: 48px;
+  }
+  @media screen and (min-width: $desktop) {
+    gap: 32px;
+  }
+
+  &-img2 {
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+    width: 200px;
+    @media screen and (min-width: $tablet) {
+      width: 350px;
+    }
+    @media screen and (min-width: $desktop) {
+      width: 460px;
+    }
+  }
+
+  &-description {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+    width: 163px;
+    @media screen and (min-width: $tablet) {
+      width: 312px;
+      font-size: 16px;
+      line-height: 1.25;
+    }
+  }
+}
