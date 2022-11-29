@@ -89,7 +89,7 @@
 
 .room-hero__title {
   width: 325px;
-  margin-bottom: 24px;
+  margin-bottom: 14px;
   font-family: 'Times New Roman Cyr', serif;
   font-size: 28px;
   line-height: 1.15;
@@ -122,18 +122,6 @@
   }
 }
 
-.room-hero__btn-item:not(:last-child) {
-  @media screen and (max-width: 1023px) {
-    margin-bottom: 24px;
-  }
-}
-
-.room-hero__btn-item:last-child {
-  @media screen and (max-width: 1023px) {
-    margin-bottom: 58px;
-  }
-}
-
 .btn.room-hero__btn {
   &:hover,
   &:focus,
@@ -159,8 +147,6 @@
 }
 
 .room-hero__social-list {
-  display: flex;
-  gap: 20px;
   @media screen and (min-width: $desktop) {
     display: none;
   }
@@ -171,7 +157,8 @@
   fill: var(--brand-color-transparent);
 }
 
-.room-hero__address-bnt {
+.room-hero__social-btn {
+  display: flex;
   @media screen and (min-width: $tablet) {
     display: flex;
     justify-content: space-between;
