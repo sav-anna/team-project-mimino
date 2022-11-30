@@ -71,6 +71,11 @@ a {
 .tagline {
   color: var(--tagline-color);
   font-family: 'Times New Roman', serif;
-  font-size: 32px;
-  line-height: calc(37px / 32px);
+  font-size: 20px;
+  line-height: calc(23px / 20px);
+
+  @media screen and (min-width: $tablet) {
+    font-size: 32px;
+    line-height: calc(37px / 32px);
+  }
 }
