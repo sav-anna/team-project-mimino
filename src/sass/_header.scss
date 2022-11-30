@@ -92,17 +92,16 @@
     rgba(0, 0, 0, 0.55) 54.17%,
     rgba(0, 0, 0, 0) 100%
   );
-  padding-bottom: 33px;
-
+  padding-bottom: 88px;
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 48px;
+  }
   @media screen and (min-width: $desktop) {
     padding-bottom: 80px;
   }
 }
 .room-hero .header__nav {
   padding-bottom: 0;
-  @media screen and (min-width: $mobile) {
-    margin-bottom: 12px;
-  }
 }
 .header__address {
   @media screen and (min-width: $mobile) {
@@ -114,6 +113,7 @@
 }
 .header__address-link {
   position: absolute;
+  top: 9px;
   right: 0;
   display: flex;
   align-items: center;
