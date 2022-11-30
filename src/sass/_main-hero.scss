@@ -15,7 +15,6 @@
   }
 
   @media screen and (min-width: $tablet) {
-    padding-bottom: 15px;
     & {
       max-width: 1024px;
       background-image: linear-gradient(var(--hero-bcg), var(--hero-bcg)),
@@ -31,7 +30,6 @@
     }
   }
   @media screen and (min-width: $desktop) {
-    padding-bottom: 65px;
     & {
       max-width: 1280px;
       background-image: linear-gradient(var(--hero-bcg), var(--hero-bcg)),
@@ -52,10 +50,19 @@
 }
 
 .main-hero__container {
-  position: relative;
-  text-align: center;
-  padding-top: 126px;
   padding-bottom: 20px;
+
+  @media screen and (min-width: $tablet) {
+    padding-bottom: 15px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 65px;
+  }
+}
+
+.main-hero__container {
+  text-align: center;
+  padding-top: 70px;
   @media screen and (min-width: $tablet) {
     padding-top: 88px;
   }
@@ -65,28 +72,22 @@
 }
 
 .main-hero__address {
-  position: absolute;
-  top: 0;
-  right: 15px;
   display: flex;
   align-items: center;
   text-align: start;
-  width: 210px;
-  height: 47px;
+  width: 285px;
+  height: 56px;
   padding-left: 10px;
   padding-right: 7px;
   font-weight: 400;
-  font-size: 11px;
+  font-size: 16px;
   letter-spacing: 0.01em;
   color: var(--white-color);
   border: 1px solid var(--brand-color);
   border-radius: 2px;
   fill: var(--brand-color);
-  @media screen and (min-width: $tablet) {
-    position: static;
-    width: 285px;
-    height: 56px;
-    font-size: 16px;
+  @media screen and (max-width: 1023px) {
+    display: none;
   }
 }
 
@@ -95,9 +96,6 @@
 }
 
 .main-hero__title {
-  width: 303px;
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 24px;
   font-family: 'Film P3', sans-serif;
   font-size: 96px;
@@ -106,12 +104,8 @@
   text-transform: uppercase;
   color: var(--white-color);
   @media screen and (min-width: $tablet) {
-    width: 404px;
-    margin-bottom: 16px;
-    font-size: 128px;
-  }
-  @media screen and (min-width: $desktop) {
     margin-bottom: 32px;
+    font-size: 128px;
   }
 }
 
@@ -158,6 +152,7 @@
 }
 
 .btn.main-hero__btn {
+  background-color: var(--btn-bcg);
   &:hover,
   &:focus,
   &:active {
