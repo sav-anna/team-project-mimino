@@ -1,0 +1,180 @@
+.menu {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  @media screen and (min-width: $tablet) {
+    background-color: var(--secondary-bg-color);
+  }
+}
+
+.menu__title {
+  margin-bottom: 32px;
+  font-family: 'Times New Roman', serif;
+  font-size: 32px;
+  line-height: 1.16;
+  color: var(--black-color);
+  text-transform: uppercase;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 40px;
+  }
+}
+
+.menu__container {
+  display: flex;
+
+  @media screen and (max-width: 1023px) {
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    gap: 88px;
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    gap: 140px;
+    margin-bottom: 30px;
+  }
+}
+
+.menu__box {
+  @media screen and (min-width: $tablet) {
+    flex-basis: calc((100% - 88px) / 2);
+  }
+
+  @media screen and (min-width: $desktop) {
+    flex-basis: calc((100% - 140px) / 2);
+  }
+}
+
+.menu__table {
+  border-collapse: collapse;
+  width: 100%;
+
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.menu__caption {
+  margin-bottom: 16px;
+  font-family: 'Times New Roman', serif;
+  font-size: 20px;
+  line-height: 1.15;
+  color: var(--black-color);
+  text-align: left;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 24px;
+    line-height: 1.17;
+  }
+}
+
+.menu__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-bottom: 8px;
+
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 12px;
+    }
+  }
+
+  &--mg:not(:last-child) {
+    @media screen and (max-width: 1279px) {
+      margin-bottom: 11px;
+    }
+  }
+}
+
+.menu__header {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  @include text();
+  font-weight: 500;
+  text-align: left;
+
+  // Вияснити як це уникнути
+  width: 225px;
+
+  @media screen and (min-width: $tablet) {
+
+    // Вияснити як це уникнути
+    width: 230px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 16px;
+    line-height: 1.25;
+
+    // Вияснити як це уникнути
+    width: 290px;
+  }
+}
+
+.menu__components {
+  @include text($size: 10px, $line-height: 1.2);
+  font-weight: 400;
+
+  // Вияснити як це уникнути
+  width: 220px;
+
+  @media screen and (min-width: $desktop) {
+    // Вияснити як це уникнути
+    width: 261px;
+  }
+}
+
+.menu__weight {
+  @include text();
+  font-weight: 300;
+}
+
+.menu__cost {
+  @include text();
+
+  @media screen and (min-width: $desktop) {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+
+.menu__btn {
+  display: block;
+  margin-left: auto;
+  background-color: var(--black-color);
+  border-color: var(--primary-bg-color);
+
+  transition: background-color 250ms var(--distribution-time),
+    border-color 250ms var(--distribution-time);
+
+  &:hover,
+  &:focus {
+    border-color: var(--brand-color);
+  }
+
+  @media screen and (max-width: 1023px) {
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: 1279px) {
+    border-color: var(--secondary-bg-color);
+  }
+}
