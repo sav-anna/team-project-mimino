@@ -1,21 +1,14 @@
 .header {
-  // position: absolute;
-  // width: 100%;
-  // top: 0;
-  // left: 0;
-  // z-index: 1;
-
   &__nav {
     @include centeredFlex($justify: space-between);
     padding-top: 16px;
     @media screen and (min-width: $tablet) {
       padding-top: 24px;
-      padding-bottom: 26px;
+      padding-bottom: 33px;
     }
   }
   &__logo {
     @include logo($size: 36px, $color: var(--white-color));
-    padding-bottom: 7px;
     line-height: calc(39px / 36px);
     @media screen and (min-width: $tablet) {
       font-size: 40px;
@@ -81,10 +74,17 @@
       gap: 20px;
     }
   }
-  &__socials-icon {
+}
+.header__socials-icon {
+  fill: rgba(243, 198, 83, 0.7);
+  transition: fill 250ms var(--distribution-time);
+  &:hover,
+  &:focus {
     fill: var(--brand-color);
   }
 }
+
+// Стилі для сторінки номеру
 .room-hero .header {
   background: linear-gradient(
     180deg,
@@ -92,5 +92,48 @@
     rgba(0, 0, 0, 0.55) 54.17%,
     rgba(0, 0, 0, 0) 100%
   );
-  padding-bottom: 73px;
+  padding-bottom: 33px;
+
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 80px;
+  }
+}
+.room-hero .header__nav {
+  padding-bottom: 0;
+  @media screen and (min-width: $mobile) {
+    margin-bottom: 12px;
+  }
+}
+.header__address {
+  @media screen and (min-width: $mobile) {
+    position: relative;
+  }
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
+.header__address-link {
+  position: absolute;
+  right: 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-style: normal;
+  width: 210px;
+  padding-top: 8px;
+  padding-bottom: 9px;
+  border: 1px solid rgba(243, 198, 83, 0.7);
+  border-radius: 2px;
+  color: var(--link-color);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: calc(15px / 12px);
+  letter-spacing: 0.01em;
+}
+.header__address-icon {
+  display: block;
+  margin-left: 6px;
+  width: 20px;
+  height: 20px;
+  fill: var(--brand-color);
 }
