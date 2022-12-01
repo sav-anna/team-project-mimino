@@ -147,7 +147,8 @@
   &__slider-box {
     display: flex;
     gap: 20px;
-    padding-right: 40px;
+    padding-right: 5px;
+    padding-left: -15px;
     margin-bottom: 32px;
 
     @media screen and (min-width: $tablet) {
