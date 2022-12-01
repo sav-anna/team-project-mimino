@@ -12,3 +12,10 @@
   color: $color;
   text-transform: uppercase;
 }
+
+@mixin text($size: 14px, $line-height: 1.21) {
+  font-size: $size;
+  letter-spacing: 0.02em;
+  line-height: $line-height;
+  color: var(--black-color);
+}
