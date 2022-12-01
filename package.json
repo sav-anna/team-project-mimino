@@ -18,6 +18,7 @@
     "url": "https://github.com/AnnaVS8/team-project-mimino/issues"
   },
   "dependencies": {
+    "jquery": "^3.6.1",
     "modern-normalize": "^1.1.0"
   },
   "devDependencies": {
