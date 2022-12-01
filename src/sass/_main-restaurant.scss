@@ -28,7 +28,7 @@
   }
 
   &__text-tagline {
-    font-style: normal;
+    // font-style: normal;
     font-weight: 400;
     @media screen and (min-width: $mobile) and (max-width: 1023px) {
       margin-bottom: 12px;
@@ -40,7 +40,7 @@
 
   &__text-title {
     font-family: 'Film P3';
-    font-style: normal;
+    // font-style: normal;
     font-weight: 700;
     font-size: 40px;
     line-height: 1.075;
@@ -59,7 +59,7 @@
   &__text-description {
     max-width: 258px;
     font-family: 'Montserrat';
-    font-style: normal;
+    // font-style: normal;
     font-weight: 600;
     font-size: 12px;
     line-height: 1.25;
@@ -121,7 +121,7 @@
 
   &-description {
     font-family: 'Montserrat';
-    font-style: normal;
+    // font-style: normal;
     font-weight: 600;
     font-size: 12px;
     line-height: 1.25;
