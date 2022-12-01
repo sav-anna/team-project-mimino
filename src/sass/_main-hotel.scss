@@ -102,9 +102,10 @@ margin-bottom: 6px;
     align-items: center;
     flex-direction: column;
     width: 242px;
+    @media screen and (max-width: 1023px) {
     margin-bottom: 28px;
-    transform: translateX(158px);
-   
+    transform: translateX(143px);
+    }
 @media screen and (min-width: $tablet) {
     width: 419px;
     margin-left: 46px;
@@ -117,7 +118,7 @@ margin-bottom: 6px;
 .main-hotel__box {
     display: flex;
     @media screen and (min-width: $tablet) {
-    transform: translate(220px, -24px);
+    transform: translate(170px, -100px);
     }
     @media screen and (min-width: $desktop) {
    transform: translate(294px,-46px);
@@ -125,7 +126,7 @@ margin-bottom: 6px;
 }
 .image1 {
     width: 244px;
-    background: #DADADA;
+    background:var(--section-text-color);
         box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
         border-radius: 2px;
         margin-bottom: 32px;
@@ -144,7 +145,7 @@ margin-bottom: 6px;
 }
 .image2 {
     width: 200px;
-    background: #DADADA;
+    background:var(--section-text-color);
     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
     border-radius: 2px;
 
@@ -156,7 +157,6 @@ margin-bottom: 6px;
 
     @media screen and (min-width: $desktop) {
         width: 460px;
-   
         box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
         border-radius: 2px;
     }
