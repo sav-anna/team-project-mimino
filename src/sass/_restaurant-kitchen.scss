@@ -30,11 +30,16 @@
   }
 
   &__text {
-    margin-bottom: 28px;
+    @media screen and (min-width: $mobile) and (max-width: $tablet) {
+      margin-bottom: 28px;
+    }
   }
 
   &__text-tagline {
     margin-bottom: 12px;
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 4px;
+    }
   }
   &__text-title {
     font-family: 'Film P3';
@@ -94,11 +99,12 @@
   gap: 20px;
   @media screen and (min-width: $tablet) {
     position: relative;
-    top: -64px;
+    top: -48px;
     gap: 48px;
   }
   @media screen and (min-width: $desktop) {
     gap: 32px;
+    top: -98px;
   }
 
   &-img2 {
