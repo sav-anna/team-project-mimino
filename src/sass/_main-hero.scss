@@ -127,6 +127,7 @@
 }
 
 .btn.main-hero__btn {
+  padding: 15px 24px 13px 24px;
   background-color: var(--btn-bcg);
   &:hover,
   &:focus,
@@ -134,6 +135,7 @@
     background-color: var(--white-color);
   }
   @media screen and (min-width: $tablet) {
+    padding: 14px 24px;
     background-color: var(--black-color);
   }
   @media screen and (min-width: $desktop) {

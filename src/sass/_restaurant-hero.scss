@@ -127,18 +127,17 @@
 }
 
 .btn.restaurant-hero__btn {
+  padding: 15px 24px 14px 24px;
   background-color: var(--btn-bcg);
   &:hover,
   &:focus,
   &:active {
     background-color: var(--white-color);
   }
-  @media screen and (min-width: $tablet) {
-    background-color: var(--black-color);
-  }
-  @media screen and (min-width: $desktop) {
-    background-color: var(--btn-bcg);
-  }
+}
+
+.btn.restaurant-hero__second-btn {
+  padding: 15px 30px 14px 29px;
 }
 
 .restaurant-hero__btn-list {

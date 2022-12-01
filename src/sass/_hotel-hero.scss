@@ -124,6 +124,7 @@
 }
 
 .btn.hotel-hero__btn {
+  padding: 15px 24px 13px 24px;
   background-color: var(--btn-bcg);
   &:hover,
   &:focus,
@@ -131,11 +132,15 @@
     background-color: var(--white-color);
   }
   @media screen and (min-width: $tablet) {
-    background-color: var(--black-color);
+    padding: 14px 26px;
   }
   @media screen and (min-width: $desktop) {
-    background-color: var(--btn-bcg);
+    padding: 16px 26px 12px 26px;
   }
+}
+
+.btn.hotel-hero__second-btn {
+  padding: 14px 35px;
 }
 
 .hotel-hero__btn-list {
