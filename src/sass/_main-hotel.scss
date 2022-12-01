@@ -1,3 +1,23 @@
+.main-hotel {
+    padding:20px, 14px;
+    @media screen and (min-width: $tablet) {
+    padding-bottom: 50px;
+    }
+}
+.main-hotel__subtitle {
+    width: 242px;
+    text-align: end;
+
+    @media screen and (min-width: $tablet) {
+            width: 419px;
+            text-align: end;
+            
+    }
+    @media screen and (min-width: $desktop) {
+            width: 488px;
+            text-align: end;
+    }
+}
 .main-hotel__tagline {
     @media screen and (max-width: 1023px) {
 font-size: 20px;
@@ -20,6 +40,7 @@ margin-bottom: 6px;
         letter-spacing: 0.3em;
         margin-bottom: 16px;
         color:var(--title-color);
+        
 
         @media screen and (min-width: $tablet) {
             font-size: 64px;
@@ -81,6 +102,8 @@ margin-bottom: 6px;
     align-items: center;
     flex-direction: column;
     width: 242px;
+    margin-bottom: 28px;
+    transform: translateX(158px);
    
 @media screen and (min-width: $tablet) {
     width: 419px;
@@ -91,33 +114,35 @@ margin-bottom: 6px;
     margin-left: 67px;
     }
  }
-
-
-
 .main-hotel__box {
     display: flex;
+    @media screen and (min-width: $tablet) {
+    transform: translate(220px, -24px);
+    }
+    @media screen and (min-width: $desktop) {
+   transform: translate(294px,-46px);
+    }
 }
 .image1 {
-    position: relative;
     width: 244px;
-    
     background: #DADADA;
         box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
         border-radius: 2px;
+        margin-bottom: 32px;
         @media screen and (min-width: $tablet) {
             width: 400px;
+            transform: translateY(-24px);
             box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
                 border-radius: 2px;
         }
 @media screen and (min-width: $desktop) {
     width: 460px;
+    transform: translateY(-24px);
                 box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
                 border-radius: 2px;
 }
 }
 .image2 {
-    position: relative;
-   
     width: 200px;
     background: #DADADA;
     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
@@ -131,7 +156,7 @@ margin-bottom: 6px;
 
     @media screen and (min-width: $desktop) {
         width: 460px;
-       
+   
         box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
         border-radius: 2px;
     }
