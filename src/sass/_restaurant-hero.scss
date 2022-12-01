@@ -18,7 +18,7 @@
     & {
       max-width: 1024px;
       background-image: linear-gradient(var(--hero-bcg), var(--hero-bcg)),
-        url(../images/section/hero/room__hero-1024.jpg);
+        url(../images/section/hero/restaurant-hero-1024.jpg);
     }
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
@@ -50,52 +50,23 @@
 }
 
 .restaurant-hero__container {
+  text-align: center;
+  padding-top: 70px;
   padding-bottom: 20px;
-
   @media screen and (min-width: $tablet) {
+    padding-top: 88px;
     padding-bottom: 15px;
   }
   @media screen and (min-width: $desktop) {
+    padding-top: 64px;
     padding-bottom: 65px;
   }
 }
 
-.restaurant-hero__container {
-  text-align: center;
-  padding-top: 70px;
-  @media screen and (min-width: $tablet) {
-    padding-top: 88px;
-  }
-  @media screen and (min-width: $desktop) {
-    padding-top: 64px;
-  }
-}
-
-.restaurant-hero__address {
-  display: flex;
-  align-items: center;
-  text-align: start;
-  width: 285px;
-  height: 56px;
-  padding-left: 10px;
-  padding-right: 7px;
-  font-weight: 400;
-  font-size: 16px;
-  letter-spacing: 0.01em;
-  color: var(--white-color);
-  border: 1px solid var(--brand-color);
-  border-radius: 2px;
-  fill: var(--brand-color);
-  @media screen and (max-width: 1023px) {
-    display: none;
-  }
-}
-
-.restaurant-hero__address-icon {
-  margin-right: 13px;
-}
-
 .restaurant-hero__title {
+  width: 303px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 20px;
   font-family: 'Film P3', sans-serif;
   font-size: 96px;
@@ -104,6 +75,7 @@
   text-transform: uppercase;
   color: var(--white-color);
   @media screen and (min-width: $tablet) {
+    width: 404px;
     margin-bottom: 16px;
     font-size: 128px;
   }
@@ -179,6 +151,30 @@
   }
 }
 
+.restaurant-hero__address {
+  display: flex;
+  align-items: center;
+  text-align: start;
+  width: 285px;
+  height: 56px;
+  padding-left: 10px;
+  padding-right: 7px;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.01em;
+  color: var(--white-color);
+  border: 1px solid var(--brand-color);
+  border-radius: 2px;
+  fill: var(--brand-color);
+  @media screen and (max-width: 1023px) {
+    display: none;
+  }
+}
+
+.restaurant-hero__address-icon {
+  margin-right: 13px;
+}
+
 .restaurant-hero__social-list {
   display: flex;
   gap: 20px;
@@ -190,6 +186,13 @@
 .restaurant-hero__social-link {
   @include centeredFlex();
   fill: var(--brand-color-transparent);
+  transition: fill 250ms var(--distribution-time);
+
+  &:hover,
+  &:focus,
+  &:active {
+    fill: var(--brand-color);
+  }
 }
 
 .restaurant-hero__address-bnt {
