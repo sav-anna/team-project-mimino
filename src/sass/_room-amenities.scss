@@ -1,0 +1,141 @@
+.room-amenities {
+    @media screen and (max-width: 1023px) {
+        padding-top: 32px;
+            padding-bottom: 32px;
+    }
+        @media screen and (min-width: $tablet) {
+            padding-top: 48px;
+                padding-bottom: 40px;
+        }
+                @media screen and (min-width: $desktop) {
+                    padding-top: 48px;
+                        padding-bottom: 48px;
+                }
+}
+
+.room-amenities__title {
+    font-family: 'Times New Roman', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 1.15;
+    color:var(--black-color);
+    margin-bottom: 16px;
+
+}
+.room-amenities__lead {
+    color: var(--main-text-color);
+    margin-bottom: 32px;
+}
+
+.room-amenities__subtitle {
+    font-family: 'Times New Roman', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.17;
+    color:var(--black-color);
+    margin-bottom: 16px;
+}
+
+.room-amenities__text {
+    color: var(--main-text-color);
+    margin-bottom: 32px;
+    width: 400px;
+
+}
+
+
+
+.room-amenities__tasks {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    @media screen and (min-width: $tablet) {
+        justify-content: center;
+        align-items: center;
+        gap: 80px;
+    }
+        @media screen and (min-width: $desktop) {
+            justify-content: center;
+            align-items: center;
+            gap: 159px;
+        }
+}
+
+.room-amenities__list {
+    display: inline-block;
+
+}
+
+.room-amenities__box {
+    display: flex;
+    flex-direction: column;
+    @media screen and (min-width: $tablet) {
+        align-items: flex-end;
+    }
+        @media screen and (min-width: $desktop) {
+            transform: translateX(-113px);
+        }
+    
+}
+
+.room-amenities__link {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    color:var(--accent-color);
+    text-decoration: none;
+   display: flex;
+    transition: background-color 250ms var(--distribution-time);
+    
+    @media screen and (max-width: 1023px) {
+    font-size: 16px;
+    line-height: 1.25;
+    }
+        @media screen and (min-width: $tablet) {
+            font-size: 20px;
+                line-height: 1.2;
+        }
+}
+.room-amenities__link:hover,
+.room-amenities__link:focus {
+color:var(--brand-color);
+}
+.room-amenities__btn {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color:var(--white-color);
+    background:var(--black-color);
+    border: 1px solid var(--brand-color);
+    border-radius: 25px;
+    display: inline-block;
+    margin-bottom: 32px;
+
+    transition: background-color 250ms var(--distribution-time);
+    @media screen and (max-width: 1023px) {
+        width: 384px;
+        padding: 20px 43px;
+    }
+
+@media screen and (min-width: $tablet) {
+        font-size: 24px;
+        width: 434px;
+        padding: 18px 38px;
+    }
+ 
+}
+.room-amenities__btn:hover,
+.room-amenities__btn:focus {
+    color: var(--black-color);
+    background-color:var(--brand-color);
+}
+.room-amenities__icon {
+    fill:var(--accent-color);
+    margin-left: 16px;
+}
+.room-amenities__icon:hover,
+.room-amenities__icon:focus {
+   fill: var(--brand-color);
+}
