@@ -13,12 +13,13 @@
   }
 }
 
-.slick-slider .slick-list {
+.slick-list {
   overflow: hidden;
 }
 
 .slick-track {
   min-width: 0;
+  max-height: 270px;
   display: flex;
   gap: 20px;
   width: 374px;
@@ -59,6 +60,11 @@
   }
 }
 
+.variable-slider .slick-arrow.slick-prev:hover {
+  background: url('./../images/svg/slider-arrow-yellow-left.svg') 0 0 / 100%
+    no-repeat;
+}
+
 .variable-slider .slick-arrow.slick-next {
   right: 0px;
 
@@ -69,28 +75,13 @@
   }
 
   @media screen and (min-width: $desktop) {
-    right: 25px;
+    right: 0;
   }
 }
 
-.my-slick-prev,
-.my-slick-next {
-  position: absolute;
-  bottom: -20%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  width: 50px;
-  height: 40px;
-  cursor: pointer;
-  font-family: inherit;
-  font-weight: 900;
-  font-size: 36px;
-  line-height: 1;
-  border: none;
-  color: white;
-  background-color: transparent;
+.variable-slider .slick-arrow.slick-next:hover {
+  background: url('./../images/svg/slider-arrow-yellow-right.svg') 0 0 / 100%
+    no-repeat;
 }
 
 .slick-dotted.slick-slider {
@@ -102,21 +93,5 @@
 
   @media screen and (min-width: $desktop) {
     margin-bottom: 32px;
-  }
-}
-
-.my-slick-prev {
-  left: 276px;
-
-  @media screen and (min-width: $desktop) {
-    left: 728px;
-  }
-}
-
-.my-slick-next {
-  right: 0px;
-
-  @media screen and (min-width: $desktop) {
-    right: 25px;
   }
 }

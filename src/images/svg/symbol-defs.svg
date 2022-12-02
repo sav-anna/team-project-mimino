@@ -29,10 +29,10 @@
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M27.429 3.428l-24 24M3.429 3.428l24 24"></path>
 </symbol>
 <symbol id="icon-slider-arrow-right" viewBox="0 0 32 32">
-<path fill="#fff" style="fill: var(--color1, #fff)" d="M22.492 7.586l-1.414 1.414 6 6h-26.078v2h26.078l-6 6 1.414 1.414 8.414-8.414-8.414-8.414z"></path>
+<path d="M22.492 7.586l-1.414 1.414 6 6h-26.078v2h26.078l-6 6 1.414 1.414 8.414-8.414-8.414-8.414z"></path>
 </symbol>
 <symbol id="icon-slider-arrow-left" viewBox="0 0 32 32">
-<path fill="#fff" style="fill: var(--color1, #fff)" d="M31.083 15h-26.077l6-6-1.416-1.414-8.413 8.414 8.414 8.414 1.415-1.414-6-6h26.077v-2z"></path>
+<path d="M31.083 15h-26.077l6-6-1.416-1.414-8.413 8.414 8.414 8.414 1.415-1.414-6-6h26.077v-2z"></path>
 </symbol>
 </defs>
 </svg>
