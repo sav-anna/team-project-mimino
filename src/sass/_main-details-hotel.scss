@@ -58,6 +58,7 @@
   }
 
   &__main {
+    min-width: 0;
     @media screen and (min-width: $tablet) {
       display: flex;
       flex-direction: column;
@@ -150,6 +151,7 @@
     padding-right: 5px;
     padding-left: -15px;
     margin-bottom: 32px;
+    min-width: 0;
 
     @media screen and (min-width: $tablet) {
       gap: 32px;
@@ -162,6 +164,10 @@
       padding-right: 32px;
       margin-bottom: 0;
     }
+  }
+
+  &__slider-item {
+    min-width: 0;
   }
 
   &__slider-item:first-of-type {
@@ -182,10 +188,6 @@
 
     @media screen and (min-width: $tablet) {
       display: flex;
-    }
-
-    @media screen and (min-width: $desktop) {
-      display: none;
     }
   }
 
