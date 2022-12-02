@@ -60,7 +60,8 @@
   }
 }
 
-.variable-slider .slick-arrow.slick-prev:hover {
+.variable-slider .slick-arrow.slick-prev:hover,
+.variable-slider .slick-arrow.slick-prev:focus {
   background: url('./../images/svg/slider-arrow-yellow-left.svg') 0 0 / 100%
     no-repeat;
 }
@@ -79,7 +80,8 @@
   }
 }
 
-.variable-slider .slick-arrow.slick-next:hover {
+.variable-slider .slick-arrow.slick-next:hover,
+.variable-slider .slick-arrow.slick-next:focus {
   background: url('./../images/svg/slider-arrow-yellow-right.svg') 0 0 / 100%
     no-repeat;
 }
