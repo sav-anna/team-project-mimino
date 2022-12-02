@@ -1,21 +1,20 @@
 .main-hotel {
-    padding:20px, 14px;
+    padding-bottom:20px;
     @media screen and (min-width: $tablet) {
-    padding-bottom: 50px;
+    padding-bottom: 20px;
     }
 }
 .main-hotel__subtitle {
-    width: 242px;
-    text-align: end;
+    text-align: right;
 
     @media screen and (min-width: $tablet) {
             width: 419px;
-            text-align: end;
+            text-align: right;
             
     }
     @media screen and (min-width: $desktop) {
             width: 488px;
-            text-align: end;
+            text-align: right;
     }
 }
 .main-hotel__tagline {
@@ -32,7 +31,7 @@ margin-bottom: 6px;
 }
 
 .main-hotel__title {
-    font-family: 'Film P3';
+    font-family: 'Film P3', sans-serif;
         font-style: normal;
         font-weight: 700;
         font-size: 40px;
@@ -51,12 +50,11 @@ margin-bottom: 6px;
                 }
 }
 .main-hotel__text {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
         font-style: normal;
         font-weight: 600;
         font-size: 12px;
         line-height: 1.25;
-        letter-spacing: 0.02em;
     
         color:var(--secondary-text-color);
 
@@ -65,12 +63,11 @@ margin-bottom: 6px;
         }
 }
 .main-hotel__lead {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
         font-style: normal;
         font-weight: 600;
         font-size: 12px;
         line-height: 1.25;
-        letter-spacing: 0.02em;
         width: 163px;
         margin-top: 102px;
         margin-right: 21px;
@@ -99,12 +96,12 @@ margin-bottom: 6px;
 }
 .main-hotel__description {
     display: flex;
-    align-items: center;
     flex-direction: column;
-    width: 242px;
     @media screen and (max-width: 1023px) {
+    max-width: 242px;
+    margin-left: 143px;
     margin-bottom: 28px;
-    transform: translateX(143px);
+    
     }
 @media screen and (min-width: $tablet) {
     width: 419px;
