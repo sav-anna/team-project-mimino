@@ -1,4 +1,11 @@
 .header {
+  // max-width: 414px;
+  // @media screen and (min-width: $tablet) {
+  //   max-width: 1024px;
+  // }
+  // @media screen and (min-width: $desktop) {
+  //   max-width: 1280px;
+  // }
   &__nav {
     @include centeredFlex($justify: space-between);
     padding-top: 16px;
@@ -103,18 +110,20 @@
 .room-hero .header__nav {
   padding-bottom: 0;
 }
-.header__address {
+.header__container {
   @media screen and (min-width: $mobile) {
     position: relative;
   }
+}
+.header__address {
   @media screen and (min-width: $tablet) {
     display: none;
   }
 }
 .header__address-link {
   position: absolute;
-  top: 9px;
-  right: 0;
+  top: 64px;
+  right: 15px;
   display: flex;
   align-items: center;
   gap: 12px;
