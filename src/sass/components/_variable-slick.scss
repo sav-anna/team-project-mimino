@@ -1,0 +1,122 @@
+.variable-slider {
+  position: relative;
+
+  margin-bottom: 80px;
+  margin-left: -15px;
+  min-width: 0;
+
+  @media screen and (min-width: $tablet) {
+    margin-left: 0;
+  }
+
+  @media screen and (min-width: $desktop) {
+  }
+}
+
+.slick-slider .slick-list {
+  overflow: hidden;
+}
+
+.slick-track {
+  min-width: 0;
+  display: flex;
+  gap: 20px;
+  width: 374px;
+
+  @media screen and (min-width: $tablet) {
+    gap: 34px;
+    width: 662px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    gap: 86px;
+    width: 874px;
+  }
+}
+
+.variable-slider .slick-arrow {
+  position: absolute;
+
+  top: 110%;
+  font-size: 0;
+  width: 32px;
+  height: 32px;
+  border: none;
+  z-index: 10;
+}
+
+.variable-slider .slick-arrow.slick-prev {
+  left: 276px;
+
+  background: url('./../images/svg/slider-arrow-left.svg') 0 0 / 100% no-repeat;
+
+  @media screen and (min-width: $tablet) {
+    left: 567px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    left: 728px;
+  }
+}
+
+.variable-slider .slick-arrow.slick-next {
+  right: 0px;
+
+  background: url('./../images/svg/slider-arrow-right.svg') 0 0 / 100% no-repeat;
+
+  @media screen and (min-width: $tablet) {
+    right: 0px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    right: 25px;
+  }
+}
+
+.my-slick-prev,
+.my-slick-next {
+  position: absolute;
+  bottom: -20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  width: 50px;
+  height: 40px;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 1;
+  border: none;
+  color: white;
+  background-color: transparent;
+}
+
+.slick-dotted.slick-slider {
+  margin-bottom: 16px;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 24px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 32px;
+  }
+}
+
+.my-slick-prev {
+  left: 276px;
+
+  @media screen and (min-width: $desktop) {
+    left: 728px;
+  }
+}
+
+.my-slick-next {
+  right: 0px;
+
+  @media screen and (min-width: $desktop) {
+    right: 25px;
+  }
+}

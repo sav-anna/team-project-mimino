@@ -1,4 +1,4 @@
-<section class="details-hotel slick">
+<section class="details-hotel">
   <div class="details-hotel__container container">
     <div class="details-hotel__main">
       <div class="details-hotel__content">
@@ -11,8 +11,8 @@
           </p>
         </div>
       </div>
-      <div class="details-hotel__slider-box slick variable">
-        <div class="details-hotel__slider-item slick__item">
+      <ul class="variable-slider">
+        <li class="variable-slider__item">
           <picture class="details-hotel__slider-tablet slick__box">
             <source
               srcset="
@@ -28,9 +28,34 @@
               alt="Ліжко в готельному номері"
             />
           </picture>
-        </div>
+        </li>
 
-        <div class="details-hotel__slider-item slick__item">
+        <li class="variable-slider__item">
+          <picture class="slick__box">
+            <source
+              srcset="
+                ./images/section/hotel/main-hotel-mobile-slide2.jpg    1x,
+                ./images/section/hotel/main-hotel-mobile-slide2@2x.jpg 2x
+              "
+              media="(max-width: 1024px)"
+            />
+            <source
+              srcset="
+                ./images/section/hotel/main-hotel-desktop-slide2.jpg    1x,
+                ./images/section/hotel/main-hotel-desktop-slide2@2x.jpg 2x
+              "
+              media="(min-width: 1024px)"
+            />
+
+            <img
+              class="details-hotel__img"
+              src="./images/section/hotel/main-hotel-mobile-slide2.jpg"
+              alt="Ліжко в готельному номері"
+            />
+          </picture>
+        </li>
+
+        <li class="variable-slider__item">
           <picture class="slick__box">
             <source
               srcset="
@@ -54,34 +79,9 @@
               alt="Ліжко в готельному номері"
             />
           </picture>
-        </div>
+        </li>
 
-        <div class="details-hotel__slider-item slick__item">
-          <picture class="slick__box">
-            <source
-              srcset="
-                ./images/section/hotel/main-hotel-mobile-slide2.jpg    1x,
-                ./images/section/hotel/main-hotel-mobile-slide2@2x.jpg 2x
-              "
-              media="(max-width: 1024px)"
-            />
-            <source
-              srcset="
-                ./images/section/hotel/main-hotel-desktop-slide2.jpg    1x,
-                ./images/section/hotel/main-hotel-desktop-slide2@2x.jpg 2x
-              "
-              media="(min-width: 1024px)"
-            />
-
-            <img
-              class="details-hotel__img"
-              src="./images/section/hotel/main-hotel-mobile-slide2.jpg"
-              alt="Ліжко в готельному номері"
-            />
-          </picture>
-        </div>
-
-        <div class="details-hotel__slider-item slick__item">
+        <li class="variable-slider__item">
           <picture class="details-hotel__slider-desktop slick__box">
             <source
               srcset="
@@ -97,8 +97,36 @@
               alt="Ліжко в готельному номері"
             />
           </picture>
-        </div>
-      </div>
+        </li>
+
+        <li class="variable-slider__item">
+          <picture class="slick__box">
+            <source
+              srcset="
+                ./images/section/hotel/main-hotel-mobile-slide1.jpg    1x,
+                ./images/section/hotel/main-hotel-mobile-slide1@2x.jpg 2x
+              "
+              media="(max-width: 1024px)"
+            />
+
+            <source
+              srcset="
+                ./images/section/hotel/main-hotel-desktop-slide1.jpg    1x,
+                ./images/section/hotel/main-hotel-desktop-slide1@2x.jpg 2x
+              "
+              media="(min-width: 1024px)"
+            />
+
+            <img
+              class="details-hotel__img"
+              src="./images/section/hotel/main-hotel-mobile-slide1.jpg"
+              alt="Ліжко в готельному номері"
+            />
+          </picture>
+        </li>
+
+      
+      </ul>
     </div>
 
     <div class="details-hotel__order">
@@ -115,22 +143,5 @@
         </li>
       </ul>
     </div>
-  </div>
+  </di>
 </section>
-
-<!-- <ul class="details-hotel__slider-arrow">
-        <li>
-          <a href="#">
-            <svg class="details-hotel__icon-arrow" width="32" height="32">
-              <use href="./images/svg/symbol-defs.svg#icon-arrow-left"></use>
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <svg class="details-hotel__icon-arrow" width="32" height="32">
-              <use href="./images/svg/symbol-defs.svg#icon-arrow-right"></use>
-            </svg>
-          </a>
-        </li>
-      </ul> -->
