@@ -6,6 +6,19 @@ body {
   font-size: 16px;
   line-height: calc(20px / 16px);
   letter-spacing: 0.02em;
+
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0) 33.9%,
+    rgba(122, 122, 122, 0.4) 34% 34%,
+    rgba(0, 0, 0, 0) 33.9%,
+    // rgba(122, 122, 122, 0.4) 34% 34%,
+    // rgba(0, 0, 0, 0) 33.9%,
+    // rgba(122, 122, 122, 0.4) 34% 34%,
+    // rgba(0, 0, 0, 0) 33.9%
+  );
+  background-size: 302px;
+  background-repeat: repeat;
 }
 
 h1,
@@ -46,14 +59,26 @@ a {
   clip-path: inset(50%);
   margin: -1px;
 }
-.section {
-  background-color: var(--primary-bg-color);
-}
+// .section {
+//   background-color: var(--primary-bg-color);
+// }
 
 .container {
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
+  // background-image: linear-gradient(
+  //   to right,
+  //   rgba(0, 0, 0, 0) 33.9%,
+  //   rgba(122, 122, 122, 0.4) 34%,
+  //   rgba(0, 0, 0, 0) 34.1%,
+  //   rgba(0, 0, 0, 0) 63.9%,
+  //   rgba(122, 122, 122, 0.4) 64%,
+  //   rgba(0, 0, 0, 0) 64.1%,
+  //   rgba(0, 0, 0, 0) 93.9%,
+  //   rgba(122, 122, 122, 0.4) 94%,
+  //   rgba(0, 0, 0, 0) 94.1%
+  // );
 
   @media screen and (min-width: $mobile) {
     width: 414px;
