@@ -51,9 +51,14 @@
   }
 
   &__container {
+    padding-right: 40px;
     @media screen and (min-width: $tablet) {
       display: flex;
-      justify-content: flex-end;
+      gap: 32px;
+      padding-right: 47px;
+    }
+    @media screen and (min-width: $desktop) {
+      padding-right: 85px;
     }
   }
 
@@ -145,67 +150,11 @@
     }
   }
 
-  &__slider-box {
-    display: flex;
-    gap: 20px;
-    padding-right: 5px;
-    padding-left: -15px;
-    margin-bottom: 32px;
-    min-width: 0;
-
-    @media screen and (min-width: $tablet) {
-      gap: 32px;
-      padding-right: 0px;
-      margin-bottom: 0;
-    }
-
-    @media screen and (min-width: $desktop) {
-      gap: 86px;
-      padding-right: 32px;
-      margin-bottom: 0;
-    }
-  }
-
-  &__slider-item {
-    min-width: 0;
-  }
-
-  &__slider-item:first-of-type {
-    @media screen and (min-width: $desktop) {
-      margin-left: -86px;
-    }
-  }
-
-  &__slider-desktop {
-    display: none;
-    @media screen and (min-width: $desktop) {
-      display: flex;
-    }
-  }
-
-  &__slider-tablet {
-    display: none;
-
-    @media screen and (min-width: $tablet) {
-      display: flex;
-    }
-  }
-
-  &__slider-arrow {
-    display: flex;
-    justify-content: flex-end;
-    gap: 32px;
-  }
-
-  &__icon-arrow {
-    fill: var(--white-color);
-    opacity: 1;
-  }
-
   &__order {
     @media screen and (min-width: $tablet) {
       display: flex;
       align-items: flex-end;
+      margin-bottom: 80px;
     }
   }
 

@@ -1,0 +1,99 @@
+.variable-slider {
+  position: relative;
+
+  margin-bottom: 80px;
+  margin-left: -15px;
+  min-width: 0;
+
+  @media screen and (min-width: $tablet) {
+    margin-left: 0;
+  }
+
+  @media screen and (min-width: $desktop) {
+  }
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-track {
+  min-width: 0;
+  max-height: 270px;
+  display: flex;
+  gap: 20px;
+  width: 374px;
+
+  @media screen and (min-width: $tablet) {
+    gap: 34px;
+    width: 662px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    gap: 86px;
+    width: 874px;
+  }
+}
+
+.variable-slider .slick-arrow {
+  position: absolute;
+
+  top: 110%;
+  font-size: 0;
+  width: 32px;
+  height: 32px;
+  border: none;
+  z-index: 10;
+}
+
+.variable-slider .slick-arrow.slick-prev {
+  left: 276px;
+
+  background: url('./../images/svg/slider-arrow-left.svg') 0 0 / 100% no-repeat;
+
+  @media screen and (min-width: $tablet) {
+    left: 567px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    left: 728px;
+  }
+}
+
+.variable-slider .slick-arrow.slick-prev:hover,
+.variable-slider .slick-arrow.slick-prev:focus {
+  background: url('./../images/svg/slider-arrow-yellow-left.svg') 0 0 / 100%
+    no-repeat;
+}
+
+.variable-slider .slick-arrow.slick-next {
+  right: 0px;
+
+  background: url('./../images/svg/slider-arrow-right.svg') 0 0 / 100% no-repeat;
+
+  @media screen and (min-width: $tablet) {
+    right: 0px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    right: 0;
+  }
+}
+
+.variable-slider .slick-arrow.slick-next:hover,
+.variable-slider .slick-arrow.slick-next:focus {
+  background: url('./../images/svg/slider-arrow-yellow-right.svg') 0 0 / 100%
+    no-repeat;
+}
+
+.slick-dotted.slick-slider {
+  margin-bottom: 16px;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 24px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 32px;
+  }
+}
