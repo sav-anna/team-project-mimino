@@ -46,39 +46,40 @@
 
 .room-hero__container {
   position: relative;
-  padding-top: 208px;
+  padding-top: 341px;
   padding-bottom: 14px;
   @media screen and (min-width: $tablet) {
-    padding-top: 225px;
+    padding-top: 353px;
     padding-bottom: 24px;
   }
   @media screen and (min-width: $desktop) {
-    padding-top: 265px;
+    padding-top: 377px;
     padding-bottom: 48px;
   }
 }
 
-.room-hero__slider {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 93px;
-  @media screen and (min-width: $tablet) {
-    margin-bottom: 88px;
-  }
-  @media screen and (min-width: $desktop) {
-    margin-bottom: 72px;
-  }
-}
+// .room-hero__slider {
+//   display: flex;
+//   justify-content: space-between;
+//   margin-bottom: 93px;
+//   @media screen and (min-width: $tablet) {
+//     margin-bottom: 88px;
+//   }
+//   @media screen and (min-width: $desktop) {
+//     margin-bottom: 72px;
+//   }
+// }
 
-.room-hero__slider-btn {
-  @include centeredFlex();
-  padding: 0;
-  width: 40px;
-  height: 40px;
-  border: none;
-  background-color: var(--hero-bcg);
-  fill: var(--brand-color);
-}
+// .room-hero__slider-btn {
+//   @include centeredFlex();
+//   padding: 0;
+//   width: 40px;
+//   height: 40px;
+//   border: none;
+//   background-color: var(--hero-bcg);
+//   fill: var(--brand-color);
+//   z-index: 100;
+// }
 
 .room-hero__title {
   margin-bottom: 14px;
@@ -186,15 +187,57 @@
   gap: 40px;
 }
 
+.slick-container {
+  position: relative;
+  width: 414px;
+  @media screen and (min-width: $tablet) {
+    width: 1024px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 1280px;
+  }
+}
+
+.room-hero-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
 .onetime {
-  display: flex;
+  // display: flex;
 }
 
-.onetime-item {
+// .onetime-item {
+//   height: 100vh;
+//   width: 100vw;
+// }
+
+.onetime-image {
   height: 100vh;
-  width: 100vw;
 }
 
-.allo {
-  width: 100%;
+.my-slick-prev.slick-arrow {
+  position: absolute;
+  bottom: 268px;
+  left: 85px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  // background-color: var(--hero-bcg);
+  background-color: aqua;
+  z-index: 10;
+}
+
+.my-slick-next.slick-arrow {
+  position: absolute;
+  bottom: 268px;
+  right: 85px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  // background-color: var(--hero-bcg);
+  background-color: aqua;
+  z-index: 10;
 }
