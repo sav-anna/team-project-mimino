@@ -21,12 +21,9 @@
       display: flex;
       align-items: center;
       gap: 26px;
-      position: relative;
-      top: -32px;
     }
     @media screen and (min-width: $desktop) {
       gap: 32px;
-      top: -33px;
     }
   }
 
@@ -84,6 +81,8 @@
     width: 244px;
     margin-left: auto;
     @media screen and (min-width: $tablet) {
+      position: relative;
+      top: -32px;
       width: 400px;
     }
     @media screen and (min-width: $desktop) {
