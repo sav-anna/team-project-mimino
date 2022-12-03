@@ -46,6 +46,21 @@
     <!--Роман  -->
     <include src="./partials/footer.html"></include>
 
+    <div
+      class="backdrop is-hidden"
+      id="modal-order"
+      js-overlay-modal
+      js-open-modal
+    >
+      <div class="modal" data-modal="3">
+        <button class="modal__btn" type="button" data-modal-close>
+          <svg class="modal-btn__svg" width="24px" height="24px">
+            <use href="./images/svg/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
     <script
       type="text/javascript"
       src="//code.jquery.com/jquery-1.11.0.min.js"
