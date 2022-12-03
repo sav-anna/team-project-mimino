@@ -60,17 +60,9 @@
 }
 
 .variable-slider .slick-arrow.slick-prev {
-  left: 276px;
+  right: 64px;
 
   background: url('./../images/svg/slider-arrow-left.svg') 0 0 / 100% no-repeat;
-
-  @media screen and (min-width: $tablet) {
-    left: 567px;
-  }
-
-  @media screen and (min-width: $desktop) {
-    left: 728px;
-  }
 }
 
 .variable-slider .slick-arrow.slick-prev:hover,
@@ -83,14 +75,6 @@
   right: 0px;
 
   background: url('./../images/svg/slider-arrow-right.svg') 0 0 / 100% no-repeat;
-
-  @media screen and (min-width: $tablet) {
-    right: 0px;
-  }
-
-  @media screen and (min-width: $desktop) {
-    right: 0;
-  }
 }
 
 .variable-slider .slick-arrow.slick-next:hover,
