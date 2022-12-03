@@ -1,0 +1,56 @@
+.footer {
+  background-color: #0e0c07;
+  &__logo {
+    @include logo($size: 40px, $color: var(--brand-color));
+    line-height: calc(43px / 40px);
+    // @media screen and (min-width: $tablet) {
+    //   font-size: 40px;
+    //   line-height: calc(43px / 40px);
+    // }
+  }
+
+  &__nav {
+    // display: flex;
+    margin-bottom: 33px;
+  }
+
+  &__socials {
+    display: none;
+
+    @media screen and (min-width: $mobile) {
+      @include centeredFlex($justify: flex-start);
+      gap: 20px;
+      display: flex;
+    }
+  }
+  &__page-nav:not(:last-child) {
+    @media screen and (min-width: $mobile) {
+      margin-bottom: 16px;
+    }
+  }
+}
+.footer__page {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: calc(24px / 20px);
+  letter-spacing: 0.02em;
+  color: var(--brand-color);
+}
+
+.footer__container {
+  display: flex;
+  align-items: center;
+  @media screen and (min-width: $mobile) {
+    justify-content: space-between;
+    padding: 40px 33px 41px 59px;
+  }
+}
+
+.footer__socials-icon {
+  fill: rgba(243, 198, 83, 0.7);
+  transition: fill 250ms var(--distribution-time);
+  &:hover,
+  &:focus {
+    fill: var(--brand-color);
+  }
+}
