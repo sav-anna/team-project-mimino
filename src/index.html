@@ -22,17 +22,13 @@
     />
 
     <link rel="stylesheet" href="./sass/main.scss" />
-    <script type="module" src="./index.js"></script>
   </head>
+
   <body>
     <!-- ❗️❗️❗️ Анна -->
     <!-- <include src="./partials/header.html"></include> підключений в герої-->
     <!--Сергій  -->
     <include src="./partials/main-hero.html"></include>
-    <!--  -->
-    <include src="./partials/table-modal.html"></include>
-    <!--  -->
-    <include src="./partials/room-modal.html"></include>
     <!--Руслан  -->
     <include src="./partials/main-restaurant.html"></include>
     <!-- Ірина -->
@@ -46,8 +42,16 @@
     <!-- Роман -->
     <include src="./partials/footer.html"></include>
 
+    <div class="backdrop js-overlay-modal">
+      <include src="./partials/room-modal.html"></include>
+    </div>
+    <div class="backdrop js-overlay-modal">
+      <include src="./partials/table-modal.html"></include>
+    </div>
+
     <a href="./room.html">ROOOOOOOOOOOOOOOOMROMROM</a>
 
+    <script type="module" src="./index.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
       integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="

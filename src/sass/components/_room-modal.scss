@@ -1,0 +1,32 @@
+.form-room {
+  &__title {
+    font-family: 'Times New Roman', serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: calc(28px / 24px);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--black-color);
+  }
+  &__input {
+    width: 384px;
+    height: 54px;
+    border: 1px solid var(--accent-color);
+    border-radius: 2px;
+  }
+  &__label {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(17px / 14px);
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+  }
+}
+.form-room__input::placeholder {
+  font-family: 'Times New Roman', serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: calc(23px / 20px);
+  letter-spacing: 0.05em;
+  color: var(--placeholder-color);
+}
