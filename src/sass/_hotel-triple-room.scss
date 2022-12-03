@@ -5,7 +5,13 @@
 }
 
 .hotel-triple-room__card {
-  gap: 20px;
+  display: flex;
+  flex-direction: column-reverse;
+
+  @media screen and (min-width: $tablet) {
+    flex-direction: row;
+  }
+
   @media screen and (min-width: $desktop) {
     display: flex;
   }
@@ -26,10 +32,10 @@
   line-height: 1.16;
 
   @media screen and (min-width: $tablet) {
-    margin-right: 90px;
+    margin-right: 45px;
     font-size: 30px;
-    height: 34px;
-    line-height: 34px;
+    height: 30px;
+    line-height: 1.1;
     letter-spacing: 0.05em;
   }
 }
@@ -85,8 +91,8 @@
   font-size: 12px;
   line-height: 1.25;
   letter-spacing: 0.02em;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 98px;
+
   margin-bottom: 32px;
 
   color: var(--secondary-text-color);
@@ -94,21 +100,21 @@
   @media screen and (min-width: $tablet) {
     width: 400px;
     font-size: 16px;
-    margin-right: 67px;
+    margin-right: 22px;
   }
 }
 
 .hotel-triple-room__btn-list {
   flex-direction: column;
   align-items: center;
-  gap: 16px;
+  padding-bottom: 32px;
 
   @media screen and (min-width: $tablet) {
-    // display: flex;
-    gap: 16px;
-  }
-
-  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: start;
+    margin-left: 2px;
+    padding-bottom: 145px;
+    padding-top: 89px;
   }
 }
 
@@ -118,6 +124,11 @@
   border-radius: 25px;
   border: 2px solid #f0ecd6;
   color: #f0ecd6;
+
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-bottom: 16px;
 
   background-color: var(--black-color);
   &:hover,
@@ -148,6 +159,7 @@
     transform: translateY(-24px);
     box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
     border-radius: 2px;
+    margin-left: 65px;
   }
   @media screen and (min-width: $desktop) {
     width: 460px;
