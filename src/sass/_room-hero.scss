@@ -228,18 +228,3 @@
     right: 85px;
   }
 }
-
-.variable-slider {
-  position: relative;
-
-  margin-bottom: 80px;
-  margin-left: -15px;
-  min-width: 0;
-
-  @media screen and (min-width: $tablet) {
-    margin-left: 0;
-  }
-
-  @media screen and (min-width: $desktop) {
-  }
-}
