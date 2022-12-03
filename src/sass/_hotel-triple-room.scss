@@ -5,8 +5,10 @@
 }
 
 .hotel-triple-room__card {
-  display: flex;
   gap: 20px;
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
 }
 
 .hotel-triple-room__description {
