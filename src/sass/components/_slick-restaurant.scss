@@ -1,9 +1,29 @@
 .slick-restaurant {
+  position: relative;
   outline: 1px solid red;
 
   @media screen and (min-width: $tablet) {
+    min-width: 0;
   }
 
   @media screen and (min-width: $desktop) {
   }
+}
+
+.slick-restaurant .slick-arrow {
+  width: 32px;
+  height: 32px;
+  font-size: 0;
+  position: absolute;
+  top: 100%;
+}
+.slick-restaurant .slick-arrow.slick-prev {
+  left: 0;
+  background: url('/src/images/svg/slider-arrow-left.svg') 0 0/100% no-repeat;
+  background-color: black;
+}
+.slick-restaurant .slick-arrow.slick-next {
+  right: 0;
+  background: url('/src/images/svg/slider-arrow-right.svg') 0 0/100% no-repeat;
+  background-color: black;
 }

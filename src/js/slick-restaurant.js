@@ -4,20 +4,20 @@ $('.slick-restaurant').slick({
   speed: 300,
   slidesToShow: 2,
   centerMode: true,
-  variableWidth: true,
+  variableWidth: false,
   mobileFirst: true,
   responsive: [
     {
       breakpoint: 1280,
       settings: {
-        slidesToShow: 3,
+        slidesToShow: 2,
         slidesToScroll: 1,
       },
     },
     {
       breakpoint: 1024,
       settings: {
-        slidesToShow: 1,
+        slidesToShow: 2,
         slidesToScroll: 1,
         infinite: true,
       },
