@@ -150,10 +150,17 @@
     }
   }
 
-  &__order {
+  &__btn-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+
     @media screen and (min-width: $tablet) {
       display: flex;
       align-items: flex-end;
+      justify-content: flex-end;
+      flex-direction: column;
       margin-bottom: 80px;
     }
   }
@@ -168,20 +175,12 @@
   }
 
   &__btn-price {
-    padding: 14px 32px;
+    padding: 14px 24px;
     width: 236px;
     max-height: 48px;
 
     @media screen and (min-width: $desktop) {
       width: 238px;
     }
-  }
-
-  &__btn-item {
-    text-align: center;
-  }
-
-  &__btn-item:not(:last-child) {
-    margin-bottom: 16px;
   }
 }
