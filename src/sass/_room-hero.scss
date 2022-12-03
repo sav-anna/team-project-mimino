@@ -167,6 +167,8 @@
 .slick-container {
   position: relative;
   width: 414px;
+  margin-left: auto;
+  margin-right: auto;
   @media screen and (min-width: $tablet) {
     width: 1024px;
   }
@@ -184,7 +186,7 @@
 
 .onetime-image {
   background-size: cover;
-  height: 100vh;
+  height: 720px;
 }
 
 .my-slick-prev.slick-arrow {
