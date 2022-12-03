@@ -12,6 +12,7 @@
     text-align: center;
     opacity: 0.6;
     transition: all 0.3s ease 0s;
+
     @media screen and (min-width: $tablet) {
       opacity: 1;
     }

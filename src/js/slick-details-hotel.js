@@ -4,6 +4,7 @@ $('.variable-slider').slick({
   speed: 300,
   slidesToShow: 1,
   centerMode: true,
+  
   variableWidth: true,
   mobileFirst: true,
   responsive: [
