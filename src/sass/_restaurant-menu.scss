@@ -40,28 +40,24 @@
   }
 }
 
-.menu__box {
-  @media screen and (min-width: $tablet) {
-    flex-basis: calc((100% - 88px) / 2);
-  }
-
-  @media screen and (min-width: $desktop) {
-    flex-basis: calc((100% - 140px) / 2);
-  }
-}
-
 .menu__table {
   border-collapse: collapse;
   width: 100%;
+  max-width: 384px;
 
   &:not(:last-child) {
     margin-bottom: 16px;
   }
 
   @media screen and (min-width: $tablet) {
+    min-width: 420px;
     &:not(:last-child) {
       margin-bottom: 20px;
     }
+  }
+
+  @media screen and (min-width: $desktop) {
+    min-width: 485px;
   }
 }
 
@@ -84,71 +80,68 @@
 }
 
 .menu__row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  border-bottom: 8px solid transparent;
 
-  &:not(:last-child) {
-    margin-bottom: 8px;
-
-    @media screen and (min-width: $desktop) {
-      margin-bottom: 12px;
-    }
+  @media screen and (min-width: $desktop) {
+    border-bottom: 12px solid transparent;
   }
 
-  &--mg:not(:last-child) {
-    @media screen and (max-width: 1279px) {
-      margin-bottom: 11px;
+  &--mg {
+    @media screen and (min-width: $tablet) {
+      border-bottom: 12px solid transparent;
+    }
+
+    @media screen and (min-width: $desktop) {
+      border-bottom: 13px solid transparent;
     }
   }
 }
 
 .menu__header {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
+  width: 100vw;
+  max-width: 225px;
+  margin-bottom: 8px;
   @include text();
   font-weight: 500;
   text-align: left;
 
-  // Вияснити як це уникнути
-  width: 225px;
-
   @media screen and (min-width: $tablet) {
-
-    // Вияснити як це уникнути
-    width: 230px;
+    max-width: 238px;
   }
 
   @media screen and (min-width: $desktop) {
     font-size: 16px;
     line-height: 1.25;
-
-    // Вияснити як це уникнути
-    width: 290px;
+    max-width: 291px;
   }
 }
 
 .menu__components {
   @include text($size: 10px, $line-height: 1.2);
   font-weight: 400;
-
-  // Вияснити як це уникнути
-  width: 220px;
-
-  @media screen and (min-width: $desktop) {
-    // Вияснити як це уникнути
-    width: 261px;
-  }
+  border-top: 4px solid transparent;
 }
 
 .menu__weight {
+  padding-left: 25px;
   @include text();
   font-weight: 300;
+  text-align: left;
+
+  @media screen and (min-width: $tablet) and (max-width:1279px) {
+    padding-left: 20px;
+    border-left: 25px solid transparent;
+  }
+
+    @media screen and (min-width: $desktop) {
+      padding-left: 40px;
+    }
 }
 
 .menu__cost {
   @include text();
+  padding-left: 0;
+  text-align: right;
 
   @media screen and (min-width: $desktop) {
     font-size: 16px;
@@ -163,7 +156,7 @@
   border-color: var(--primary-bg-color);
 
   transition: background-color 250ms var(--distribution-time),
-    border-color 250ms var(--distribution-time);
+  border-color 250ms var(--distribution-time);
 
   &:hover,
   &:focus {

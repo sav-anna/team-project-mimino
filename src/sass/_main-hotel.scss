@@ -19,12 +19,10 @@
 }
 .main-hotel__tagline {
     @media screen and (max-width: 1023px) {
-font-size: 20px;
 margin-top: 18px;
 margin-bottom: 6px;
 }
  @media screen and (min-width: $tablet) {
-    font-size: 32px;
     margin-top: 120px;
     margin-bottom: 4px;
  }
@@ -115,10 +113,12 @@ margin-bottom: 6px;
 .main-hotel__box {
     display: flex;
     @media screen and (min-width: $tablet) {
-    transform: translate(170px, -100px);
+        margin-left: 170px;
+    transform: translateY(-100px);
     }
     @media screen and (min-width: $desktop) {
-   transform: translate(294px,-46px);
+        margin-left: 294px;
+   transform: translateY(-46px);
     }
 }
 .image1 {
