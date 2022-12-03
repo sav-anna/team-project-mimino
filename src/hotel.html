@@ -26,7 +26,6 @@
       href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
     />
     <link rel="stylesheet" href="./sass/main.scss" />
-    <script type="module" src="./index.js"></script>
   </head>
   <body>
     <!-- ❗️❗️❗️ Анна -->
@@ -34,9 +33,9 @@
     <!--  -->
     <include src="./partials/hotel-hero.html"></include>
     <!--  -->
-    <include src="./partials/room-modal.html"></include>
+    <!-- <include src="./partials/room-modal.html"></include> -->
     <!--  -->
-    <include src="./partials/price-modal.html"></include>
+    <!-- <include src="./partials/price-modal.html"></include> -->
     <!--  -->
     <include src="./partials/hotel-luxe-room.html"></include>
     <!--  -->
@@ -46,21 +45,11 @@
     <!--Роман  -->
     <include src="./partials/footer.html"></include>
 
-    <div
-      class="backdrop is-hidden"
-      id="modal-order"
-      js-overlay-modal
-      js-open-modal
-    >
-      <div class="modal" data-modal="3">
-        <button class="modal__btn" type="button" data-modal-close>
-          <svg class="modal-btn__svg" width="24px" height="24px">
-            <use href="./images/svg/symbol-defs.svg#icon-close"></use>
-          </svg>
-        </button>
-      </div>
+    <div class="backdrop" js-overlay-modal>
+      <include src="./partials/price-modal.html"></include>
     </div>
 
+    <script type="module" src="./index.js"></script>
     <script
       type="text/javascript"
       src="//code.jquery.com/jquery-1.11.0.min.js"

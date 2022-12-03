@@ -33,23 +33,16 @@
     <!-- <include src="./partials/header.html"></include> підключений в герої-->
     <!--  -->
     <include src="./partials/room-hero.html"></include>
-    <!--  -->
-    <include src="./partials/price-modal.html"></include>
+
     <!--Марина  -->
     <include src="./partials/room-amenities.html"></include>
     <!--  -->
-    <include src="./partials/room-modal.html"></include>
+    <!-- <include src="./partials/room-modal.html"></include> -->
     <!--Роман  -->
     <include src="./partials/footer.html"></include>
 
-    <div class="backdrop is-hidden js-overlay-modal" data-modal>
-      <div class="modal">
-        <button class="modal__btn" type="button" data-modal-close>
-          <svg class="modal-btn__svg" width="24px" height="24px">
-            <use href="./images/svg/symbol-defs.svg#icon-close"></use>
-          </svg>
-        </button>
-      </div>
+    <div class="backdrop" js-overlay-modal>
+      <include src="./partials/price-modal.html"></include>
     </div>
 
     <script
