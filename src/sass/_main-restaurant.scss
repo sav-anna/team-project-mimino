@@ -1,6 +1,9 @@
 .main-restaurant {
   margin: 0 auto;
   padding-top: 12px;
+  @media screen and (max-width: 1023px) {
+    margin-bottom: 72px;
+  }
 
   @media screen and (min-width: $tablet) {
     padding-top: 0;
@@ -96,6 +99,10 @@
   display: flex;
   align-items: center;
   gap: 20px;
+
+  @media screen and (max-width: 1023px) {
+    margin-bottom: 32px;
+  }
   @media screen and (min-width: $tablet) {
     // position: absolute;
     // top: 476px;
