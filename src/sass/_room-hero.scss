@@ -2,82 +2,60 @@
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  max-width: 414px;
+  // max-width: 414px;
 
-  background-image: url(../images/section/hero/room__hero-414.jpg);
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    & {
-      background-image: url(../images/section/hero/room__hero-414@2x.jpg);
-    }
-  }
+  // background-image: url(../images/section/hero/room__hero-414.jpg);
+  // @media screen and (min-device-pixel-ratio: 2),
+  //   screen and (min-resolution: 192dpi),
+  //   screen and (min-resolution: 2dppx) {
+  //   & {
+  //     background-image: url(../images/section/hero/room__hero-414@2x.jpg);
+  //   }
+  // }
 
-  @media screen and (min-width: $tablet) {
-    & {
-      max-width: 1024px;
-      background-image: url(../images/section/hero/room__hero-1024.jpg);
-    }
-    @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-      & {
-        background-image: url(../images/section/hero/room__hero-1024@2x.jpg);
-      }
-    }
-  }
-  @media screen and (min-width: $desktop) {
-    & {
-      max-width: 1280px;
-      background-image: url(../images/section/hero/room__hero-1280.jpg);
-    }
-    @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-      & {
-        background-image: url(../images/section/hero/room__hero-1280@2x.jpg);
-      }
-    }
-  }
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  // @media screen and (min-width: $tablet) {
+  //   & {
+  //     max-width: 1024px;
+  //     background-image: url(../images/section/hero/room__hero-1024.jpg);
+  //   }
+  //   @media screen and (min-device-pixel-ratio: 2),
+  //     screen and (min-resolution: 192dpi),
+  //     screen and (min-resolution: 2dppx) {
+  //     & {
+  //       background-image: url(../images/section/hero/room__hero-1024@2x.jpg);
+  //     }
+  //   }
+  // }
+  // @media screen and (min-width: $desktop) {
+  //   & {
+  //     max-width: 1280px;
+  //     background-image: url(../images/section/hero/room__hero-1280.jpg);
+  //   }
+  // @media screen and (min-device-pixel-ratio: 2),
+  //   screen and (min-resolution: 192dpi),
+  //   screen and (min-resolution: 2dppx) {
+  //   & {
+  //     background-image: url(../images/section/hero/room__hero-1280@2x.jpg);
+  //   }
+  // }
+  // }
+  // background-position: center center;
+  // background-repeat: no-repeat;
+  // background-size: cover;
 }
 
 .room-hero__container {
   position: relative;
-  padding-top: 208px;
+  padding-top: 341px;
   padding-bottom: 14px;
   @media screen and (min-width: $tablet) {
-    padding-top: 225px;
+    padding-top: 353px;
     padding-bottom: 24px;
   }
   @media screen and (min-width: $desktop) {
-    padding-top: 265px;
+    padding-top: 377px;
     padding-bottom: 48px;
   }
-}
-
-.room-hero__slider {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 93px;
-  @media screen and (min-width: $tablet) {
-    margin-bottom: 88px;
-  }
-  @media screen and (min-width: $desktop) {
-    margin-bottom: 72px;
-  }
-}
-
-.room-hero__slider-btn {
-  @include centeredFlex();
-  padding: 0;
-  width: 40px;
-  height: 40px;
-  border: none;
-  background-color: var(--hero-bcg);
-  fill: var(--brand-color);
 }
 
 .room-hero__title {
@@ -184,4 +162,84 @@
 .social-address-container {
   display: flex;
   gap: 40px;
+}
+
+.slick-container {
+  position: relative;
+  width: 414px;
+  @media screen and (min-width: $tablet) {
+    width: 1024px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 1280px;
+  }
+}
+
+.room-hero-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.onetime-image {
+  background-size: cover;
+  height: 100vh;
+}
+
+.my-slick-prev.slick-arrow {
+  position: absolute;
+  bottom: 350px;
+  left: 15px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: url('./../images/svg/slider-arrow-yellow-left.svg') 0 0 / 100%
+    no-repeat;
+  background-color: var(--hero-bcg);
+  z-index: 10;
+  @media screen and (min-width: $tablet) {
+    bottom: 340px;
+    left: 47px;
+  }
+  @media screen and (min-width: $desktop) {
+    bottom: 268px;
+    left: 85px;
+  }
+}
+
+.my-slick-next.slick-arrow {
+  position: absolute;
+  bottom: 350px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: url('./../images/svg/slider-arrow-yellow-right.svg') 0 0 / 100%
+    no-repeat;
+  background-color: var(--hero-bcg);
+  z-index: 10;
+  @media screen and (min-width: $tablet) {
+    bottom: 340px;
+    right: 47px;
+  }
+  @media screen and (min-width: $desktop) {
+    bottom: 268px;
+    right: 85px;
+  }
+}
+
+.variable-slider {
+  position: relative;
+
+  margin-bottom: 80px;
+  margin-left: -15px;
+  min-width: 0;
+
+  @media screen and (min-width: $tablet) {
+    margin-left: 0;
+  }
+
+  @media screen and (min-width: $desktop) {
+  }
 }
