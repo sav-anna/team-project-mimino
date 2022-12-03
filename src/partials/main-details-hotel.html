@@ -12,14 +12,14 @@
         </div>
       </div>
       <ul class="variable-slider">
-        <li class="variable-slider__item">
-          <picture class="details-hotel__slider-tablet slick__box">
+        <!-- <li class="variable-slider__item">
+          <picture class="details-hotel__slider hidden-mobile slick__box">
             <source
               srcset="
                 ./images/section/hotel/main-hotel-desktop-slide4.jpg    1x,
                 ./images/section/hotel/main-hotel-desktop-slide4@2x.jpg 2x
               "
-              media="(min-width: 320px)"
+              media="(min-width: 1080px)"
             />
 
             <img
@@ -27,9 +27,10 @@
               src="./images/section/hotel/main-hotel-desktop-slide4.jpg"
               alt="Ліжко в готельному номері"
               width="162"
+              media="(min-width: 1080px)"
             />
           </picture>
-        </li>
+        </li> -->
 
         <li class="variable-slider__item">
           <picture class="slick__box">
@@ -86,13 +87,23 @@
         </li>
 
         <li class="variable-slider__item">
-          <picture class="details-hotel__slider-desktop slick__box">
+          <picture class="slick__box">
+            <source
+              srcset="
+                ./images/section/hotel/main-hotel-desktop-slide4.jpg    1x,
+                ./images/section/hotel/main-hotel-desktop-slide4@2x.jpg 2x
+              "
+              media="(max-width: 1280px)"
+              width="162"
+            />
+
             <source
               srcset="
                 ./images/section/hotel/main-hotel-desktop-slide3.jpg    1x,
                 ./images/section/hotel/main-hotel-desktop-slide3@2x.jpg 2x
               "
-              media="(min-width: 320px)"
+              media="(min-width: 1280px)"
+              width="270"
             />
 
             <img
@@ -136,7 +147,7 @@
         Забронювати номер
       </button>
 
-      <a href="./room.html" class="details-hotel__btn-price btn">
+      <a href="./hotel.html" class="details-hotel__btn-price btn">
         Переглянути ціни
       </a>
     </div>

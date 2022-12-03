@@ -8,12 +8,25 @@
   @media screen and (min-width: $tablet) {
     margin-left: 0;
   }
-
-  @media screen and (min-width: $desktop) {
+  &__item {
+    text-align: center;
+    opacity: 0.6;
+    transition: all 0.3s ease 0s;
+    @media screen and (min-width: $tablet) {
+      opacity: 1;
+    }
   }
 }
 
-.variable-slider .slick-list {
+.variable-slider .variable-slider__item.slick-center {
+  opacity: 1;
+}
+
+.variable-slider .variable-slider__list {
+  overflow: hidden;
+}
+
+.variable-slider .slick-items {
   overflow: hidden;
 }
 
@@ -86,7 +99,7 @@
     no-repeat;
 }
 
-.slick-dotted.slick-slider {
+.variable-slider .slick-dotted.slick-slider {
   margin-bottom: 16px;
 
   @media screen and (min-width: $tablet) {
