@@ -1,8 +1,8 @@
 .main-restaurant {
   margin: 0 auto;
-  padding-top: 12px;
   @media screen and (max-width: 1023px) {
     margin-bottom: 72px;
+    padding-top: 12px;
   }
 
   @media screen and (min-width: $tablet) {
