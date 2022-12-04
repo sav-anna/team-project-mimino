@@ -186,7 +186,10 @@
 
 .onetime-image {
   background-size: cover;
-  height: 720px;
+  height: 740px;
+  @media screen and (min-width: $tablet) {
+    height: 720px;
+  }
 }
 
 .my-slick-prev.slick-arrow {
