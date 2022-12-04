@@ -27,10 +27,12 @@
     border: 1px solid var(--accent-color);
     border-radius: 2px;
     background-color: var(--primary-bg-color);
+
     @media screen and (min-width: $tablet) {
       width: 288px;
       height: 64px;
     }
+
     &::placeholder {
       font-family: 'Times New Roman', serif;
       font-weight: 700;
@@ -44,6 +46,7 @@
       line-height: calc(28px / 24px);
     }
   }
+
   &__label {
     font-weight: 500;
     font-size: 14px;
@@ -57,6 +60,9 @@
   }
 }
 
+.form-room__input--position {
+  padding-right: 20px;
+}
 .form-room_box {
   position: relative;
   width: 384px;
@@ -71,8 +77,6 @@
   fill: var(--accent-color);
 }
 .form-room__svg--bgc {
-  right: 5px;
-  width: 50px;
   background-color: var(--primary-bg-color);
 }
 .form-room__dropdown {
@@ -84,8 +88,8 @@
   color: var(--placeholder-color);
 }
 
-.form-room__dropdown option {
-}
+// .form-room__dropdown {
+// }
 
 .form-room-phone {
   margin-top: 20px;
