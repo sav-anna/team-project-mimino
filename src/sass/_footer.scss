@@ -7,18 +7,32 @@
       font-size: 64px;
       line-height: calc(69px / 64px);
       margin-right: 164px;
+      background-size: 1024px;
+      background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0) 23.8%,
+        rgba(122, 122, 122, 0.4) 24%,
+        rgba(0, 0, 0, 0) 24.1%,
+        rgba(0, 0, 0, 0) 50.8%,
+        rgba(122, 122, 122, 0.4) 50%,
+        rgba(0, 0, 0, 0) 51.1%,
+        rgba(0, 0, 0, 0) 75.8%,
+        rgba(122, 122, 122, 0.4) 76%,
+        rgba(0, 0, 0, 0) 76.1%
+      );
     }
     @media screen and (min-width: $desktop) {
       margin-right: 200px;
     }
   }
 
-  &__nav {
+  &__nav:not(:last-child) {
     margin-bottom: 33px;
     @media screen and (min-width: $tablet) {
       margin-right: 110px;
+      margin-bottom: 0;
     }
-    margin-bottom: 33px;
+
     @media screen and (min-width: $desktop) {
       margin-right: 215px;
     }
@@ -145,6 +159,11 @@
   align-content: space-between;
   align-items: center;
   gap: 20px;
+
+  @media screen and (min-width: $tablet) {
+    justify-content: center;
+    gap: 11px;
+  }
 
   &:hover,
   &:focus {
