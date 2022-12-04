@@ -4,4 +4,44 @@
       <use href="./images/svg/symbol-defs.svg#icon-close"></use>
     </svg>
   </button>
+
+  <!-- Форма даних -->
+  <form class="form" name="book-room" autocomplete="off">
+    <p class="form__title">ЦІНИ НА НОМЕР</p>
+
+    <div>
+      <input class="form__input" id="room" placeholder="Двомісний люкс" />
+      <label for="room" class="form__label">Категорія номеру</label>
+    </div>
+
+    <!-- <div>
+      <input
+        id="personal-name"
+        class="form__input"
+        type="text"
+        name="personal-name"
+        minlength="6"
+        maxlength="20"
+        pattern="^[Є-ЯҐа-їґ]+\s[Є-ЯҐа-їґ]+$"
+        title="Введіть ім'я та прізвище кирилицею, допускаються малі та великі літери"
+        placeholder="Ваше ім’я"
+        required
+      />
+      <label for="personal-name" class="form__label"
+        >На кого забронювати номер?</label
+      >
+    </div> -->
+
+    <div>
+      <input class="form__input" id="room" placeholder="1" />
+      <label for="room" class="form__label">Кількість ночей</label>
+    </div>
+
+    <div>
+      <input class="form__input" id="room" placeholder="1000" />
+      <label for="room" class="form__label">Ціна</label>
+    </div>
+
+    <button class="btn-modal" type="submit">ЗАБРОНЮВАТИ НОМЕР</button>
+  </form>
 </div>
