@@ -2,6 +2,7 @@
   @include centeredFlex();
   flex-wrap: wrap;
   gap: 20px;
+
   // @media screen and (min-width: $tablet) {
 
   // }
@@ -25,6 +26,7 @@
     height: 54px;
     border: 1px solid var(--accent-color);
     border-radius: 2px;
+    background-color: var(--primary-bg-color);
     @media screen and (min-width: $tablet) {
       width: 288px;
       height: 64px;
@@ -71,7 +73,7 @@
 .form-room__svg--bgc {
   right: 5px;
   width: 50px;
-  background-color: var(--white-color);
+  background-color: var(--primary-bg-color);
 }
 .form-room__dropdown {
   font-family: 'Times New Roman', serif;
@@ -83,7 +85,6 @@
 }
 
 .form-room__dropdown option {
-  visibility: hidden;
 }
 
 .form-room-phone {
