@@ -10,10 +10,10 @@
     <div class="form-room-part">
       <div class="form-room__name">
         <input
-          id="personal-name"
+          id="personal-name2"
           class="form-room__input"
           type="text"
-          name="personal-name"
+          name="personal-name2"
           minlength="6"
           maxlength="20"
           pattern="^[Є-ЯҐа-їґ]+\s[Є-ЯҐа-їґ]+$"
@@ -21,30 +21,29 @@
           placeholder="Ваше ім’я"
           required
         />
-        <label for="personal-name" class="form-room__label"
+        <label for="personal-name2" class="form-room__label"
           >На кого забронювати номер?</label
         >
       </div>
       <div class="form-room-phone">
         <input
-          id="personal-phone"
+          id="personal-phone2"
           class="form-room__input"
           type="tel"
-          name="personal-phone"
+          name="personal-phone2"
           pattern="^\+[0-9]{12}"
           title="+380..."
           placeholder="+38 (___) ___--"
           required
         />
-        <label for="personal-phone" class="form-room__label"
+        <label for="personal-phone2" class="form-room__label"
           >Номер телефону</label
         >
       </div>
     </div>
     <div class="form-room-list">
       <div class="form-room_box">
-        <select id="room-select" name="room-select" class="form-room__input">
-          <option disabled>Двомісний люкс</option>
+        <select id="room-select2" name="room-select2" class="form-room__input">
           <option class="form-room__dropdown" value="1">Двомісний люкс</option>
           <option class="form-room__dropdown" value="2">Двомісний номер</option>
           <option class="form-room__dropdown" value="3">
@@ -57,7 +56,9 @@
           ></use>
         </svg>
       </div>
-      <label for="room-select" class="form-room__label">Категорія номеру</label>
+      <label for="room-select2" class="form-room__label"
+        >Категорія номеру</label
+      >
     </div>
     <div class="form-room-part">
       <div>
@@ -73,13 +74,12 @@
           </svg>
           <input
             class="form-room__input form-room__input--position"
-            id="arrival-date"
+            id="arrival-date2"
             type="date"
-            placeholder="Сьогодні"
           />
         </div>
         <label
-          for="arrival-date"
+          for="arrival-date2"
           class="form-room__label form-room__label--bottom"
           >Дата заїзду</label
         >
@@ -97,13 +97,12 @@
           </svg>
           <input
             class="form-room__input form-room__input--position"
-            id="departure-date"
+            id="departure-date2"
             type="date"
-            placeholder="Сьогодні"
           />
         </div>
         <label
-          for="departure-date"
+          for="departure-date2"
           class="form-room__label form-room__label--bottom"
           >Дата виїзду</label
         >

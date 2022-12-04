@@ -2,61 +2,70 @@
   @include centeredFlex();
   flex-wrap: wrap;
   gap: 20px;
+}
 
-  // @media screen and (min-width: $tablet) {
+.form-room__title {
+  margin-bottom: 20px;
+  font-family: 'Times New Roman', serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: calc(28px / 24px);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--black-color);
+  @media screen and (min-width: $tablet) {
+    font-size: 40px;
+    line-height: calc(46px / 40px);
+  }
+}
 
-  // }
+.form-room__input {
+  appearance: none;
+  padding-left: 12px;
+  margin-bottom: 8px;
+  width: 384px;
+  height: 54px;
+  border: 1px solid var(--accent-color);
+  border-radius: 2px;
+  background-color: var(--primary-bg-color);
+  font-family: 'Times New Roman', serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: calc(23px / 20px);
+  letter-spacing: 0.05em;
 
-  &__title {
-    margin-bottom: 20px;
-    font-family: 'Times New Roman', serif;
-    font-weight: 700;
+  @media screen and (min-width: $tablet) {
+    width: 288px;
+    height: 64px;
     font-size: 24px;
     line-height: calc(28px / 24px);
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    text-align: center;
-    color: var(--black-color);
   }
-  &__input {
-    appearance: none;
-    padding-left: 12px;
-    margin-bottom: 8px;
-    width: 384px;
-    height: 54px;
-    border: 1px solid var(--accent-color);
-    border-radius: 2px;
-    background-color: var(--primary-bg-color);
+}
 
-    @media screen and (min-width: $tablet) {
-      width: 288px;
-      height: 64px;
-    }
+.form-room::placeholder {
+  font-family: 'Times New Roman', serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: calc(23px / 20px);
+  letter-spacing: 0.05em;
+  color: var(--placeholder-color);
 
-    &::placeholder {
-      font-family: 'Times New Roman', serif;
-      font-weight: 700;
-      font-size: 20px;
-      line-height: calc(23px / 20px);
-      letter-spacing: 0.05em;
-      color: var(--placeholder-color);
-    }
-    @media screen and (min-width: $tablet) {
-      font-size: 24px;
-      line-height: calc(28px / 24px);
-    }
+  @media screen and (min-width: $tablet) {
+    font-size: 24px;
+    line-height: calc(28px / 24px);
   }
+}
 
-  &__label {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: calc(17px / 14px);
-    letter-spacing: 0.02em;
-    color: var(--accent-color);
-    @media screen and (min-width: $tablet) {
-      font-size: 16px;
-      line-height: calc(20px / 16px);
-    }
+.form-room__label {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(17px / 14px);
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+  @media screen and (min-width: $tablet) {
+    font-size: 16px;
+    line-height: calc(20px / 16px);
   }
 }
 
@@ -76,7 +85,9 @@
   right: 20px;
   fill: var(--accent-color);
 }
+
 .form-room__svg--bgc {
+  width: 26px;
   background-color: var(--primary-bg-color);
 }
 .form-room__dropdown {
@@ -87,9 +98,6 @@
   letter-spacing: 0.05em;
   color: var(--placeholder-color);
 }
-
-// .form-room__dropdown {
-// }
 
 .form-room-phone {
   margin-top: 20px;
