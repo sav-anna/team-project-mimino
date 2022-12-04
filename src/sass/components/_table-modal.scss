@@ -1,5 +1,9 @@
 .modal__table{
+    min-height: 688px;
+    @media screen and (min-width: $tablet) {
     padding: 60px;
+    min-height: 522px;
+    }
     
 
 
@@ -8,15 +12,28 @@
     font-family: 'Times New Roman';
         font-style: normal;
         font-weight: 700;
-        font-size: 40px;
+        font-size: 24px;
         line-height: 1.15;
         letter-spacing: 0.05em;
+        text-transform: uppercase;
         color: var(--black-color);
         text-align: center;
         margin-bottom: 40px;
 
+        @media screen and (min-width: $tablet) {
+            font-size: 40px;
+        }
+
 }
 .form-table__input {
+width: 384px;
+    height: 54px;
+    padding-left: 12px;
+        border: 1px solid var(--accent-color);
+        border-radius: 2px;
+        margin-bottom: 8px;
+        background-color: var(--primary-bg-color);
+    @media screen and (min-width: $tablet) {
     width: 288px;
     height: 64px;
     padding-left: 12px;
@@ -24,15 +41,20 @@
     border-radius: 2px;
     margin-bottom: 8px;
     appearance: none;
+    }
 }
 .form-table__input::placeholder {
     font-family: 'Times New Roman';
         font-style: normal;
         font-weight: 700;
-        font-size: 24px;
+        font-size: 20px;
         line-height: 1.16;
         letter-spacing: 0.05em;
-     color:#808080;
+     color:var(--placeholder-color);
+
+    @media screen and (min-width: $tablet) {
+    font-size: 24px;
+    }
 }
 .form-table__label{
 font-weight: 500;
@@ -40,6 +62,7 @@ font-size: 14px;
 line-height: 1.21;
 letter-spacing: 0.02em;
 color: var(--accent-color);
+
            
 }
 .form-table__button {
@@ -60,16 +83,19 @@ margin-bottom: 40px;
     display: flex;
     flex-wrap: wrap;
     gap:16px;
-   
-   
+     
 }
 .form-table__svg {
 position: relative;
 }
 .form-table__icon {
-    fill:#C79002;
+    fill:var(--accent-color);
     position: absolute;
-        right: 20px;
+    width: 40px;
+        right: 4px;
         top: 50%;
         transform: translateY(-50%);
+        background-color: var(--primary-bg-color);
 }
+
+
