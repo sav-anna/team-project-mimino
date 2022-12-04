@@ -1,0 +1,129 @@
+.footer {
+  &__logo {
+    @include logo($size: 40px, $color: var(--brand-color));
+    line-height: calc(43px / 40px);
+    @media screen and (min-width: $tablet) {
+      font-size: 64px;
+      line-height: calc(69px / 64px);
+      margin-right: 164px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-right: 200px;
+    }
+  }
+
+  &__nav {
+    margin-bottom: 33px;
+    @media screen and (min-width: $tablet) {
+      margin-right: 110px;
+      // width: 380px;
+    }
+    margin-bottom: 33px;
+    @media screen and (min-width: $desktop) {
+      margin-right: 215px;
+      // width: 380px;
+    }
+  }
+
+  &__socials {
+    display: none;
+    // font-family: 'Montserrat';
+    // font-style: normal;
+    font-weight: 400;
+    color: var(--brand-color);
+    font-size: 16px;
+    line-height: calc(20px / 16px);
+
+    // display: flex;
+    // align-items: center;
+    letter-spacing: 0.02em;
+
+    @media screen and (min-width: $mobile) {
+      @include centeredFlex($justify: flex-start);
+      gap: 20px;
+      display: flex;
+    }
+
+    @media screen and (min-width: $tablet) {
+      @include centeredFlex($justify: space-between);
+
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }
+  &__page-nav:not(:last-child) {
+    @media screen and (min-width: $mobile) {
+      margin-bottom: 16px;
+    }
+  }
+}
+.footer__linc {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
+}
+
+.footer__container {
+  background-color: #0e0c07;
+  display: flex;
+  align-items: center;
+  max-width: 414px;
+  @media screen and (min-width: $mobile) {
+    justify-content: space-between;
+    padding: 40px 33px 40px 59px;
+  }
+  @media screen and (min-width: $tablet) {
+    max-width: 1024px;
+    padding: 80px 123px 80px 154px;
+  }
+  @media screen and (min-width: $desktop) {
+    max-width: 1280px;
+    padding: 80px 186px 80px 218px;
+  }
+}
+.footer__page {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: calc(24px / 20px);
+  letter-spacing: 0.02em;
+  color: var(--brand-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.footer__socials-item {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 144px;
+    padding: 10px 12px;
+    border: 0.5px solid var(--brand-color);
+    border-radius: 2px;
+  }
+}
+.footer__social-name {
+  @media screen and (min-width: $mobile) {
+    display: none;
+    margin: 0;
+  }
+  @media screen and (min-width: $tablet) {
+    display: flex;
+
+    justify-content: center;
+  }
+}
+
+.footer__socials-icon {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  fill: rgba(243, 198, 83, 0.7);
+  transition: fill 250ms var(--distribution-time);
+  &:hover,
+  &:focus {
+    fill: var(--brand-color);
+  }
+}
