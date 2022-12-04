@@ -18,11 +18,19 @@
   pointer-events: auto;
 }
 
-.modal.active {
+.modal__table.active,
+.modal__room.active,
+.modal__price.active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
   transform: translate(-50%, -50%) scale(0.9);
 }
 
 .modal {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
   position: absolute;
   top: 350px;
   left: 50%;
@@ -58,4 +66,7 @@
   &:focus {
     stroke: var(--brand-color);
   }
+}
+.modal-btn__svg {
+  color: currentColor;
 }

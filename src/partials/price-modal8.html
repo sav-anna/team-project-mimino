@@ -1,0 +1,33 @@
+<div class="modal modal__price modal-order8" data-modal="8">
+  <button class="modal__btn js-modal-close" type="button">
+    <svg class="modal__btn__svg" width="24" height="24">
+      <use href="./images/svg/symbol-defs.svg#icon-close"></use>
+    </svg>
+  </button>
+
+  <!-- Форма даних -->
+  <form class="price-form" name="price-modal" autocomplete="off">
+    <p class="price-form__title">Ціни на номер</p>
+
+    <div>
+      <input
+        class="price-form__input"
+        id="category"
+        placeholder="Двомісний люкс"
+      />
+      <label for="category" class="price-form__label">Категорія номеру</label>
+    </div>
+
+    <div>
+      <input class="price-form__input" id="night" placeholder="1" />
+      <label for="night" class="form__label">Кількість ночей</label>
+    </div>
+
+    <div>
+      <input class="price-form__input" id="price" placeholder="1000" />
+      <label for="price" class="price-form__label">Ціна</label>
+    </div>
+
+    <button class="btn-modal" type="submit">Забронювати номер</button>
+  </form>
+</div>
