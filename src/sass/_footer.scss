@@ -1,5 +1,4 @@
 .footer {
-  background-color: #0e0c07;
   &__logo {
     @include logo($size: 40px, $color: var(--brand-color));
     line-height: calc(43px / 40px);
@@ -65,16 +64,20 @@
 }
 
 .footer__container {
+  background-color: #0e0c07;
   display: flex;
   align-items: center;
+  max-width: 414px;
   @media screen and (min-width: $mobile) {
     justify-content: space-between;
     padding: 40px 33px 40px 59px;
   }
   @media screen and (min-width: $tablet) {
+    max-width: 1024px;
     padding: 80px 123px 80px 154px;
   }
   @media screen and (min-width: $desktop) {
+    max-width: 1280px;
     padding: 80px 186px 80px 218px;
   }
 }
