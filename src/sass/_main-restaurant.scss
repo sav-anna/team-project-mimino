@@ -7,7 +7,7 @@
 
   @media screen and (min-width: $tablet) {
     padding-top: 0;
-    position: relative;
+    // position: relative;
     // margin-bottom: -40px;
   }
 
@@ -30,8 +30,11 @@
   }
 
   &__text {
-    @media screen and (min-width: $mobile) and (max-width: 1023px) {
+    @media screen and (max-width: 1023px) {
       margin-bottom: 28px;
+    }
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 120px;
     }
   }
 
@@ -91,8 +94,9 @@
     margin-left: auto;
     @media screen and (min-width: $tablet) {
       width: 400px;
-      position: relative;
-      top: -32px;
+      transform: translateY(-32px);
+      // position: relative;
+      // top: -32px;
     }
     @media screen and (min-width: $desktop) {
       width: 460px;
@@ -112,8 +116,8 @@
     // position: absolute;
     // top: 476px;
     // gap: 48px;
-    position: relative;
-    top: -64px;
+    // position: relative;
+    // top: -64px;
   }
   @media screen and (min-width: $desktop) {
     gap: 32px;
@@ -125,9 +129,11 @@
     width: 200px;
     @media screen and (min-width: $tablet) {
       width: 350px;
+      transform: translateY(-54px);
     }
     @media screen and (min-width: $desktop) {
       width: 460px;
+      transform: translateY(-98px);
     }
   }
 
