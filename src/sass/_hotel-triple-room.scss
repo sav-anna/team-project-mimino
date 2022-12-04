@@ -12,6 +12,33 @@
 .hotel-triple-room .slider-container .hotel-room-slick {
   left: 0;
 }
+
+.hotel-triple-room .hotel-room-slick .slick-arrow.slick-next {
+  left: 64px;
+
+  background: url('./../images/svg/slider-arrow-black-right.svg') 0 0 / 100%
+    no-repeat;
+}
+
+.hotel-triple-room .hotel-room-slick .slick-arrow.slick-next:hover,
+.hotel-triple-room .hotel-room-slick .slick-arrow.slick-next:focus {
+  background: url('./../images/svg/slider-arrow-yellow-right.svg') 0 0 / 100%
+    no-repeat;
+}
+
+.hotel-triple-room .hotel-room-slick .slick-arrow.slick-prev {
+  left: 0px;
+
+  background: url('./../images/svg/slider-arrow-black-left.svg') 0 0 / 100%
+    no-repeat;
+}
+
+.hotel-triple-room .hotel-room-slick .slick-arrow.slick-prev:hover,
+.hotel-triple-room .hotel-room-slick .slick-arrow.slick-prev:focus {
+  background: url('./../images/svg/slider-arrow-yellow-left.svg') 0 0 / 100%
+    no-repeat;
+}
+
 .hotel-triple-room__card {
   display: flex;
   flex-direction: column-reverse;
