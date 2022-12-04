@@ -12,25 +12,6 @@
         </div>
       </div>
       <ul class="variable-slider">
-        <!-- <li class="variable-slider__item">
-          <picture class="details-hotel__slider hidden-mobile slick__box">
-            <source
-              srcset="
-                ./images/section/hotel/main-hotel-desktop-slide4.jpg    1x,
-                ./images/section/hotel/main-hotel-desktop-slide4@2x.jpg 2x
-              "
-              media="(min-width: 1080px)"
-            />
-
-            <img
-              class="details-hotel__img"
-              src="./images/section/hotel/main-hotel-desktop-slide4.jpg"
-              alt="Ліжко в готельному номері"
-              width="162"
-              media="(min-width: 1080px)"
-            />
-          </picture>
-        </li> -->
         <li class="variable-slider__item">
           <picture class="slick__box">
             <source
@@ -216,7 +197,12 @@
       </ul>
     </div>
     <div class="details-hotel__btn-list">
-      <button class="details-hotel__btn btn" type="button">
+      <button
+        class="details-hotel__btn btn js-open-modal"
+        data-modal="4"
+        id="modal-order4"
+        type="button"
+      >
         Забронювати номер
       </button>
 
