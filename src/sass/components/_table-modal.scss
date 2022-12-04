@@ -1,0 +1,75 @@
+.modal__table{
+    padding: 60px;
+    
+
+
+}
+.form-table__title {
+    font-family: 'Times New Roman';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 1.15;
+        letter-spacing: 0.05em;
+        color: var(--black-color);
+        text-align: center;
+        margin-bottom: 40px;
+
+}
+.form-table__input {
+    width: 288px;
+    height: 64px;
+    padding-left: 12px;
+    border: 1px solid var(--accent-color);
+    border-radius: 2px;
+    margin-bottom: 8px;
+    appearance: none;
+}
+.form-table__input::placeholder {
+    font-family: 'Times New Roman';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1.16;
+        letter-spacing: 0.05em;
+     color:#808080;
+}
+.form-table__label{
+font-weight: 500;
+font-size: 14px;
+line-height: 1.21;
+letter-spacing: 0.02em;
+color: var(--accent-color);
+           
+}
+.form-table__button {
+    display: block;
+    margin: 0 auto;
+}
+.form-table__box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px;
+    
+}
+.form-table__box:last-child {
+margin-bottom: 40px;
+}
+
+.form-table__control {
+    display: flex;
+    flex-wrap: wrap;
+    gap:16px;
+   
+   
+}
+.form-table__svg {
+position: relative;
+}
+.form-table__icon {
+    fill:#C79002;
+    position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+}
