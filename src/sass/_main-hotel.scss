@@ -1,8 +1,6 @@
 .main-hotel {
     padding-bottom:20px;
-    @media screen and (min-width: $tablet) {
-    padding-bottom: 20px;
-    }
+   
 }
 .main-hotel__subtitle {
     text-align: right;
@@ -121,7 +119,7 @@ margin-bottom: 6px;
    transform: translateY(-46px);
     }
 }
-.image1 {
+.main-hotel__image1 {
     width: 244px;
     background:var(--section-text-color);
         box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
@@ -140,7 +138,7 @@ margin-bottom: 6px;
                 border-radius: 2px;
 }
 }
-.image2 {
+.main-hotel__image2 {
     width: 200px;
     background:var(--section-text-color);
     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
@@ -158,3 +156,13 @@ margin-bottom: 6px;
         border-radius: 2px;
     }
 }
+// .main-hotel__slider {
+    
+//     @media screen and (min-width: $tablet) {
+      
+//         transform: translateY(-100px);
+//     }
+//         @media screen and (min-width: $desktop) {
+//         transform: translateY(-20px);
+//         }
+// }
