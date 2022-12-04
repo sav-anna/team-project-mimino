@@ -161,6 +161,7 @@
     no-repeat;
   background-color: var(--hero-bcg);
   z-index: 10;
+  cursor: pointer;
   @media screen and (min-width: $tablet) {
     bottom: 340px;
     left: 47px;
@@ -182,6 +183,7 @@
     no-repeat;
   background-color: var(--hero-bcg);
   z-index: 10;
+  cursor: pointer;
   @media screen and (min-width: $tablet) {
     bottom: 340px;
     right: 47px;
