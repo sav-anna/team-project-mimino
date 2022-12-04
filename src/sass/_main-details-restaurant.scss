@@ -1,4 +1,7 @@
 .details-restaurant {
+  max-width: 414px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 24px;
   padding-bottom: 40px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
@@ -8,55 +11,40 @@
   background-repeat: no-repeat;
 
   @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
       url(../images/section/restaurant/details-backimage-414m@2x.jpg);
   }
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: $tablet) {
+    max-width: 1024px;
+    padding-top: 48px;
+    padding-bottom: 96px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
       url(../images/section/restaurant/details-backimage-1024t.jpg);
 
     @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-      background-image: linear-gradient(
-          rgba(0, 0, 0, 0.65),
-          rgba(0, 0, 0, 0.65)
-        ),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)),
         url(../images/section/restaurant/details-backimage-1024t@2x.jpg);
     }
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
+    max-width: 1280px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
       url(../images/section/restaurant/details-backimage-1280d.jpg);
 
     @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-      background-image: linear-gradient(
-          rgba(0, 0, 0, 0.65),
-          rgba(0, 0, 0, 0.65)
-        ),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)),
         url(../images/section/restaurant/details-backimage-1280d@2x.jpg);
     }
-  }
-
-  @media screen and (min-width: 1024px) {
-    padding-top: 48px;
-    padding-bottom: 96px;
-  }
-}
-
-.details-restaurant__container {
-  @media screen and (max-width: 1023px) {
-    padding-left: 40px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    padding-right: 52px;
   }
 }
 
@@ -66,23 +54,22 @@
     margin-left: auto;
   }
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: $tablet) {
     max-width: 610px;
     margin-left: 231px;
   }
 
-    @media screen and (min-width: 1280px) {
-      margin-left: 253px;
-    }
+  @media screen and (min-width: $desktop) {
+    margin-left: 253px;
+  }
 }
-
 
 .details-restaurant__logo {
   @include logo($size: 40px, $color: var(--white-color));
   text-transform: uppercase;
   margin-bottom: 12px;
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: $tablet) {
     margin-bottom: 16px;
     font-size: 64px;
   }
@@ -95,7 +82,7 @@
   line-height: 1.2;
   color: var(--white-color);
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: $tablet) {
     margin-bottom: 8px;
     font-size: 24px;
     line-height: 1.21;
@@ -110,7 +97,7 @@
   line-height: 1.25;
   color: var(--section-text-color);
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: $tablet) {
     margin-bottom: 40px;
 
     font-size: 16px;
@@ -119,42 +106,97 @@
 }
 
 .details-restaurant__box {
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: $tablet) {
     display: flex;
     flex-direction: row-reverse;
     align-items: flex-end;
     justify-content: flex-end;
-    gap: 27px;
+    gap: 29px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    gap: 32px;
   }
 }
 
-.details-restaurant__slider-box {
+.details-restaurant__slider-list {
   @media screen and (max-width: 1023px) {
+    position: relative;
+    margin-right: -15px;
+    margin-left: 25px;
     margin-bottom: 80px;
   }
-  
-  @media screen and (min-width: 1024px) {
-    display: flex;
+}
+
+.details-restaurant__slider-list .slick-list {
+  width: 374px;
+
+  @media screen and (min-width: $tablet) {
+    width: 682px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 875px;
+  }
+}
+
+.details-restaurant__slider-list .slick-track {
+  display: flex;
+  min-width: 0;
+
+  @media screen and (max-width: 1023px) {
+    gap: 20px;
+  }
+
+  @media screen and (min-width: $tablet) {
     gap: 34px;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     gap: 86px;
   }
 }
 
-.hidden-mobile {
+.details-restaurant__slider-list .slick-current.slick-active {
   @media screen and (max-width: 1023px) {
-    position: absolute;
-      white-space: nowrap;
-      width: 1px;
-      height: 1px;
-      overflow: hidden;
-      border: 0;
-      padding: 0;
-      clip: rect(0, 0, 0, 0);
-      clip-path: inset(50%);
-      margin: -1px;
+    opacity: 1;
+  }
+}
+
+.details-restaurant__slider-list .slick-slide {
+  @media screen and (max-width: 1023px) {
+    opacity: 0.6;
+    transition: opacity 250ms var(--distribution-time);
+  }
+}
+
+.details-restaurant__slider-list .slick-arrow {
+  position: absolute;
+  top: 110%;
+  z-index: 10;
+  font-size: 0;
+  width: 32px;
+  height: 32px;
+  border: 0;
+}
+
+.details-restaurant__slider-list .slick-arrow.slick-prev {
+  left: 0;
+  background: url("../images/svg/slider-arrow-left.svg") 0 0 / 100% no-repeat;
+
+  &:hover,
+  &:focus {
+    background: url("../images/svg/slider-arrow-yellow-left.svg") 0 0 / 100% no-repeat;
+  }
+}
+
+.details-restaurant__slider-list .slick-arrow.slick-next {
+  left: 64px;
+  background: url("../images/svg/slider-arrow-right.svg") 0 0 / 100% no-repeat;
+
+  &:hover,
+  &:focus {
+    background: url("../images/svg/slider-arrow-yellow-right.svg") 0 0 / 100% no-repeat;
   }
 }
 
@@ -165,12 +207,14 @@
   gap: 16px;
 }
 
-.btn--bg {
-  @media screen and (min-width: 1024px) and (max-width: 1279px) {
-      background-color: var(--black-color);
-    }
-}
+.details-restaurant__btn {
+  width: 241px;
 
-.btn--padding {
-padding: 14px 32px;
+  @media screen and (min-width: $tablet) and (max-width: 1279px) {
+    background-color: var(--black-color);
+  }
+
+  &--padding {
+    padding: 14px 32px;
+  }
 }
