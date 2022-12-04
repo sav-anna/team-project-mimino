@@ -2,7 +2,11 @@
   max-width: 414px;
   margin: 0 auto;
   padding-top: 12px;
-  padding-bottom: 20px;
+
+  @media screen and (max-width: 1023px) {
+    padding-bottom: 20px;
+  }
+
   @media screen and (min-width: $tablet) {
     max-width: 1024px;
     padding-top: 0;
@@ -97,6 +101,11 @@
   display: flex;
   align-items: center;
   gap: 20px;
+
+  @media screen and (max-width: 1023px) {
+    margin-bottom: 32px;
+  }
+
   @media screen and (min-width: $tablet) {
     position: relative;
     top: -48px;
