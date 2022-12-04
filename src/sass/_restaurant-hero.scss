@@ -142,10 +142,10 @@
 
 .restaurant-hero__btn-list {
   @media screen and (min-width: $tablet) {
-    display: flex;
+    @include centeredFlex();
     gap: 40px;
   }
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $desktop) {
     gap: 60px;
   }
 }
