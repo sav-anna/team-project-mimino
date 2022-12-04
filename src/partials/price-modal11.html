@@ -7,16 +7,8 @@
 
   <form class="price-form" name="price-modal" autocomplete="off">
     <p class="price-form__title">Ціни на номер</p>
-
-    <label class="price-form__label">
-      <select name="category" class="price-form__input">
-        <option value="1" selected>Двомісний люкс</option>
-        <option value="2">Двомісний люкс</option>
-        <option value="3">Двомісний люкс</option>
-        <option value="4">Двомісний люкс</option>
-      </select>
-      Категорія номеру</label
-    >
+    <p class="price-form__subtitle">Двомісний номер</p>
+    <p class="price-form__category">Категорія номеру</p>
 
     <div class="price-form__wrapper">
       <label class="price-form__label">
@@ -24,13 +16,16 @@
           <option value="1" selected>1</option>
           <option value="2">2</option>
           <option value="3">3</option>
-          <option value="4">4</option></select
-        >Кількість ночей</label
+          <option value="4">4</option>
+        </select>
+        Кількість ночей</label
       >
       <label class="price-form__label"
-        ><input class="price-form__input" placeholder="1000" />Ціна</label
+        ><input class="price-form__input" placeholder="1000" disabled />
+        Грн</label
       >
     </div>
+
     <button class="btn-modal price-form__btn" type="submit">
       Забронювати номер
     </button>
