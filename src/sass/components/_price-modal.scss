@@ -68,6 +68,7 @@
     line-height: 28px;
     letter-spacing: 0.05em;
     color: var(--placeholder-color);
+    background-color: var(----brand-color-transparent);
     @media screen and (min-width: $tablet) {
       width: 288px;
     }
