@@ -5,7 +5,7 @@
         <p class="hotel-luxe-room__subtitle">Amet minim mollit non</p>
         <h2 class="hotel-luxe-room__text-title">MIMIHO</h2>
         <h3 class="hotel-luxe-room__text-subtitle">
-          ДВОМІСНИЙ НОМЕР&nbsp<supan class="text-subtitle__s">люкс</supan>
+          ДВОМІСНИЙ НОМЕР<span class="text-subtitle__s">люкс</span>
         </h3>
         <p class="hotel-luxe-room__text">
           Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
@@ -67,25 +67,28 @@
       </picture>
     </div>
     <!-- img -->
-    <div class="">
-      <ul class="hotel-luxe-room__btn-list">
-        <li class="hotel-luxe-room__btn-item">
-          <a href="/src/room.html" class="hotel-luxe-room__btn btn"
-            >Детальніше</a
-          >
-        </li>
-        <li class="hotel-luxe-room__btn-item">
-          <button
-            class="hotel-luxe-room__btn btn"
-            type="button"
-            data-modal="11"
-            id="modal-order11"
-            s-open-modal
-          >
-            Переглянути ціни
-          </button>
-        </li>
-      </ul>
+    <div class="hotel-luxe-room__slider-box">
+      <include src="./partials/hotel-room-slick.html"></include>
+      <div class="">
+        <ul class="hotel-luxe-room__btn-list">
+          <li class="hotel-luxe-room__btn-item">
+            <a href="/src/room.html" class="hotel-luxe-room__btn btn"
+              >Детальніше</a
+            >
+          </li>
+          <li class="hotel-luxe-room__btn-item">
+            <button
+              class="hotel-luxe-room__btn btn"
+              type="button"
+              data-modal="11"
+              id="modal-order11"
+              s-open-modal
+            >
+              Переглянути ціни
+            </button>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </section>
