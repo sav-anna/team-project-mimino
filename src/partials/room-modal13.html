@@ -4,4 +4,115 @@
       <use href="./images/svg/symbol-defs.svg#icon-close"></use>
     </svg>
   </button>
+   <!-- Форма даних -->
+   <form class="form-room" name="book-room" autocomplete="off">
+    <p class="form-room__title">Забронювати номер</p>
+    <div class="form-room-part">
+      <div class="form-room__name">
+        <input
+          id="personal-name"
+          class="form-room__input"
+          type="text"
+          name="personal-name"
+          minlength="6"
+          maxlength="20"
+          pattern="^[Є-ЯҐа-їґ]+\s[Є-ЯҐа-їґ]+$"
+          title="Введіть ім'я та прізвище кирилицею, допускаються малі та великі літери"
+          placeholder="Ваше ім’я"
+          required
+        />
+        <label for="personal-name" class="form-room__label"
+          >На кого забронювати номер?</label
+        >
+      </div>
+      <div class="form-room-phone">
+        <input
+          id="personal-phone"
+          class="form-room__input"
+          type="tel"
+          name="personal-phone"
+          pattern="^\+[0-9]{12}"
+          title="+380..."
+          placeholder="+38 (___) ___--"
+          required
+        />
+        <label for="personal-phone" class="form-room__label"
+          >Номер телефону</label
+        >
+      </div>
+    </div>
+    <div class="form-room-list">
+      <div class="form-room_box">
+        <select id="room-select" name="room-select" class="form-room__input">
+                    <option class="form-room__dropdown" value="1">Двомісний люкс</option>
+          <option class="form-room__dropdown" value="2">Двомісний номер</option>
+          <option class="form-room__dropdown" value="3">
+            Трьохмісний номер
+          </option>
+        </select>
+        <svg class="form-room__svg" width="24" height="24">
+          <use
+            href="/src/images/svg/symbol-defs.svg#icon-arrow-down-bold"
+          ></use>
+        </svg>
+      </div>
+      <label for="room-select" class="form-room__label">Категорія номеру</label>
+    </div>
+    <div class="form-room-part">
+      <div>
+        <div class="form-room_box">
+          <svg
+            class="form-room__svg form-room__svg--bgc"
+            width="24"
+            height="24"
+          >
+            <use
+              href="/src/images/svg/symbol-defs.svg#icon-arrow-down-bold"
+            ></use>
+          </svg>
+          <input
+            class="form-room__input form-room__input--position"
+            id="arrival-date"
+            type="date"
+            placeholder="Сьогодні"
+          />
+        </div>
+        <label
+          for="arrival-date"
+          class="form-room__label form-room__label--bottom"
+          >Дата заїзду</label
+        >
+      </div>
+      <div>
+        <div class="form-room_box">
+          <svg
+            class="form-room__svg form-room__svg--bgc"
+            width="24"
+            height="24"
+          >
+            <use
+              href="/src/images/svg/symbol-defs.svg#icon-arrow-down-bold"
+            ></use>
+          </svg>
+          <input
+            class="form-room__input form-room__input--position"
+            id="departure-date"
+            type="date"
+            placeholder="Сьогодні"
+          />
+        </div>
+        <label
+          for="departure-date"
+          class="form-room__label form-room__label--bottom"
+          >Дата виїзду</label
+        >
+      </div>
+    </div>
+
+    <button class="btn-modal btn-modal--top" type="submit">
+      Оформити бронювання
+    </button>
+  </form>
+</div>
+
 </div>
