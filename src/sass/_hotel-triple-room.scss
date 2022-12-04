@@ -2,8 +2,16 @@
   background-color: #f0ecd6;
   padding-left: auto;
   padding-right: auto;
-}
 
+  &__slider-box {
+    display: flex;
+
+    justify-content: space-between;
+  }
+}
+.hotel-triple-room .slider-container .hotel-room-slick {
+  left: 0;
+}
 .hotel-triple-room__card {
   display: flex;
   flex-direction: column-reverse;
@@ -116,6 +124,10 @@
     padding-bottom: 145px;
     padding-top: 89px;
   }
+
+  @media screen and (min-width: $desktop) {
+    gap: 16px;
+  }
 }
 
 .btn.hotel-triple-room__btn {
@@ -128,7 +140,6 @@
   margin-left: auto;
   margin-right: auto;
   display: block;
-  margin-bottom: 16px;
 
   background-color: var(--black-color);
   &:hover,
