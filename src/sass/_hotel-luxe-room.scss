@@ -1,14 +1,22 @@
 .hotel-luxe-room {
-  background-color: #FFFDEE;
+  background-color: #fffdee;
   padding-left: auto;
   padding-right: auto;
+
+  &__slider-box {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__slider-box .slider-container {
+    margin-left: -40px;
+  }
 }
 
 .hotel-luxe-room__card {
   display: flex;
   gap: 20px;
 }
-
 
 .hotel-luxe-room__text-subtitle {
   color: var(--black-color);
@@ -28,7 +36,7 @@
     letter-spacing: 0.05em;
   }
 }
-.text-subtitle__s{
+.text-subtitle__s {
   text-transform: lowercase;
 }
 
@@ -88,7 +96,7 @@
   margin-left: 0;
   margin-right: auto;
   margin-bottom: 32px;
-  
+
   color: var(--secondary-text-color);
 
   @media screen and (min-width: $tablet) {
