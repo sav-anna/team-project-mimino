@@ -1,4 +1,4 @@
-.main-restaurant .container .slider-container {
+.restaurant-kitchen .container .slider-container {
   width: 330px;
 
   @media screen and (min-width: $tablet) {
@@ -6,7 +6,7 @@
     margin-left: auto;
     // transform: translateY(-128px);
     position: relative;
-    // top: -114px;
+    top: -114px;
   }
   @media screen and (min-width: $desktop) {
     width: 550px;
