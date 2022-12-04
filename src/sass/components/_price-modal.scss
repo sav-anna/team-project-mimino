@@ -1,6 +1,9 @@
 .modal__price {
   min-height: 489px;
-  padding: 60px;
+
+  @media screen and (min-width: $tablet) {
+    padding: 60px;
+  }
 }
 
 .price-form {
@@ -8,6 +11,7 @@
     @media screen and (min-width: $tablet) {
       display: flex;
       gap: 16px;
+      margin-bottom: 20px;
     }
   }
   &__title {
@@ -50,7 +54,6 @@
     letter-spacing: 0.02em;
     color: var(--accent-color);
     margin-bottom: 20px;
-    margin-left: 10px;
   }
 }
 .price-form__input::placeholder {

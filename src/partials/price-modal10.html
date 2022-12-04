@@ -4,32 +4,32 @@
       <use href="./images/svg/symbol-defs.svg#icon-close"></use>
     </svg>
   </button>
+
   <form class="price-form" name="price-modal" autocomplete="off">
     <p class="price-form__title">Ціни на номер</p>
-    <div>
-      <select id="category" name="category" class="price-form__input">
+
+    <label class="price-form__label">
+      <select name="category" class="price-form__input">
         <option value="1" selected>Двомісний люкс</option>
         <option value="2">Двомісний люкс</option>
         <option value="3">Двомісний люкс</option>
         <option value="4">Двомісний люкс</option>
       </select>
-      <label for="category" class="price-form__label">Категорія номеру</label>
-    </div>
+      Категорія номеру</label
+    >
+
     <div class="price-form__wrapper">
-      <div>
-        <select id="night" name="night" class="price-form__input">
+      <label class="price-form__label">
+        <select name="night" class="price-form__input">
           <option value="1" selected>1</option>
           <option value="2">2</option>
           <option value="3">3</option>
-          <option value="4">4</option>
-        </select>
-        <label for="night" class="price-form__label">Кількість ночей</label>
-      </div>
-
-      <div>
-        <input class="price-form__input" id="price" placeholder="1000" />
-        <label for="price" class="price-form__label">Ціна</label>
-      </div>
+          <option value="4">4</option></select
+        >Кількість ночей</label
+      >
+      <label class="price-form__label"
+        ><input class="price-form__input" placeholder="1000" />Ціна</label
+      >
     </div>
     <button class="btn-modal price-form__btn" type="submit">
       Забронювати номер
