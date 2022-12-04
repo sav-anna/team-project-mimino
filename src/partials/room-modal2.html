@@ -44,9 +44,8 @@
     <div class="form-room-list">
       <div class="form-room_box">
         <select id="room-select" name="room-select" class="form-room__input">
-          <option class="form-room__dropdown" value="1" selected>
-            Двомісний люкс
-          </option>
+          <option disabled>Двомісний люкс</option>
+          <option class="form-room__dropdown" value="1">Двомісний люкс</option>
           <option class="form-room__dropdown" value="2">Двомісний номер</option>
           <option class="form-room__dropdown" value="3">
             Трьохмісний номер
@@ -63,13 +62,17 @@
     <div class="form-room-part">
       <div>
         <div class="form-room_box">
-          <svg class="form-room__svg" width="24" height="24">
+          <svg
+            class="form-room__svg form-room__svg--bgc"
+            width="24"
+            height="24"
+          >
             <use
               href="/src/images/svg/symbol-defs.svg#icon-arrow-down-bold"
             ></use>
           </svg>
           <input
-            class="form-room__input"
+            class="form-room__input form-room__input--position"
             id="arrival-date"
             type="date"
             placeholder="Сьогодні"
@@ -83,13 +86,17 @@
       </div>
       <div>
         <div class="form-room_box">
-          <svg class="form-room__svg" width="24" height="24">
+          <svg
+            class="form-room__svg form-room__svg--bgc"
+            width="24"
+            height="24"
+          >
             <use
               href="/src/images/svg/symbol-defs.svg#icon-arrow-down-bold"
             ></use>
           </svg>
           <input
-            class="form-room__input"
+            class="form-room__input form-room__input--position"
             id="departure-date"
             type="date"
             placeholder="Сьогодні"
