@@ -140,8 +140,14 @@
 
 .menu__cost {
   @include text();
-  padding-left: 0;
+  padding-left: 10px;
   text-align: right;
+
+
+  @media screen and (min-width: $mobile) {
+    padding-left: 0;
+    
+  }
 
   @media screen and (min-width: $desktop) {
     font-size: 16px;
