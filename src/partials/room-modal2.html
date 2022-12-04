@@ -10,7 +10,7 @@
     <div>
       <input
         id="personal-name"
-        class="form__input"
+        class="form-room__input"
         type="text"
         name="personal-name"
         minlength="6"
@@ -40,25 +40,51 @@
       >
     </div>
     <div>
-      <input class="form-room__input" id="room" placeholder="Двомісний люкс" />
-      <label for="room" class="form-room__label">Категорія номеру</label>
+      <div class="form-room_box">
+        <select id="room-select" name="room-select" class="form-room__input">
+          <option value="1" selected>Двомісний люкс</option>
+          <option value="2">Двомісний номер</option>
+          <option value="3">Трьохмісний номер</option>
+        </select>
+        <svg class="form-room__svg" width="24" height="24">
+          <use
+            href="/src/images/svg/symbol-defs.svg#icon-arrow-down-bold"
+          ></use>
+        </svg>
+      </div>
+
+      <label for="room-select" class="form-room__label">Категорія номеру</label>
     </div>
     <div>
-      <input
-        class="form-room__input"
-        id="arrival-date"
-        type="date"
-        placeholder="Сьогодні"
-      />
+      <div class="form-room_box">
+        <svg class="form-room__svg" width="24" height="24">
+          <use
+            href="/src/images/svg/symbol-defs.svg#icon-arrow-down-bold"
+          ></use>
+        </svg>
+        <input
+          class="form-room__input"
+          id="arrival-date"
+          type="date"
+          placeholder="Сьогодні"
+        />
+      </div>
       <label for="arrival-date" class="form-room__label">Дата заїзду</label>
     </div>
     <div>
-      <input
-        class="form-room__input"
-        id="departure-date"
-        type="date"
-        placeholder="Сьогодні"
-      />
+      <div class="form-room_box">
+        <svg class="form-room__svg" width="24" height="24">
+          <use
+            href="/src/images/svg/symbol-defs.svg#icon-arrow-down-bold"
+          ></use>
+        </svg>
+        <input
+          class="form-room__input"
+          id="departure-date"
+          type="date"
+          placeholder="Сьогодні"
+        />
+      </div>
       <label for="departure-date" class="form-room__label">Дата виїзду</label>
     </div>
     <button class="btn-modal" type="submit">Оформити бронювання</button>

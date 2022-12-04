@@ -1,11 +1,13 @@
 .form-room {
   &__title {
+    margin-bottom: 40px;
     font-family: 'Times New Roman', serif;
     font-weight: 700;
     font-size: 24px;
     line-height: calc(28px / 24px);
     letter-spacing: 0.05em;
     text-transform: uppercase;
+    text-align: center;
     color: var(--black-color);
   }
   &__input {
@@ -13,6 +15,14 @@
     height: 54px;
     border: 1px solid var(--accent-color);
     border-radius: 2px;
+    &::placeholder {
+      font-family: 'Times New Roman', serif;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: calc(23px / 20px);
+      letter-spacing: 0.05em;
+      color: var(--placeholder-color);
+    }
   }
   &__label {
     font-weight: 500;
@@ -22,11 +32,14 @@
     color: var(--accent-color);
   }
 }
-.form-room__input::placeholder {
-  font-family: 'Times New Roman', serif;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: calc(23px / 20px);
-  letter-spacing: 0.05em;
-  color: var(--placeholder-color);
+
+.form-room_box {
+  position: relative;
+  width: 384px;
+}
+.form-room__svg {
+  position: absolute;
+  top: 25%;
+  right: 20px;
+  fill: var(--accent-color);
 }
