@@ -1,4 +1,19 @@
+.modal__price {
+  min-height: 489px;
+
+  @media screen and (min-width: $tablet) {
+    padding: 60px;
+  }
+}
+
 .price-form {
+  &__wrapper {
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+  }
   &__title {
     font-family: 'Times New Roman', serif;
     font-weight: 700;
@@ -20,6 +35,16 @@
     border: 1px solid var(--accent-color);
     border-radius: 2px;
     margin-bottom: 8px;
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.05em;
+    color: #808080;
+    @media screen and (min-width: $tablet) {
+      width: 288px;
+    }
   }
   &__label {
     display: inline-block;
@@ -38,4 +63,10 @@
   line-height: calc(23px / 20px);
   letter-spacing: 0.05em;
   color: var(--placeholder-color);
+}
+
+.price-form__btn {
+  text-align: center;
+  margin: 0 auto;
+  display: block;
 }
