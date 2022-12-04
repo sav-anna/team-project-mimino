@@ -2,6 +2,7 @@
   @include centeredFlex();
   flex-wrap: wrap;
   gap: 20px;
+
   // @media screen and (min-width: $tablet) {
 
   // }
@@ -25,6 +26,7 @@
     height: 54px;
     border: 1px solid var(--accent-color);
     border-radius: 2px;
+    background-color: var(--primary-bg-color);
     @media screen and (min-width: $tablet) {
       width: 288px;
       height: 64px;
@@ -68,6 +70,11 @@
   right: 20px;
   fill: var(--accent-color);
 }
+.form-room__svg--bgc {
+  right: 5px;
+  width: 50px;
+  background-color: var(--primary-bg-color);
+}
 .form-room__dropdown {
   font-family: 'Times New Roman', serif;
   font-weight: 700;
@@ -77,8 +84,16 @@
   color: var(--placeholder-color);
 }
 
+.form-room__dropdown option {
+}
+
 .form-room-phone {
   margin-top: 20px;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0;
+  }
 }
 .form-room-list {
   display: flex;
