@@ -1,4 +1,15 @@
+.modal__price {
+  min-height: 200px;
+  padding: 60px;
+}
+
 .price-form {
+  &__wrapper {
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      gap: 16px;
+    }
+  }
   &__title {
     font-family: 'Times New Roman', serif;
     font-weight: 700;
@@ -20,6 +31,9 @@
     border: 1px solid var(--accent-color);
     border-radius: 2px;
     margin-bottom: 8px;
+    @media screen and (min-width: $tablet) {
+      width: 288px;
+    }
   }
   &__label {
     display: inline-block;
@@ -38,4 +52,10 @@
   line-height: calc(23px / 20px);
   letter-spacing: 0.05em;
   color: var(--placeholder-color);
+}
+
+.price-form__btn {
+  text-align: center;
+  margin: 0 auto;
+  display: block;
 }
