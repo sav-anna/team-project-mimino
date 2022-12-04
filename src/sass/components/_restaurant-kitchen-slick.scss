@@ -4,6 +4,7 @@
   @media screen and (min-width: $tablet) {
     width: 428px;
     margin-left: auto;
+    transform: translateY(-118px);
   }
   @media screen and (min-width: $desktop) {
     width: 550px;
