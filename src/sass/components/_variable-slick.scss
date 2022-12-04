@@ -1,6 +1,6 @@
 .variable-slider {
   position: relative;
-
+  padding-right: 25px;
   margin-bottom: 80px;
   margin-left: -15px;
   min-width: 0;
@@ -11,7 +11,7 @@
   &__item {
     text-align: center;
     opacity: 0.6;
-    transition: all 0.3s ease 0s;
+    transition: var(--distribution-time);
 
     @media screen and (min-width: $tablet) {
       opacity: 1;
@@ -19,7 +19,7 @@
   }
 }
 
-.variable-slider .variable-slider__item.slick-center {
+.variable-slider .variable-slider__item.slick-active {
   opacity: 1;
 }
 
