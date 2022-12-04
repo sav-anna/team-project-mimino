@@ -18,13 +18,18 @@
   pointer-events: auto;
 }
 
-.modal.active {
+.modal__table.active,
+.modal__price.active,
+.modal__room.active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
   transform: translate(-50%, -50%) scale(0.9);
 }
 
 .modal {
   position: absolute;
-  top: 350px;
+  top: 100px;
   left: 50%;
   transform: translateX(-50%);
   width: 414px;
