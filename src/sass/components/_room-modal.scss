@@ -1,6 +1,13 @@
 .form-room {
+  @include centeredFlex();
+  flex-wrap: wrap;
+  gap: 20px;
+  // @media screen and (min-width: $tablet) {
+
+  // }
+
   &__title {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     font-family: 'Times New Roman', serif;
     font-weight: 700;
     font-size: 24px;
@@ -11,10 +18,15 @@
     color: var(--black-color);
   }
   &__input {
+    margin-bottom: 8px;
     width: 384px;
     height: 54px;
     border: 1px solid var(--accent-color);
     border-radius: 2px;
+    @media screen and (min-width: $tablet) {
+      width: 288px;
+      height: 64px;
+    }
     &::placeholder {
       font-family: 'Times New Roman', serif;
       font-weight: 700;
@@ -23,6 +35,10 @@
       letter-spacing: 0.05em;
       color: var(--placeholder-color);
     }
+    @media screen and (min-width: $tablet) {
+      font-size: 24px;
+      line-height: calc(28px / 24px);
+    }
   }
   &__label {
     font-weight: 500;
@@ -30,16 +46,53 @@
     line-height: calc(17px / 14px);
     letter-spacing: 0.02em;
     color: var(--accent-color);
+    @media screen and (min-width: $tablet) {
+      font-size: 16px;
+      line-height: calc(20px / 16px);
+    }
   }
 }
 
 .form-room_box {
   position: relative;
   width: 384px;
+  @media screen and (min-width: $tablet) {
+    width: 288px;
+  }
 }
 .form-room__svg {
   position: absolute;
   top: 25%;
   right: 20px;
   fill: var(--accent-color);
+}
+.form-room__dropdown {
+  font-family: 'Times New Roman', serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: calc(23px / 20px);
+  letter-spacing: 0.05em;
+  color: var(--placeholder-color);
+}
+
+.form-room-phone {
+  margin-top: 20px;
+}
+.form-room-list {
+}
+.form-room__label--bottom {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.form-room-part {
+  @media screen and (min-width: $tablet) {
+    @include centeredFlex();
+    gap: 16px;
+  }
+}
+.form-room__name {
+  @media screen and (min-width: $tablet) {
+    @include centeredFlex();
+    flex-wrap: wrap;
+  }
 }
