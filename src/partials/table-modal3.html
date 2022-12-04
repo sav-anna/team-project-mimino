@@ -1,9 +1,86 @@
 <div class="modal modal__table modal-order3" data-modal="3">
-    <button class="modal__btn js-modal-close" type="button">
-      <svg class="modal__btn__svg" width="24" height="24">
-        <use href="./images/svg/symbol-defs.svg#icon-close"></use>
-      </svg>
+  <button class="modal__btn js-modal-close" type="button">
+    <svg class="modal__btn__svg" width="24" height="24">
+      <use href="./images/svg/symbol-defs.svg#icon-close"></use>
+    </svg>
+  </button>
+  <form class="form-table" name="book-table" autocomplete="off">
+    <p class="form-table__title">Забронювати столик</p>
+    <div class="form-table__control">
+      <div class="form-table__box">
+        <input
+          id="personal-name"
+          class="form-table__input"
+          type="text"
+          name="personal-name"
+          minlength="6"
+          maxlength="20"
+          pattern="^[Є-ЯҐа-їґ]+\s[Є-ЯҐа-їґ]+$"
+          title="Введіть ім'я та прізвище кирилицею, допускаються малі та великі літери"
+          placeholder="Ваше ім’я"
+          required
+        />
+        <label for="personal-name" class="form-table__label"
+          >На кого забронювати номер?</label
+        >
+      </div>
+      <div class="form-table__box">
+        <div class="form-table__svg">
+          <input
+            id="number-visits"
+            class="form-table__input"
+            type="number"
+            value="50"
+            min="1"
+            max="50"
+            name="number-visits"
+          />
+          <svg class="form-table__icon" width="24" height="24">
+            <use
+              href="/src/images/svg/symbol-defs.svg#icon-arrow-down-bold"
+            ></use>
+          </svg>
+        </div>
+        <label for="number-visits" class="form-table__label"
+          >Столик на яку кількість осіб?</label
+        >
+      </div>
+      <div class="form-table__box">
+        <input
+          id="personal-phone"
+          class="form-table__input"
+          type="tel"
+          name="personal-phone"
+          pattern="^\+[0-9]{12}"
+          title="+380..."
+          placeholder="+38 (___) ___--"
+          required
+        />
+        <label for="personal-phone" class="form-table__label"
+          >Номер телефону</label
+        >
+      </div>
+      <div class="form-table__box">
+        <div class="form-table__svg">
+          <input
+            class="form-table__input"
+            id="booking-date"
+            type="date"
+            placeholder="Сьогодні"
+          />
+          <svg class="form-table__icon" width="24" height="24">
+            <use
+              href="/src/images/svg/symbol-defs.svg#icon-arrow-down-bold"
+            ></use>
+          </svg>
+        </div>
+        <label for="booking-date" class="form-table__label"
+          >На яку дату бронювати?</label
+        >
+      </div>
+    </div>
+    <button class="form-table__button btn-modal" type="submit">
+      Оформити бронювання
     </button>
-    <form class="form-room" name="book-room" autocomplete="off">
-      <p class="form-room__title">Забронювати столик</p>
-  </div>
+  </form>
+</div>
