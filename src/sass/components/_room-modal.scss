@@ -18,6 +18,8 @@
     color: var(--black-color);
   }
   &__input {
+    appearance: none;
+    padding-left: 12px;
     margin-bottom: 8px;
     width: 384px;
     height: 54px;
@@ -79,8 +81,12 @@
   margin-top: 20px;
 }
 .form-room-list {
-  display: block;
-  right: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  @media screen and (min-width: $tablet) {
+    align-items: flex-end;
+  }
 }
 .form-room__label--bottom {
   display: inline-block;
