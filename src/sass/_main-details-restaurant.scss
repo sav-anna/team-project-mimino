@@ -129,15 +129,15 @@
 }
 
 .details-restaurant__slider-list .slick-list {
-  width: 374px;
+  max-width: 374px;
   overflow: hidden;
 
   @media screen and (min-width: $tablet) {
-    width: 682px;
+    max-width: 682px;
   }
 
   @media screen and (min-width: $desktop) {
-    width: 875px;
+    max-width: 875px;
   }
 }
 
