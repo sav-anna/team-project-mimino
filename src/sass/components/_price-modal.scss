@@ -1,8 +1,8 @@
 .modal__price {
-  min-height: 489px;
+  height: 572px;
 
   @media screen and (min-width: $tablet) {
-    padding: 60px;
+    height: 489px;
   }
 }
 
@@ -57,7 +57,7 @@
     display: block;
     width: 384px;
     height: 54px;
-    padding: 10px;
+    padding: 10px 15px;
     border: 1px solid var(--accent-color);
     border-radius: 2px;
     margin-bottom: 8px;
@@ -86,6 +86,16 @@
     letter-spacing: 0.02em;
     color: var(--accent-color);
     margin-bottom: 20px;
+    position: relative;
+  }
+  &__svg {
+    position: absolute;
+    top: 20%;
+    right: 5px;
+    width: 40px;
+    height: 26px;
+    background-color: var(--primary-bg-color);
+    fill: var(--accent-color);
   }
 }
 .price-form__input::placeholder {
