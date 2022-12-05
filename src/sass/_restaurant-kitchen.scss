@@ -87,6 +87,9 @@
     border-radius: 2px;
     width: 244px;
     margin-left: auto;
+    @media screen and (max-width: 1023px) {
+      margin-bottom: 32px;
+    }
     @media screen and (min-width: $tablet) {
       width: 400px;
       transform: translateY(-32px);
