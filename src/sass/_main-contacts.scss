@@ -30,7 +30,7 @@ color: var(--title-color);
 text-transform: uppercase;
 font-style: normal;
 font-size: 64px;
-padding-top: 56px;
+margin-top: 56px;
 letter-spacing: 0.3em;
 }
 
@@ -55,8 +55,10 @@ margin-top: 16px;
 
 @media screen and (min-width: $tablet) {
 gap: 32px;
+width: fit-content;
+margin-right: 0px;
 display: block;
-padding-top: 52px;}
+margin-top: 52px;}
 }
 
 &__location-page {
@@ -147,8 +149,10 @@ margin-left: 28px;
 @media screen and (min-width: $tablet){ 
 display: flex;
 align-items: center;
+margin-left:0px;
 background-color: var(--white-color);
 gap: 8px;
+width: fit-content;
 border: 1px solid rgba(243, 198, 83, 0.7);
 border-radius: 2px;}
 }
@@ -161,13 +165,18 @@ gap: 8px;
 border: 1px solid rgba(243, 198, 83, 0.7);
 border-radius: 2px;
 margin-left: 54px;
-}
+
 @media screen and (min-width: $tablet) {
-  @include centeredFlex();
-  padding: 0 8px;
+  display: flex;
+  align-items: center;
+  margin-left:0px;
+  background-color: var(--white-color);
   gap: 8px;
+  font-weight: 400;
+  line-height: calc(20px / 16px);
+  width: fit-content;
   border: 1px solid rgba(243, 198, 83, 0.7);
-  border-radius: 2px;
+  border-radius: 2px;}
 }
 &__location-maps{
   display: flex;
@@ -177,7 +186,19 @@ margin-left: 54px;
   border: 1px solid rgba(243, 198, 83, 0.7);
   border-radius: 2px;
   margin-left: 108px;
-}
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: center;
+    margin-left:0px;
+    background-color: var(--white-color);
+    gap: 8px;
+    margin-bottom: 44px;
+    width: 285px;
+    border: 1px solid rgba(243, 198, 83, 0.7);
+    border-radius: 2px;}
+  }
+
 &__location-picture{
 margin-top: 15px;
 margin-bottom: 15px;
@@ -186,14 +207,14 @@ box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
 border-radius: 2px;
 
   @media screen and (min-width: $tablet) {
-  display: flex;
-  margin-bottom: 40px;
-  margin-top: 69px;
-  transform: translateY(-110%);
-  margin-left: 442px;
-  margin-right: 47px;
-
-
-  }
+    margin-right: 47px;
+    width: 535px;
+    border-radius: 2px;
+    margin-right: 47px;
+    transform: translateX(75%);
+    bottom: 0px;
+    margin-bottom: 0px;
+    position: absolute;
+    }
 }
 }
