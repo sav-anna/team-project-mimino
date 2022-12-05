@@ -1,90 +1,97 @@
 <!-- Яна -->
 
-<section class="hotel-triple-room section">
+<section class="triple-room section">
   <div class="container">
-    <div class="hotel-triple-room__card">
-      <picture>
-        <source
-          srcset="
-            ./images/section/hotel/hotel-room-des-460.webp    1x,
-            ./images/section/hotel/hotel-room-des-460@2x.webp 2x
-          "
-          media="(min-width: 1280px)"
-          type="image/webp"
-        />
-        <source
-          srcset="
-            ./images/section/hotel/hotel-room-des-460.jpg    1x,
-            ./images/section/hotel/hotel-room-des-460@2x.jpg 2x
-          "
-          media="(min-width: 1280px)"
-        />
-        <source
-          srcset="
-            ./images/section/hotel/hotel-room-400.webp    1x,
-            ./images/section/hotel/hotel-room-400@2x.webp 2x
-          "
-          media="(min-width: 1024px)"
-          type="image/webp"
-        />
-        <source
-          srcset="
-            ./images/section/hotel/hotel-room-400.jpg    1x,
-            ./images/section/hotel/hotel-room-400@2x.jpg 2x
-          "
-          media="(min-width: 1024px)"
-        />
-        <source
-          srcset="
-            ./images/section/hotel/hotel-room-244.webp    1x,
-            ./images/section/hotel/hotel-room-244@2x.webp 2x
-          "
-          media="(max-width: 1023px)"
-          type="image/webp"
-        />
-        <source
-          srcset="
-            ./images/section/hotel/hotel-room-244.jpg    1x,
-            ./images/section/hotel/hotel-room-244@2x.jpg 2x
-          "
-          media="(max-width: 1023px)"
-        />
-        <img
-          class="image1"
-          src="./images/section/hotel/hotel-room-des-460.jpg"
-          alt="hotel-room"
-        />
-      </picture>
-      <div class="hotel-triple-room__description">
-        <p class="hotel-triple-room__subtitle">Amet minim mollit non</p>
-        <h2 class="hotel-triple-room__text-title">MIMIHO</h2>
-        <h3 class="hotel-triple-room__text-subtitle">ТРЬОХМІСНИЙ НОМЕР</h3>
-        <p class="hotel-triple-room__text">
-          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-          sint. Velit officia consequat duis enim velit mollit. Exercitation
-          veniam consequat sunt nostrud amet.
-        </p>
+    <div class="triple-room__container">
+      <div class="triple-room__card">
+        <div class="triple-room__description">
+          <h2 class="main-hotel__room visually-hidden">room3</h2>
+          <div class="triple-room__subtitle">
+            <p class="triple-room__tagline tagline">Amet minim mollit non</p>
+            <p class="triple-room__logo">MIMIHO</p>
+          </div>
+          <div class="triple-room__content">
+            <h3 class="triple-room__text-subtitle">Трьохмісний номер</h3>
+            <p class="triple-room__text">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+          </div>
+        </div>
+        <picture>
+          <source
+            srcset="
+              ./images/section/hotel/hotel-room-des-460.webp    1x,
+              ./images/section/hotel/hotel-room-des-460@2x.webp 2x
+            "
+            media="(min-width: 1280px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/section/hotel/hotel-room-des-460.jpg    1x,
+              ./images/section/hotel/hotel-room-des-460@2x.jpg 2x
+            "
+            media="(min-width: 1280px)"
+          />
+          <source
+            srcset="
+              ./images/section/hotel/hotel-room-400.webp    1x,
+              ./images/section/hotel/hotel-room-400@2x.webp 2x
+            "
+            media="(min-width: 1024px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/section/hotel/hotel-room-400.jpg    1x,
+              ./images/section/hotel/hotel-room-400@2x.jpg 2x
+            "
+            media="(min-width: 1024px)"
+          />
+          <source
+            srcset="
+              ./images/section/hotel/hotel-room-244.webp    1x,
+              ./images/section/hotel/hotel-room-244@2x.webp 2x
+            "
+            media="(max-width: 1023px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/section/hotel/hotel-room-244.jpg    1x,
+              ./images/section/hotel/hotel-room-244@2x.jpg 2x
+            "
+            media="(max-width: 1023px)"
+          />
+          <img
+            class="triple-room__image"
+            src="./images/section/hotel/hotel-room-des-460.jpg"
+            alt="hotel-room"
+          />
+        </picture>
       </div>
-    </div>
-    <div class="hotel-triple-room__slider-box">
-      <ul class="hotel-triple-room__btn-list">
-        <li class="hotel-triple-room__btn-item">
-          <a href="/src/room.html" class="btn hotel-triple-room__btn">
-            Детальніше
-          </a>
-        </li>
-        <li class="hotel-triple-room__btn-item">
-          <button
-            id="modal-order10"
-            class="hotel-triple-room__btn btn js-open-modal"
-            data-modal="10"
-            type="button"
-          >
-            Переглянути ціни
-          </button>
-        </li>
-      </ul>
-      <include src="./partials/hotel-room-slick.html"></include>
+      <div class="triple-room__slider-box">
+        <ul class="triple-room__btn-list">
+          <li class="triple-room__btn-item">
+            <a href="/src/room.html" class="btn triple-room__btn">
+              Детальніше
+            </a>
+          </li>
+          <li class="triple-room__btn-item">
+            <button
+              id="modal-order10"
+              class="triple-room__btn btn js-open-modal"
+              data-modal="10"
+              type="button"
+            >
+              Переглянути ціни
+            </button>
+          </li>
+        </ul>
+        <include src="./partials/hotel-slick.html"></include>
+      </div>
     </div>
   </div>
 </section>
