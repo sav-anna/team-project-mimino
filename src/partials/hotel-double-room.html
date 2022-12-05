@@ -71,18 +71,21 @@
     <!-- img -->
     <div class="hotel-luxe-room__slider-box">
       <include src="./partials/hotel-room-slick.html"></include>
-      <div class="hotel-luxe-room__btn-list">
-        <a href="/src/room.html" class="hotel-luxe-room__btn btn">Детальніше</a>
-
-        <button
-          class="hotel-luxe-room__btn btn js-open-modal"
-          type="button"
-          data-modal="11"
-          id="modal-order11"
-        >
-          Переглянути ціни
-        </button>
-      </div>
+      <ul class="triple-room__btn-list">
+        <li class="triple-room__btn-item">
+          <a href="/src/room.html" class="btn triple-room__btn"> Детальніше </a>
+        </li>
+        <li class="triple-room__btn-item">
+          <button
+            id="modal-order11"
+            class="triple-room__btn btn js-open-modal"
+            data-modal="11"
+            type="button"
+          >
+            Переглянути ціни
+          </button>
+        </li>
+      </ul>
     </div>
   </div>
 </section>
