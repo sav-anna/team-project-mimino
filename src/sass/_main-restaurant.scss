@@ -1,16 +1,14 @@
 .main-restaurant {
   margin: 0 auto;
   @media screen and (max-width: 1023px) {
-    margin-bottom: 72px;
+    padding-bottom: 72px;
     padding-top: 12px;
   }
 
   @media screen and (min-width: $tablet) {
     padding-top: 0;
   }
-
   @media screen and (min-width: $desktop) {
-    // margin-bottom: -120px;
   }
 
   &__wrap {
