@@ -7,6 +7,7 @@
 
   @media screen and (min-width: $tablet) {
     margin-left: 0;
+    padding-right: 0;
   }
   &__item {
     text-align: center;
@@ -61,7 +62,7 @@
 }
 
 .variable-slider .slick-arrow.slick-prev {
-  right: 64px;
+  right: 89px;
 
   background: url('./../images/svg/slider-arrow-left.svg') 0 0 / 100% no-repeat;
 }
@@ -73,7 +74,7 @@
 }
 
 .variable-slider .slick-arrow.slick-next {
-  right: 0px;
+  right: 25px;
 
   background: url('./../images/svg/slider-arrow-right.svg') 0 0 / 100% no-repeat;
 }
