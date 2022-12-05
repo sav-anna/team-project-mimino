@@ -38,7 +38,7 @@
   left: 50%;
   transform: translateX(-50%);
   width: 414px;
-  min-height: 780px;
+  height: 780px;
   padding: 60px 15px;
   background-color: var(--primary-bg-color);
   border-radius: 2px;
@@ -48,7 +48,7 @@
 
   @media screen and (min-width: $tablet) {
     width: 712px;
-    min-height: 638px;
+    height: 638px;
     padding: 60px;
   }
 }
