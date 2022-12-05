@@ -91,3 +91,13 @@
     margin-bottom: 32px;
   }
 }
+
+.triple-room {
+  &__slider-box .slider-container .hotel-slick .slick-arrow.slick-prev {
+    right: 20px;
+  }
+
+  & .slider-container .hotel-slick .slick-arrow.slick-next {
+    right: 200px;
+  }
+}
