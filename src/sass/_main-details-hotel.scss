@@ -34,7 +34,8 @@
       url('../images/section/hotel/main-hotel-bg-mobile@2x.jpg');
   }
   @media screen and (min-width: $tablet) {
-    padding-bottom: 15px;
+    padding-bottom: 96px;
+
     & {
       max-width: 1024px;
       background-image: linear-gradient(
@@ -110,16 +111,16 @@
   }
 
   &__container {
-    // padding-right: 40px;
-    @media screen and (min-width: $tablet) {
-      display: flex;
-      flex-direction: column;
-      gap: 40px;
-      padding-right: 47px;
-    }
-    @media screen and (min-width: $desktop) {
-      padding-right: 85px;
-    }
+    // // padding-right: 40px;
+    // @media screen and (min-width: $tablet) {
+    //   display: flex;
+    //   flex-direction: column;
+    //   gap: 40px;
+    //   padding-right: 47px;
+    // }
+    // @media screen and (min-width: $desktop) {
+    //   padding-right: 85px;
+    // }
   }
 
   &__main {
@@ -234,7 +235,8 @@
       align-items: flex-end;
       justify-content: flex-end;
       flex-direction: column;
-      margin-bottom: 80px;
+
+      // margin-bottom: 80px;
     }
   }
 
@@ -256,19 +258,36 @@
       width: 238px;
     }
   }
-}
 
-.hidden-mobile {
-  @media screen and (max-width: 1023px) {
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0, 0, 0, 0);
-    clip-path: inset(50%);
-    margin: -1px;
+  &__box {
+    display: flex;
+    flex-direction: column-reverse;
+
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: flex-end;
+      justify-content: flex-end;
+      gap: 29px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      gap: 32px;
+    }
   }
 }
+
+// .hidden-mobile {
+//   @media screen and (max-width: 1023px) {
+//     position: absolute;
+//     white-space: nowrap;
+//     width: 1px;
+//     height: 1px;
+//     overflow: hidden;
+//     border: 0;
+//     padding: 0;
+//     clip: rect(0, 0, 0, 0);
+//     clip-path: inset(50%);
+//     margin: -1px;
+//   }
+// }
