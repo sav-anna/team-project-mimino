@@ -3,11 +3,9 @@
 
   @media screen and (min-width: $tablet) {
     width: 419px;
-    text-align: right;
   }
   @media screen and (min-width: $desktop) {
     width: 488px;
-    text-align: right;
   }
 }
 .main-hotel__tagline {
@@ -120,15 +118,11 @@
   margin-bottom: 25px;
   @media screen and (min-width: $tablet) {
     width: 400px;
-    transform: translateY(-24px);
-    box-shadow: 5px 5px 70px 17px var(--shadow-photo);
-    border-radius: 2px;
+    transform: translateY(-24px);  
   }
   @media screen and (min-width: $desktop) {
     width: 460px;
     transform: translateY(-24px);
-    box-shadow: 5px 5px 70px 17px var(--shadow-photo);
-    border-radius: 2px;
   }
 }
 .main-hotel__image2 {
@@ -139,14 +133,11 @@
 
   @media screen and (min-width: $tablet) {
     width: 350px;
-    box-shadow: 5px 5px 70px 17px var(--shadow-photo);
-    border-radius: 2px;
+    
   }
-
   @media screen and (min-width: $desktop) {
     width: 460px;
-    box-shadow: 5px 5px 70px 17px var(--shadow-photo);
-    border-radius: 2px;
+
   }
 }
 .main-hotel__slider {
