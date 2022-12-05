@@ -1,12 +1,8 @@
 .modal__table{
-    min-height: 688px;
+    height: 688px;
     @media screen and (min-width: $tablet) {
-    padding: 60px;
-    min-height: 522px;
+    height: 522px;
     }
-    
-
-
 }
 .form-table__title {
     font-family: 'Times New Roman';
@@ -51,7 +47,6 @@ width: 384px;
         font-size: 20px;
         line-height: 1.16;
         letter-spacing: 0.05em;
-        opacity: 1;
      color:var(--placeholder-color);
 
     @media screen and (min-width: $tablet) {
