@@ -87,6 +87,7 @@
     color:var(--accent-color);
     text-decoration: none;
    display: flex;
+    cursor: pointer;
     transition: background-color 250ms var(--distribution-time);
     
     @media screen and (max-width: 1023px) {

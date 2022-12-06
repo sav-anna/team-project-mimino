@@ -6,8 +6,11 @@
   </button>
   <form class="form-table" name="book-table" autocomplete="off">
     <p class="form-table__title">Забронювати столик</p>
+    <div class="form-table__card">
     <div class="form-table__control">
       <div class="form-table__box">
+        <label for="personal-name1" class="form-table__label">
+          На кого забронювати номер?</label>
         <input
           id="personal-name1"
           class="form-table__input"
@@ -18,31 +21,28 @@
           pattern="^[Є-ЯҐа-їґ]+\s[Є-ЯҐа-їґ]+$"
           title="Введіть ім'я та прізвище кирилицею, допускаються малі та великі літери"
           placeholder="Ваше ім’я"
-          required
-        />
-        <label for="personal-name1" class="form-table__label"
-          >На кого забронювати номер?</label
-        >
+          required/> 
       </div>
       <div class="form-table__box">
         <div class="form-table__svg">
-          <input
-            id="number-visits1"
-            class="form-table__input"
-            type="number"
-            name="number-visits1"
-          />
-          <svg class="form-table__icon" width="24" height="24">
-            <use
-              href="/src/images/svg/symbol-defs.svg#icon-arrow-down-bold"
-            ></use>
-          </svg>
-        </div>
-        <label for="number-visits1" class="form-table__label"
-          >Столик на яку кількість осіб?</label
-        >
+          <label for="number-visits1" class="form-table__label">Столик на яку кількість осіб?
+            <svg class="form-table__icon1" width="24" height="24">
+              <use href="/src/images/svg/symbol-defs.svg#icon-arrow-down-bold"></use>
+            </svg>
+          </div>
+<select name="number-visits1" id="number-visits1" class="form-table__select">
+  <option value="1" selected>1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+</select>
+  </label>
       </div>
       <div class="form-table__box">
+        <label for="personal-phone1" class="form-table__label">
+          Номер телефону</label>
         <input
           id="personal-phone1"
           class="form-table__input"
@@ -51,26 +51,18 @@
           pattern="^\+[0-9]{12}"
           title="+380..."
           placeholder="+38 (___) ___--"
-          required
-        />
-        <label for="personal-phone1" class="form-table__label"
-          >Номер телефону</label
-        >
+          required/>
       </div>
       <div class="form-table__box">
-        <div class="form-table__svg">
-          <input class="form-table__input" id="booking-date1" type="date" />
-
-          <svg class="form-table__icon" width="24" height="24">
-            <use
-              href="/src/images/svg/symbol-defs.svg#icon-arrow-down-bold"
-            ></use>
-          </svg>
-        </div>
-        <label for="booking-date1" class="form-table__label"
-          >На яку дату бронювати?</label
-        >
+          <label for="booking-date1" class="form-table__label">
+            На яку дату бронювати?</label>
+            <div class="form-table__svg">
+          <input class="form-table__select" id="booking-date1" type="date"/>
+<svg class="form-table__icon2" width="24" height="24">
+            <use href="/src/images/svg/symbol-defs.svg#icon-arrow-down-bold"></use>
+          </svg></div>
       </div>
+    </div>
     </div>
     <button class="form-table__button btn-modal" type="submit">
       Оформити бронювання
