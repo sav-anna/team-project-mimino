@@ -80,6 +80,7 @@
   }
 }
 .form-room__svg {
+  pointer-events: none;
   position: absolute;
   top: 25%;
   right: 20px;

@@ -1,11 +1,4 @@
 .header {
-  // max-width: 414px;
-  // @media screen and (min-width: $tablet) {
-  //   max-width: 1024px;
-  // }
-  // @media screen and (min-width: $desktop) {
-  //   max-width: 1280px;
-  // }
   &__nav {
     @include centeredFlex($justify: space-between);
     padding-top: 16px;
@@ -15,8 +8,13 @@
     }
   }
   &__logo {
-    @include logo($size: 36px, $color: var(--white-color));
-    line-height: calc(39px / 36px);
+    @include logo($size: 28px, $color: var(--white-color));
+    line-height: calc(39px / 28px);
+
+    @media screen and (min-width: $mobile) {
+      @include logo($size: 36px, $color: var(--white-color));
+      line-height: calc(39px / 36px);
+    }
     @media screen and (min-width: $tablet) {
       font-size: 40px;
       line-height: calc(43px / 40px);
@@ -24,7 +22,10 @@
   }
   &__main-nav {
     @include centeredFlex();
-    gap: 20px;
+    gap: 15px;
+    @media screen and (min-width: $mobile) {
+      gap: 20px;
+    }
     @media screen and (min-width: $tablet) {
       gap: 72px;
     }
@@ -39,6 +40,12 @@
   &__page {
     color: var(--brand-color);
     font-weight: 500;
+
+    @media screen and (max-width: $mobile) {
+      font-size: 15px;
+      line-height: calc(24px / 15px);
+    }
+
     @media screen and (min-width: $tablet) {
       font-size: 20px;
       line-height: calc(24px / 20px);
@@ -57,6 +64,7 @@
     display: block;
     fill: var(--brand-color);
   }
+
   &__number {
     display: none;
     @media screen and (min-width: $tablet) {
@@ -92,7 +100,9 @@
 }
 
 // Стилі для сторінки номеру
+
 .room-hero .header {
+  width: 414px;
   background: linear-gradient(
     180deg,
     #000000 0%,
