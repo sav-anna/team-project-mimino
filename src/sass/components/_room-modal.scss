@@ -2,6 +2,7 @@
   @include centeredFlex();
   flex-wrap: wrap;
   gap: 20px;
+  width: 100%;
 }
 
 .form-room__title {
@@ -24,7 +25,7 @@
   appearance: none;
   padding-left: 12px;
   margin-bottom: 8px;
-  width: 384px;
+  width: 320px;
   height: 54px;
   border: 1px solid var(--accent-color);
   border-radius: 2px;
@@ -34,6 +35,10 @@
   font-size: 20px;
   line-height: calc(23px / 20px);
   letter-spacing: 0.05em;
+
+  @media screen and (min-width: $mobile) {
+    width: 384px;
+  }
 
   @media screen and (min-width: $tablet) {
     width: 288px;
@@ -63,6 +68,7 @@
   line-height: calc(17px / 14px);
   letter-spacing: 0.02em;
   color: var(--accent-color);
+
   @media screen and (min-width: $tablet) {
     font-size: 16px;
     line-height: calc(20px / 16px);
@@ -74,7 +80,10 @@
 }
 .form-room_box {
   position: relative;
-  width: 384px;
+  width: 320px;
+  @media screen and (min-width: $mobile) {
+    width: 384px;
+  }
   @media screen and (min-width: $tablet) {
     width: 288px;
   }
@@ -103,6 +112,10 @@
 
 .form-room-phone {
   margin-top: 20px;
+  width: 320px;
+  @media screen and (min-width: $mobile) {
+    width: 100%;
+  }
   @media screen and (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
@@ -112,7 +125,11 @@
 .form-room-list {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 320px;
+  @media screen and (min-width: $mobile) {
+    width: 100%;
+  }
+
   @media screen and (min-width: $tablet) {
     align-items: flex-end;
   }
@@ -128,6 +145,12 @@
   }
 }
 .form-room__name {
+  display: flex;
+  flex-wrap: wrap;
+  width: 320px;
+  @media screen and (min-width: $mobile) {
+    width: 100%;
+  }
   @media screen and (min-width: $tablet) {
     @include centeredFlex();
     flex-wrap: wrap;

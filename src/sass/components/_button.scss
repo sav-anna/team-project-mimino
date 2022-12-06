@@ -33,8 +33,10 @@
   text-transform: uppercase;
 
   transition: background-color 250ms var(--distribution-time);
-  @media screen and (min-width: 413px) {
-    font-size: calc(16px + 4 * (100vw / 414));
+  @media screen and (max-width: 413px) {
+    font-size: calc(10px + 10 * (100vw / 414));
+    font-size: 15px;
+    width: 320px;
   }
   @media screen and (min-width: $tablet) {
     width: 592px;
