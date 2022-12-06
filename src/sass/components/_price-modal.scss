@@ -8,8 +8,11 @@
 
 .price-form {
   &__wrapper {
+    display: flex;
+    flex-direction: column;
+
     @media screen and (min-width: $tablet) {
-      display: flex;
+      flex-direction: row;
       gap: 16px;
       margin-bottom: 20px;
     }
@@ -53,11 +56,25 @@
     margin-bottom: 20px;
   }
 
+  &__label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(17px / 14px);
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+    margin-bottom: 20px;
+    position: relative;
+  }
+
+  &__label-text {
+    margin-left: 12px;
+  }
+
   &__input {
-    display: block;
-    width: 384px;
     height: 54px;
-    padding: 10px 15px;
+    padding: 10px 12px;
     border: 1px solid var(--accent-color);
     border-radius: 2px;
     margin-bottom: 8px;
@@ -68,26 +85,13 @@
     line-height: 28px;
     letter-spacing: 0.05em;
     background-color: var(--primary-bg-color);
+    appearance: none;
 
     @media screen and (min-width: $tablet) {
       width: 288px;
     }
+  }
 
-    &__icon {
-      position: relative;
-      transform: translateY(-50%);
-    }
-  }
-  &__label {
-    display: inline-block;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: calc(17px / 14px);
-    letter-spacing: 0.02em;
-    color: var(--accent-color);
-    margin-bottom: 20px;
-    position: relative;
-  }
   &__svg {
     position: absolute;
     top: 20%;
@@ -96,6 +100,7 @@
     height: 26px;
     background-color: var(--primary-bg-color);
     fill: var(--accent-color);
+    pointer-events: none;
   }
 }
 .price-form__input::placeholder {
