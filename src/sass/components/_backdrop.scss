@@ -37,7 +37,7 @@
   top: 50%;
   left: 50%;
   transform: translateX(-50%);
-  width: 414px;
+  max-width: 414px;
   height: 780px;
   padding: 60px 15px;
   background-color: var(--primary-bg-color);
@@ -47,7 +47,7 @@
   transition: transform 250ms var(--distribution-time);
 
   @media screen and (min-width: $tablet) {
-    width: 712px;
+    min-width: 712px;
     height: 638px;
     padding: 60px;
   }
