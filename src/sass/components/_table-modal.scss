@@ -29,6 +29,8 @@ width: 384px;
         border: 1px solid var(--accent-color);
         border-radius: 2px;
         margin-bottom: 8px;
+        appearance: none;
+        font-family: inherit;
         background-color: var(--primary-bg-color);
     @media screen and (min-width: $tablet) {
     width: 288px;
@@ -37,6 +39,7 @@ width: 384px;
     padding-right: 24px;
     border: 1px solid var(--accent-color);
     border-radius: 2px;
+    appearance: none;
     margin-bottom: 8px;
     }
 }
@@ -53,7 +56,36 @@ width: 384px;
     font-size: 24px;
     }
    }
-     
+   .form-table__select {
+    font-family: 'Times New Roman';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.17;
+         letter-spacing: 0.05em;
+        color:var(--placeholder-color);
+    width: 384px;
+        height: 53px;
+        padding-left: 12px;
+        padding-right: 20px;
+        border: 1px solid var(--accent-color);
+        border-radius: 2px;
+        margin-bottom: 8px;
+        appearance: none;
+        background-color: var(--primary-bg-color);
+   
+        @media screen and (min-width: $tablet) {
+            font-size: 24px;
+            width: 288px;
+            height: 63px;
+            padding-left: 12px;
+            padding-right: 24px;
+            border: 1px solid var(--accent-color);
+            border-radius: 2px;
+            appearance: none;
+            margin-bottom: 8px;
+        }
+    }
 .form-table__label{
 font-weight: 500;
 font-size: 14px;
@@ -66,15 +98,13 @@ color: var(--accent-color);
 .form-table__button {
     display: block;
     margin: 0 auto;
+    cursor: pointer;
 }
 .form-table__box {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     margin-bottom: 12px;
     
-}
-.form-table__box:last-child {
-margin-bottom: 40px;
 }
 
 .form-table__control {
@@ -86,13 +116,27 @@ margin-bottom: 40px;
 .form-table__svg {
 position: relative;
 }
-.form-table__icon {
+.form-table__icon2 {
     fill:var(--accent-color);
     position: absolute;
-        right: 20px;
-        top: 50%;
+        right: 24px;
+        top: 45%;
         transform: translateY(-50%);
+        pointer-events: none;
         background-color: var(--primary-bg-color);
+        @media screen and (min-width: $tablet) {
+            right: 26px;
+        }
 }
-
-
+.form-table__icon1 {
+    fill: var(--accent-color);
+    position: absolute;
+    right: 20px;
+    bottom: 160%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    background-color: var(--primary-bg-color);
+}
+.form-table__card {
+    margin-bottom: 40px;
+}
