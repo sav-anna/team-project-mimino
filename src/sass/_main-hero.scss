@@ -14,7 +14,7 @@
     }
   }
 
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: 415px) {
     & {
       max-width: 1024px;
       background-image: linear-gradient(var(--hero-bcg), var(--hero-bcg)),
@@ -29,7 +29,7 @@
       }
     }
   }
-  @media screen and (min-width: $desktop) {
+  @media screen and (min-width: 1025px) {
     & {
       max-width: 1280px;
       background-image: linear-gradient(var(--hero-bcg), var(--hero-bcg)),
