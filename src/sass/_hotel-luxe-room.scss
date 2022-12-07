@@ -37,8 +37,10 @@
 
   &__slider-box .hotel-room-slick {
     transform: scale(-1, 1);
+    margin-left: -14px;
     @media screen and (min-width: $tablet) {
       transform: scale(1, 1);
+      margin-left: 0;
     }
   }
 
@@ -120,9 +122,6 @@
     font-size: 12px;
     line-height: 1.25;
     letter-spacing: 0.02em;
-    // margin-left: 0;
-    // margin-right: auto;
-    // margin-bottom: 32px;
 
     color: var(--secondary-text-color);
 
