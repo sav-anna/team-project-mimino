@@ -1,13 +1,15 @@
 .restaurant-kitchen .container .slider-container {
-  width: 330px;
+  @media screen and (max-width: 413px) {
+    max-width: 290px;
+  }
 
   @media screen and (min-width: $tablet) {
-    width: 428px;
+    max-width: 428px;
     margin-left: auto;
     transform: translateY(-118px);
   }
   @media screen and (min-width: $desktop) {
-    width: 550px;
+    max-width: 550px;
     top: -204px;
   }
 }
