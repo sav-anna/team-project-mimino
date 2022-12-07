@@ -110,19 +110,6 @@
     }
   }
 
-  &__container {
-    // // padding-right: 40px;
-    // @media screen and (min-width: $tablet) {
-    //   display: flex;
-    //   flex-direction: column;
-    //   gap: 40px;
-    //   padding-right: 47px;
-    // }
-    // @media screen and (min-width: $desktop) {
-    //   padding-right: 85px;
-    // }
-  }
-
   &__main {
     min-width: 0;
     @media screen and (min-width: $tablet) {
@@ -148,7 +135,7 @@
     }
 
     @media screen and (min-width: $desktop) {
-      max-width: 862px;
+      max-width: 889px;
       align-items: flex-end;
     }
   }
@@ -230,13 +217,15 @@
     align-items: center;
     gap: 16px;
 
+    transform: translateX(23px);
+
     @media screen and (min-width: $tablet) {
       display: flex;
       align-items: flex-end;
       justify-content: flex-end;
       flex-direction: column;
 
-      // margin-bottom: 80px;
+      transform: translateX(0px);
     }
   }
 
@@ -262,12 +251,15 @@
   &__box {
     display: flex;
     flex-direction: column-reverse;
+    gap: 80px;
+    transform: translateX(-23px);
 
     @media screen and (min-width: $tablet) {
       display: flex;
       flex-direction: row-reverse;
       align-items: flex-end;
       justify-content: flex-end;
+      transform: translateX(0px);
       gap: 29px;
     }
 
@@ -275,19 +267,9 @@
       gap: 32px;
     }
   }
-}
+  &__box .details-restaurant__slider-list {
+    margin: 0;
 
-// .hidden-mobile {
-//   @media screen and (max-width: 1023px) {
-//     position: absolute;
-//     white-space: nowrap;
-//     width: 1px;
-//     height: 1px;
-//     overflow: hidden;
-//     border: 0;
-//     padding: 0;
-//     clip: rect(0, 0, 0, 0);
-//     clip-path: inset(50%);
-//     margin: -1px;
-//   }
-// }
+    transform: scale(-1, 1);
+  }
+}
