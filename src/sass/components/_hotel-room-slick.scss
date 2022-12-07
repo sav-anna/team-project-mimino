@@ -1,12 +1,14 @@
 .hotel-room-slick {
-  left: 40px;
-  min-width: 0;
+  max-height: 194px;
+  max-width: 284px;
+  width: 100%;
 
   @media screen and (min-width: $tablet) {
-    margin-left: 0;
+    max-width: 428px;
   }
   @media screen and (min-width: $desktop) {
-    margin-left: 0;
+    max-width: 550px;
+    max-height: 270px;
   }
 }
 
@@ -41,7 +43,7 @@
 }
 
 .hotel-room-slick .slick-arrow.slick-prev {
-  right: 64px;
+  right: 79px;
 
   background: url('./../images/svg/slider-arrow-black-left.svg') 0 0 / 100%
     no-repeat;
@@ -54,7 +56,7 @@
 }
 
 .hotel-room-slick .slick-arrow.slick-next {
-  right: 0px;
+  right: 15px;
 
   background: url('./../images/svg/slider-arrow-black-right.svg') 0 0 / 100%
     no-repeat;
