@@ -1,18 +1,12 @@
 .details-restaurant {
-  max-width: 414px;
+  // max-width: 414px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 24px;
-  padding-bottom: 40px;
+  // padding-top: 24px;
+  // padding-bottom: 40px;
   background-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.76) 34.9%,
-      rgba(122, 122, 122, 0.4) 35%,
-      rgba(0, 0, 0, 0.76) 35.1%,
-      rgba(0, 0, 0, 0.76) 64.9%,
-      rgba(122, 122, 122, 0.4) 65%,
-      rgba(0, 0, 0, 0.76) 65.1%
-    ),
+    rgba(0, 0, 0, 0.76),
+    rgba(0, 0, 0, 0.76)),
     url(../images/section/restaurant/details-backimage-414m.jpg);
   background-color: var(--black-color);
   background-size: cover;
@@ -22,50 +16,26 @@
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     background-image: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0.76) 34.9%,
-        rgba(122, 122, 122, 0.4) 35%,
-        rgba(0, 0, 0, 0.76) 35.1%,
-        rgba(0, 0, 0, 0.76) 64.9%,
-        rgba(122, 122, 122, 0.4) 65%,
-        rgba(0, 0, 0, 0.76) 65.1%
-      ),
+      rgba(0, 0, 0, 0.76),
+      rgba(0, 0, 0, 0.76)),
       url(../images/section/restaurant/details-backimage-414m@2x.jpg);
   }
 
   @media screen and (min-width: $tablet) {
-    max-width: 1024px;
-    padding-top: 48px;
-    padding-bottom: 96px;
+    // max-width: 1024px;
+    // padding-top: 48px;
+    // padding-bottom: 96px;
     background-image: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0.76) 23.9%,
-        rgba(122, 122, 122, 0.4) 24%,
-        rgba(0, 0, 0, 0.76) 24.1%,
-        rgba(0, 0, 0, 0.76) 50.9%,
-        rgba(122, 122, 122, 0.4) 50%,
-        rgba(0, 0, 0, 0.76) 51.1%,
-        rgba(0, 0, 0, 0.76) 75.9%,
-        rgba(122, 122, 122, 0.4) 76%,
-        rgba(0, 0, 0, 0.76) 76.1%
-      ),
+      rgba(0, 0, 0, 0.76),
+      rgba(0, 0, 0, 0.76)),
       url(../images/section/restaurant/details-backimage-1024t.jpg);
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
       background-image: linear-gradient(
-          to right,
-          rgba(0, 0, 0, 0.76) 23.9%,
-          rgba(122, 122, 122, 0.4) 24%,
-          rgba(0, 0, 0, 0.76) 24.1%,
-          rgba(0, 0, 0, 0.76) 50.9%,
-          rgba(122, 122, 122, 0.4) 50%,
-          rgba(0, 0, 0, 0.76) 51.1%,
-          rgba(0, 0, 0, 0.76) 75.9%,
-          rgba(122, 122, 122, 0.4) 76%,
-          rgba(0, 0, 0, 0.76) 76.1%
-        ),
+        rgba(0, 0, 0, 0.76),
+        rgba(0, 0, 0, 0.76)),
         url(../images/section/restaurant/details-backimage-1024t@2x.jpg);
     }
   }
@@ -73,26 +43,16 @@
   @media screen and (min-width: $desktop) {
     max-width: 1280px;
     background-image: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0.76) 23.9%,
-        rgba(122, 122, 122, 0.4) 24%,
-        rgba(0, 0, 0, 0.76) 24.1%,
-        rgba(0, 0, 0, 0.76) 50.9%,
-        rgba(122, 122, 122, 0.4) 50%,
-        rgba(0, 0, 0, 0.76) 51.1%,
-        rgba(0, 0, 0, 0.76) 75.9%,
-        rgba(122, 122, 122, 0.4) 76%,
-        rgba(0, 0, 0, 0.76) 76.1%
-      ),
+      rgba(0, 0, 0, 0.76),
+      rgba(0, 0, 0, 0.76)),
       url(../images/section/restaurant/details-backimage-1280d.jpg);
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
       background-image: linear-gradient(
-          rgba(0, 0, 0, 0.65),
-          rgba(0, 0, 0, 0.65)
-        ),
+        rgba(0, 0, 0, 0.76),
+        rgba(0, 0, 0, 0.76)),
         url(../images/section/restaurant/details-backimage-1280d@2x.jpg);
     }
   }
