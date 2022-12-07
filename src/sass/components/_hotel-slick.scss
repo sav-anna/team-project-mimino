@@ -1,23 +1,51 @@
 .slider-container {
-  width: 330px;
-  @media screen and (min-width: $tablet) {
-    width: 428px;
+  @media screen and (max-width: 413px) {
+    max-height: 130px;
+    max-width: 290px;
+    width: 100%;
+    // margin-right: -12px;
   }
+
+  @media screen and (min-width: $mobile) {
+    max-height: 245px;
+    max-width: 330px;
+    width: 100%;
+    // margin-right: -12px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    max-height: 194px;
+    max-width: 428px;
+    width: 100%;
+    // margin-right: 0;
+  }
+
   @media screen and (min-width: $desktop) {
-    width: 550px;
+    max-width: 550px;
+    width: 100%;
+    max-height: 245px;
   }
 }
 
 .hotel-slick {
-  bottom: -40px;
-  left: 40px;
-  margin-bottom: 80px;
-  margin-left: -15px;
-  min-width: 0;
+  @media screen and (max-width: 413px) {
+    bottom: -50px;
+  }
+
+  @media screen and (min-width: $mobile) {
+    bottom: -50px;
+    left: 20px;
+    margin-bottom: 80px;
+    // margin-left: -15px;
+    min-width: 0;
+  }
 
   @media screen and (min-width: $tablet) {
     margin-left: 0;
+    left: 10px;
+    bottom: -20px;
   }
+
   @media screen and (min-width: $desktop) {
     margin-left: 0;
   }
@@ -56,27 +84,23 @@
 .hotel-slick .slick-arrow.slick-prev {
   left: 0px;
 
-  background: url('./../images/svg/slider-arrow-black-left.svg') 0 0 / 100%
-    no-repeat;
+  background: url('./../images/svg/slider-arrow-black-left.svg') 0 0 / 100% no-repeat;
 }
 
 .hotel-slick .slick-arrow.slick-prev:hover,
 .hotel-slick .slick-arrow.slick-prev:focus {
-  background: url('./../images/svg/slider-arrow-yellow-left.svg') 0 0 / 100%
-    no-repeat;
+  background: url('./../images/svg/slider-arrow-yellow-left.svg') 0 0 / 100% no-repeat;
 }
 
 .hotel-slick .slick-arrow.slick-next {
   left: 64px;
 
-  background: url('./../images/svg/slider-arrow-black-right.svg') 0 0 / 100%
-    no-repeat;
+  background: url('./../images/svg/slider-arrow-black-right.svg') 0 0 / 100% no-repeat;
 }
 
 .hotel-slick .slick-arrow.slick-next:hover,
 .hotel-slick .slick-arrow.slick-next:focus {
-  background: url('./../images/svg/slider-arrow-yellow-right.svg') 0 0 / 100%
-    no-repeat;
+  background: url('./../images/svg/slider-arrow-yellow-right.svg') 0 0 / 100% no-repeat;
 }
 
 .hotel-slick .slick-dotted.slick-slider {
