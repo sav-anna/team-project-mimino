@@ -63,16 +63,19 @@
     font-size: 40px;
     line-height: 1.08;
     letter-spacing: 0.3em;
+    max-width: 127px;
+    margin-left: auto;
 
     color: var(--title-color);
 
     @media screen and (min-width: $tablet) {
       font-size: 64px;
+      max-width: 222px;
     }
     @media screen and (min-width: $desktop) {
-      color: var(--home-text-color);
+      
       width: 202px;
-      margin-left: auto;
+      
     }
   }
   &__text {
