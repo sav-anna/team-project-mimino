@@ -1,4 +1,4 @@
-$('.hotel-slick, .hotel-room-slick, .restaurant-slick').slick({
+$('.hotel-slick, .hotel-room-slick, .restaurant-slick-second').slick({
   dots: false,
   infinite: true,
   speed: 300,

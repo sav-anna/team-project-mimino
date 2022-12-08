@@ -1,12 +1,14 @@
-.restaurant-slick {
+.restaurant-slick-second {
   max-height: 245px;
   max-width: 330px;
   width: 100%;
-  margin-right: -12px;
+  margin-right: -15px;
 
   @media screen and (min-width: $tablet) {
     max-width: 428px;
     margin-right: 0;
+    transform: translateY(-125px);
+    margin-bottom: -125px;
   }
   @media screen and (min-width: $desktop) {
     max-width: 550px;
@@ -14,11 +16,11 @@
   }
 }
 
-.restaurant-slick .slick-list {
+.restaurant-slick-second .slick-list {
   overflow: hidden;
 }
 
-.restaurant-slick .slick-track {
+.restaurant-slick-second .slick-track {
   max-height: 245px;
   height: 100%;
   display: flex;
@@ -34,7 +36,7 @@
   }
 }
 
-.restaurant-slick .slick-arrow {
+.restaurant-slick-second .slick-arrow {
   position: absolute;
   top: 110%;
   font-size: 0;
@@ -44,28 +46,29 @@
   z-index: 10;
 }
 
-.restaurant-slick .slick-arrow.slick-prev {
-  right: 79px;
+.restaurant-slick-second .slick-arrow.slick-prev {
+  right: 65px;
+  bottom: 20px;
 
   background: url('./../images/svg/slider-arrow-black-left.svg') 0 0 / 100%
     no-repeat;
 }
 
-.restaurant-slick .slick-arrow.slick-prev:hover,
-.restaurant-slick .slick-arrow.slick-prev:focus {
+.restaurant-slick-second .slick-arrow.slick-prev:hover,
+.restaurant-slick-second .slick-arrow.slick-prev:focus {
   background: url('./../images/svg/slider-arrow-yellow-left.svg') 0 0 / 100%
     no-repeat;
 }
 
-.restaurant-slick .slick-arrow.slick-next {
-  right: 15px;
+.restaurant-slick-second .slick-arrow.slick-next {
+  right: 0px;
 
   background: url('./../images/svg/slider-arrow-black-right.svg') 0 0 / 100%
     no-repeat;
 }
 
-.restaurant-slick .slick-arrow.slick-next:hover,
-.restaurant-slick .slick-arrow.slick-next:focus {
+.restaurant-slick-second .slick-arrow.slick-next:hover,
+.restaurant-slick-second .slick-arrow.slick-next:focus {
   background: url('./../images/svg/slider-arrow-yellow-right.svg') 0 0 / 100%
     no-repeat;
 }

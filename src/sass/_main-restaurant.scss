@@ -10,7 +10,7 @@
 
   @media screen and (min-width: $tablet) {
     padding-top: 0;
-    padding-bottom: 60px;
+    padding-bottom: 96px;
   }
 
   @media screen and (min-width: $desktop) {
@@ -32,6 +32,8 @@
   }
 
   &__box-slider {
+    display: flex;
+    justify-content: flex-end;
   }
 
   &__text {
@@ -39,6 +41,7 @@
     flex-direction: column;
     gap: 12px;
     @media screen and (min-width: $tablet) {
+      gap: 4px;
     }
   }
 
@@ -60,6 +63,7 @@
     @media screen and (min-width: $tablet) {
       font-size: 64px;
       line-height: 1.078;
+      margin-bottom: 20px;
     }
     @media screen and (min-width: $desktop) {
       color: #828282;
@@ -92,6 +96,7 @@
     @media screen and (min-width: $tablet) {
       width: 400px;
       transform: translateY(-32px);
+      margin-bottom: -32px;
     }
     @media screen and (min-width: $desktop) {
       width: 460px;
