@@ -2,7 +2,7 @@
   <div class="container">
     <h3 class="visually-hidden">About our restaurant</h3>
 
-    <div class="main-restaurant__wrap">
+    <div class="main-restaurant__box-main">
       <div class="main-restaurant__text">
         <p class="main-restaurant__text-tagline tagline">
           Amet minim mollit non
@@ -30,7 +30,6 @@
           "
           media="(max-width: 1023px)"
         />
-
         <source
           srcset="
             ./images/section/hero/restaurant-hotel1-400t.webp    1x,
@@ -39,7 +38,6 @@
           type="image/webp"
           media="(min-width: 1024px) and (max-width: 1279px)"
         />
-
         <source
           srcset="
             ./images/section/hero/restaurant-hotel1-400t.jpg    1x,
@@ -47,7 +45,6 @@
           "
           media="(min-width: 1024px) and (max-width: 1279px)"
         />
-
         <source
           srcset="
             ./images/section/hero/restaurant-hotel1-460d.webp    1x,
@@ -56,7 +53,6 @@
           type="image/webp"
           media="(min-width: 1279px)"
         />
-
         <source
           srcset="
             ./images/section/hero/restaurant-hotel1-460d.jpg    1x,
@@ -64,7 +60,6 @@
           "
           media="(min-width: 1279px)"
         />
-
         <img
           class="main-restaurant__img1"
           src="/src/images/section/hero/restaurant-hotel1-400t.jpg"
@@ -72,68 +67,69 @@
         />
       </picture>
     </div>
-
-    <div class="main-restaurant__about">
-      <picture>
-        <source
-          srcset="
-            ./images/section/hero/restaurant-hotel2-200m.webp    1x,
-            ./images/section/hero/restaurant-hotel2-200m@2x.webp 2x
-          "
-          type="image/webp"
-          media="(max-width: 1023px)"
-        />
-        <source
-          srcset="
-            ./images/section/hero/restaurant-hotel2-200m.jpg    1x,
-            ./images/section/hero/restaurant-hotel2-200m@2x.jpg 2x
-          "
-          media="(max-width: 1023px)"
-        />
-        <source
-          srcset="
-            ./images/section/hero/restaurant-hotel2-350t.webp    1x,
-            ./images/section/hero/restaurant-hotel2-350t@2x.webp 2x
-          "
-          type="image/webp"
-          media="(min-width: 1024px) and (max-width: 1279px)"
-        />
-        <source
-          srcset="
-            ./images/section/hero/restaurant-hotel2-350t.jpg    1x,
-            ./images/section/hero/restaurant-hotel2-350t@2x.jpg 2x
-          "
-          media="(min-width: 1024px) and (max-width: 1279px)"
-        />
-        <source
-          srcset="
-            ./images/section/hero/restaurant-hotel2-460d.webp    1x,
-            ./images/section/hero/restaurant-hotel2-460d@2x.webp 2x
-          "
-          type="image/webp"
-          media="(min-width: 1279px)"
-        />
-
-        <source
-          srcset="
-            ./images/section/hero/restaurant-hotel2-460d.jpg    1x,
-            ./images/section/hero/restaurant-hotel2-460d@2x.jpg 2x
-          "
-          media="(min-width: 1279px)"
-        />
-
-        <img
-          class="main-restaurant__about-img2"
-          src="/src/images/section/hero/restaurant-hotel2-200m.jpg"
-          alt=""
-        />
-      </picture>
-      <p class="main-restaurant__about-description">
-        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-        sint. Velit officia consequat duis enim velit mollit. Exercitation
-        veniam consequat sunt nostrud amet.
-      </p>
+    <div class="main-restaurant__box-about">
+      <div class="main-restaurant__about">
+        <picture>
+          <source
+            srcset="
+              ./images/section/hero/restaurant-hotel2-200m.webp    1x,
+              ./images/section/hero/restaurant-hotel2-200m@2x.webp 2x
+            "
+            type="image/webp"
+            media="(max-width: 1023px)"
+          />
+          <source
+            srcset="
+              ./images/section/hero/restaurant-hotel2-200m.jpg    1x,
+              ./images/section/hero/restaurant-hotel2-200m@2x.jpg 2x
+            "
+            media="(max-width: 1023px)"
+          />
+          <source
+            srcset="
+              ./images/section/hero/restaurant-hotel2-350t.webp    1x,
+              ./images/section/hero/restaurant-hotel2-350t@2x.webp 2x
+            "
+            type="image/webp"
+            media="(min-width: 1024px) and (max-width: 1279px)"
+          />
+          <source
+            srcset="
+              ./images/section/hero/restaurant-hotel2-350t.jpg    1x,
+              ./images/section/hero/restaurant-hotel2-350t@2x.jpg 2x
+            "
+            media="(min-width: 1024px) and (max-width: 1279px)"
+          />
+          <source
+            srcset="
+              ./images/section/hero/restaurant-hotel2-460d.webp    1x,
+              ./images/section/hero/restaurant-hotel2-460d@2x.webp 2x
+            "
+            type="image/webp"
+            media="(min-width: 1279px)"
+          />
+          <source
+            srcset="
+              ./images/section/hero/restaurant-hotel2-460d.jpg    1x,
+              ./images/section/hero/restaurant-hotel2-460d@2x.jpg 2x
+            "
+            media="(min-width: 1279px)"
+          />
+          <img
+            class="main-restaurant__about-img2"
+            src="/src/images/section/hero/restaurant-hotel2-200m.jpg"
+            alt=""
+          />
+        </picture>
+        <p class="main-restaurant__about-description">
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+          sint. Velit officia consequat duis enim velit mollit. Exercitation
+          veniam consequat sunt nostrud amet.
+        </p>
+      </div>
     </div>
-    <include src="./partials/restaurant-slick.html"></include>
+    <div class="main-restaurant__box-slider">
+      <include src="./partials/restaurant-kitchen-slick.html"></include>
+    </div>
   </div>
 </section>

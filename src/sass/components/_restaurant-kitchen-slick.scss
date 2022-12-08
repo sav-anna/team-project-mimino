@@ -1,38 +1,26 @@
-.restaurant-kitchen .container .slider-container {
-  @media screen and (max-width: 413px) {
-    max-width: 290px;
-  }
+.restaurant-slick {
+  max-height: 245px;
+  max-width: 330px;
+  width: 100%;
+  margin-right: -12px;
 
   @media screen and (min-width: $tablet) {
     max-width: 428px;
-    margin-left: auto;
-    transform: translateY(-118px);
+    margin-right: 0;
   }
   @media screen and (min-width: $desktop) {
     max-width: 550px;
-    top: -204px;
+    max-height: 270px;
   }
 }
 
-.restaurant-kitchen-slick {
-  // left: 140px;
-  min-width: 0;
-
-  @media screen and (min-width: $tablet) {
-    margin-left: 0;
-  }
-  @media screen and (min-width: $desktop) {
-    margin-left: 0;
-  }
-}
-
-.restaurant-kitchen-slick .slick-list {
+.restaurant-slick .slick-list {
   overflow: hidden;
 }
 
-.restaurant-kitchen-slick .slick-track {
-  min-width: 0;
-  max-height: 270px;
+.restaurant-slick .slick-track {
+  max-height: 245px;
+  height: 100%;
   display: flex;
   gap: 20px;
   width: 330px;
@@ -46,7 +34,7 @@
   }
 }
 
-.restaurant-kitchen-slick .slick-arrow {
+.restaurant-slick .slick-arrow {
   position: absolute;
   top: 110%;
   font-size: 0;
@@ -56,39 +44,39 @@
   z-index: 10;
 }
 
-.restaurant-kitchen-slick .slick-arrow.slick-prev {
-  right: 81px;
+.restaurant-slick .slick-arrow.slick-prev {
+  right: 79px;
+
   background: url('./../images/svg/slider-arrow-black-left.svg') 0 0 / 100%
     no-repeat;
 }
 
-.restaurant-kitchen-slick .slick-arrow.slick-prev:hover,
-.restaurant-kitchen-slick .slick-arrow.slick-prev:focus {
+.restaurant-slick .slick-arrow.slick-prev:hover,
+.restaurant-slick .slick-arrow.slick-prev:focus {
   background: url('./../images/svg/slider-arrow-yellow-left.svg') 0 0 / 100%
     no-repeat;
 }
 
-.restaurant-kitchen-slick .slick-arrow.slick-next {
+.restaurant-slick .slick-arrow.slick-next {
   right: 15px;
 
   background: url('./../images/svg/slider-arrow-black-right.svg') 0 0 / 100%
     no-repeat;
 }
 
-.restaurant-kitchen-slick .slick-arrow.slick-next:hover,
-.restaurant-kitchen-slick .slick-arrow.slick-next:focus {
+.restaurant-slick .slick-arrow.slick-next:hover,
+.restaurant-slick .slick-arrow.slick-next:focus {
   background: url('./../images/svg/slider-arrow-yellow-right.svg') 0 0 / 100%
     no-repeat;
 }
 
-.restaurant-kitchen-slick .slick-dotted.slick-slider {
-  margin-bottom: 16px;
+// .restaurant-slick .slick-dotted.slick-slider {
 
-  @media screen and (min-width: $tablet) {
-    margin-bottom: 24px;
-  }
+//   @media screen and (min-width: $tablet) {
 
-  @media screen and (min-width: $desktop) {
-    margin-bottom: 32px;
-  }
-}
+//   }
+
+//   @media screen and (min-width: $desktop) {
+
+//   }
+// }
