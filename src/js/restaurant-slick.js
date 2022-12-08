@@ -1,11 +1,9 @@
-$('.restaurant-slick, restaurant-kitchen-slick').slick({
+$('.restaurant-slick, .restaurant-kitchen-slick').slick({
   dots: false,
   infinite: true,
   speed: 500,
   slidesToShow: 2,
-  // centerMode: true,
   variableWidth: true,
-
   mobileFirst: true,
   responsive: [
     {
@@ -15,7 +13,7 @@ $('.restaurant-slick, restaurant-kitchen-slick').slick({
         slidesToScroll: 1,
         infinite: true,
         autoplay: true,
-        autoplaySpeed: 1000,
+        autoplaySpeed: 1200,
       },
     },
   ],

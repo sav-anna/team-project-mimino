@@ -4,34 +4,29 @@
     max-width: 290px;
     margin-left: auto;
   }
-
   @media screen and (min-width: $mobile) {
     max-width: 330px;
     margin-left: 84px;
   }
-
   @media screen and (min-width: $tablet) {
     max-width: 428px;
     margin-left: auto;
+    transform: translateY(-120px);
   }
   @media screen and (min-width: $desktop) {
     max-width: 550px;
+    transform: translateY(-170px);
   }
 }
-
-// .restaurant-slick .slick-current .slick-active {
-//   opacity: 1;
-// }
-// .restaurant-slick .slick-current .slick-slide {
-//   opacity: 0, 5;
-// }
 
 .restaurant-slick__item.slick-slide.slick-current.slick-active {
   opacity: 1;
 }
 
 .restaurant-slick__item.slick-slide.slick-active {
-  opacity: 0.5;
+  @media screen and (max-width: 1023px) {
+    opacity: 0.5;
+  }
 }
 
 .restaurant-slick .slick-list {

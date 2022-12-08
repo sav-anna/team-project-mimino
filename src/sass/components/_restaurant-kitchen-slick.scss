@@ -1,28 +1,31 @@
-.restaurant-kitchen .container .slider-container {
+.restaurant-kitchen-slick {
+  min-width: 0;
   @media screen and (max-width: 413px) {
     max-width: 290px;
+    margin-left: auto;
   }
-
+  @media screen and (min-width: $mobile) {
+    max-width: 330px;
+    margin-left: 84px;
+  }
   @media screen and (min-width: $tablet) {
     max-width: 428px;
     margin-left: auto;
-    transform: translateY(-118px);
+    transform: translateY(-80px);
   }
   @media screen and (min-width: $desktop) {
     max-width: 550px;
-    top: -204px;
+    transform: translateY(-170px);
   }
 }
 
-.restaurant-kitchen-slick {
-  // left: 140px;
-  min-width: 0;
+.restaurant-kitchen-slick__item.slick-slide.slick-current.slick-active {
+  opacity: 1;
+}
 
-  @media screen and (min-width: $tablet) {
-    margin-left: 0;
-  }
-  @media screen and (min-width: $desktop) {
-    margin-left: 0;
+.restaurant-kitchen-slick__item.slick-slide.slick-active {
+  @media screen and (max-width: 1023px) {
+    opacity: 0.5;
   }
 }
 
@@ -32,7 +35,6 @@
 
 .restaurant-kitchen-slick .slick-track {
   min-width: 0;
-  max-height: 270px;
   display: flex;
   gap: 20px;
   width: 330px;
@@ -57,7 +59,7 @@
 }
 
 .restaurant-kitchen-slick .slick-arrow.slick-prev {
-  right: 81px;
+  right: 60px;
   background: url('./../images/svg/slider-arrow-black-left.svg') 0 0 / 100%
     no-repeat;
 }
@@ -69,10 +71,13 @@
 }
 
 .restaurant-kitchen-slick .slick-arrow.slick-next {
-  right: 15px;
+  right: 0;
 
   background: url('./../images/svg/slider-arrow-black-right.svg') 0 0 / 100%
     no-repeat;
+  @media screen and (min-width: $desktop) {
+    right: 15px;
+  }
 }
 
 .restaurant-kitchen-slick .slick-arrow.slick-next:hover,
