@@ -2,6 +2,9 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
+  @media screen and (min-width: $tablet) {
+    gap: 0;
+  }
 }
 
 .main-restaurant {
@@ -14,7 +17,7 @@
   }
 
   @media screen and (min-width: $desktop) {
-    padding-bottom: 80px;
+    padding-bottom: 118px;
   }
 
   &__box-main {
@@ -41,7 +44,7 @@
     flex-direction: column;
     gap: 12px;
     @media screen and (min-width: $tablet) {
-      gap: 4px;
+      gap: 0px;
     }
   }
 
@@ -49,6 +52,7 @@
     font-weight: 400;
 
     @media screen and (min-width: $tablet) {
+      margin-bottom: 4px;
     }
   }
 
@@ -63,7 +67,7 @@
     @media screen and (min-width: $tablet) {
       font-size: 64px;
       line-height: 1.078;
-      margin-bottom: 20px;
+      margin-bottom: 24px;
     }
     @media screen and (min-width: $desktop) {
       color: #828282;
@@ -86,6 +90,8 @@
 
     @media screen and (min-width: $desktop) {
       max-width: 518px;
+
+      margin-bottom: 112px;
     }
   }
   &__img1 {
@@ -110,7 +116,7 @@
   gap: 20px;
 
   @media screen and (min-width: $tablet) {
-    // gap: 48px;
+    gap: 46px;
   }
   @media screen and (min-width: $desktop) {
     gap: 32px;
@@ -123,12 +129,14 @@
 
     @media screen and (min-width: $tablet) {
       width: 350px;
-      transform: translateY(-54px);
+      transform: translateY(-16px);
+      margin-bottom: -16px;
     }
 
     @media screen and (min-width: $desktop) {
       width: 460px;
       transform: translateY(-98px);
+      margin-bottom: -98px;
     }
   }
 
@@ -146,6 +154,9 @@
       width: 312px;
       font-size: 16px;
       line-height: 1.25;
+    }
+    @media screen and (min-width: $desktop) {
+      padding-bottom: 119px;
     }
   }
 }
