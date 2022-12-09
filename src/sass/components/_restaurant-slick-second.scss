@@ -1,0 +1,106 @@
+.restaurant-slick-second {
+  max-height: 245px;
+  max-width: 330px;
+  width: 100%;
+  margin-right: -15px;
+
+  @media screen and (min-width: $tablet) {
+    max-width: 428px;
+    max-height: 194px;
+    margin-right: 0;
+    transform: translateY(-28px);
+    margin-bottom: -28px;
+  }
+  @media screen and (min-width: $desktop) {
+    max-width: 550px;
+    max-height: 254px;
+    transform: translateY(-125px);
+    margin-bottom: -125px;
+  }
+}
+
+.restaurant-slick-second .slick-list {
+  overflow: hidden;
+}
+
+.restaurant-slick-second .slick-track {
+  max-height: 245px;
+  height: 100%;
+  display: flex;
+  gap: 20px;
+  width: 330px;
+
+  @media screen and (min-width: $tablet) {
+    gap: 40px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 530px;
+    max-height: 254px;
+  }
+}
+
+.restaurant-slick-second .slick-arrow {
+  position: absolute;
+  top: 110%;
+  font-size: 0;
+  width: 32px;
+  height: 32px;
+  border: none;
+  z-index: 10;
+}
+
+.restaurant-slick-second .slick-arrow.slick-prev {
+  right: 80px;
+
+  background: url('./../images/svg/slider-arrow-black-left.svg') 0 0 / 100%
+    no-repeat;
+
+  @media screen and (min-width: $tablet) {
+    top: 226px;
+    right: 65px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    top: 290px;
+  }
+}
+
+.restaurant-slick-second .slick-arrow.slick-prev:hover,
+.restaurant-slick-second .slick-arrow.slick-prev:focus {
+  background: url('./../images/svg/slider-arrow-yellow-left.svg') 0 0 / 100%
+    no-repeat;
+}
+
+.restaurant-slick-second .slick-arrow.slick-next {
+  right: 15px;
+
+  background: url('./../images/svg/slider-arrow-black-right.svg') 0 0 / 100%
+    no-repeat;
+
+  @media screen and (min-width: $tablet) {
+    top: 226px;
+    right: 0px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    top: 290px;
+  }
+}
+
+.restaurant-slick-second .slick-arrow.slick-next:hover,
+.restaurant-slick-second .slick-arrow.slick-next:focus {
+  background: url('./../images/svg/slider-arrow-yellow-right.svg') 0 0 / 100%
+    no-repeat;
+}
+
+// .restaurant-slick .slick-dotted.slick-slider {
+
+//   @media screen and (min-width: $tablet) {
+
+//   }
+
+//   @media screen and (min-width: $desktop) {
+
+//   }
+// }
