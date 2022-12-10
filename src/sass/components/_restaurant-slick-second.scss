@@ -51,7 +51,7 @@
 }
 
 .restaurant-slick-second .slick-arrow.slick-prev {
-  right: 80px;
+  right: 70px;
 
   background: url('./../images/svg/slider-arrow-black-left.svg') 0 0 / 100%
     no-repeat;
@@ -63,6 +63,7 @@
 
   @media screen and (min-width: $desktop) {
     top: 290px;
+    right: 75px;
   }
 }
 
@@ -73,18 +74,19 @@
 }
 
 .restaurant-slick-second .slick-arrow.slick-next {
-  right: 15px;
+  right: 5px;
 
   background: url('./../images/svg/slider-arrow-black-right.svg') 0 0 / 100%
     no-repeat;
 
   @media screen and (min-width: $tablet) {
     top: 226px;
-    right: 0px;
+    right: 10px;
   }
 
   @media screen and (min-width: $desktop) {
     top: 290px;
+    right: 20px;
   }
 }
 
@@ -93,14 +95,3 @@
   background: url('./../images/svg/slider-arrow-yellow-right.svg') 0 0 / 100%
     no-repeat;
 }
-
-// .restaurant-slick .slick-dotted.slick-slider {
-
-//   @media screen and (min-width: $tablet) {
-
-//   }
-
-//   @media screen and (min-width: $desktop) {
-
-//   }
-// }
