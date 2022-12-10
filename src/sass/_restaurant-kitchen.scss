@@ -1,28 +1,31 @@
-.restaurant-kitchen {
-  max-width: 414px;
-  margin: 0 auto;
-  padding-top: 12px;
-
-  @media screen and (max-width: 1023px) {
-    padding-bottom: 80px;
+.restaurant-kitchen .container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  @media screen and (min-width: $tablet) {
+    gap: 0;
   }
+}
+
+.restaurant-kitchen {
+  padding-top: 12px;
+  padding-bottom: 72px;
 
   @media screen and (min-width: $tablet) {
-    max-width: 1024px;
     padding-top: 0;
-    left: 0;
-    right: 0;
-  }
-  @media screen and (min-width: $desktop) {
-    max-width: 1280px;
+    padding-bottom: 96px;
   }
 
-  &__wrap {
-    @media screen and (min-width: $mobile) and (max-width: 1023px) {
-      margin-bottom: 32px;
-    }
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 118px;
+  }
+
+  &__box-main {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
     @media screen and (min-width: $tablet) {
-      display: flex;
+      flex-direction: row;
       align-items: center;
       gap: 26px;
     }
@@ -32,28 +35,30 @@
   }
 
   &__text {
-    @media screen and (min-width: $mobile) and (max-width: $tablet) {
-      margin-bottom: 28px;
-    }
-    @media screen and (min-width: $desktop) {
-      margin-bottom: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    @media screen and (min-width: $tablet) {
+      gap: 0px;
     }
   }
 
   &__text-tagline {
-    margin-bottom: 12px;
+    font-weight: 400;
+
     @media screen and (min-width: $tablet) {
       margin-bottom: 4px;
     }
   }
+
   &__text-title {
     font-family: 'Film P3';
-    // font-weight: 700;
+    font-weight: 700;
     font-size: 40px;
     line-height: 1.075;
     letter-spacing: 0.3em;
     color: var(--title-color);
-    margin-bottom: 12px;
+
     @media screen and (min-width: $tablet) {
       font-size: 64px;
       line-height: 1.078;
@@ -71,29 +76,37 @@
     line-height: 1.25;
     letter-spacing: 0.02em;
     color: var(--secondary-text-color);
-    margin-bottom: 28px;
+
     @media screen and (min-width: $tablet) {
       max-width: 439px;
       font-size: 16px;
       line-height: 1.25;
-      margin-bottom: 0;
     }
+
     @media screen and (min-width: $desktop) {
       max-width: 518px;
+
+      margin-bottom: 112px;
     }
   }
   &__img1 {
     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
     border-radius: 2px;
-    width: 244px;
     margin-left: auto;
+
     @media screen and (min-width: $tablet) {
       width: 400px;
       transform: translateY(-32px);
+      margin-bottom: -32px;
     }
     @media screen and (min-width: $desktop) {
       width: 460px;
     }
+  }
+
+  &__box-slider {
+    display: flex;
+    justify-content: flex-end;
   }
 }
 
@@ -102,29 +115,28 @@
   align-items: center;
   gap: 20px;
 
-  @media screen and (max-width: 1023px) {
-    margin-bottom: 32px;
-  }
-
   @media screen and (min-width: $tablet) {
-    position: relative;
-    top: -48px;
-    gap: 48px;
+    gap: 46px;
   }
   @media screen and (min-width: $desktop) {
     gap: 32px;
-    top: -98px;
   }
 
   &-img2 {
     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
     border-radius: 2px;
     width: 200px;
+
     @media screen and (min-width: $tablet) {
       width: 350px;
+      transform: translateY(-16px);
+      margin-bottom: -16px;
     }
+
     @media screen and (min-width: $desktop) {
       width: 460px;
+      transform: translateY(-98px);
+      margin-bottom: -98px;
     }
   }
 
@@ -136,10 +148,14 @@
     letter-spacing: 0.02em;
     color: var(--accent-color);
     width: 163px;
+
     @media screen and (min-width: $tablet) {
       width: 312px;
       font-size: 16px;
       line-height: 1.25;
+    }
+    @media screen and (min-width: $desktop) {
+      padding-bottom: 119px;
     }
   }
 }
