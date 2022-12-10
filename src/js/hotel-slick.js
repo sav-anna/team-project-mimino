@@ -7,7 +7,7 @@ $('.hotel-slick, .hotel-room-slick, .restaurant-slick-second').slick({
     variableWidth: true,
     
   
-  mobileFirst: true,
+  mobileFirst: false,
   responsive: [
   
     {
