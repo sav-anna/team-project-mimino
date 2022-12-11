@@ -1,9 +1,7 @@
 .details-restaurant {
-  // max-width: 414px;
   margin-left: auto;
   margin-right: auto;
-  // padding-top: 24px;
-  // padding-bottom: 40px;
+
   background-image: linear-gradient(rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.76)),
     url(../images/section/restaurant/details-backimage-414m.jpg);
   background-color: var(--black-color);
@@ -18,9 +16,6 @@
   }
 
   @media screen and (min-width: $tablet) {
-    // max-width: 1024px;
-    // padding-top: 48px;
-    // padding-bottom: 96px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.76)),
       url(../images/section/restaurant/details-backimage-1024t.jpg);
 
@@ -110,11 +105,17 @@
 }
 
 .details-restaurant__box {
+  display: flex;
+  flex-direction: column;
+  max-width: 374px;
+  margin-left: auto;
+  gap: 80px;
+
   @media screen and (min-width: $tablet) {
-    display: flex;
     flex-direction: row-reverse;
     align-items: flex-end;
     justify-content: flex-end;
+    margin-left: 0;
     gap: 29px;
   }
 
@@ -127,13 +128,13 @@
   @media screen and (max-width: 1023px) {
     position: relative;
     margin-right: -15px;
-    margin-left: 25px;
-    margin-bottom: 80px;
+    margin-left: 15px;
     max-width: 374px;
     width: 100%;
   }
   @media screen and (min-width: $tablet) {
     max-width: 662px;
+    margin-left: 25px;
   }
 
   @media screen and (min-width: $desktop) {
@@ -143,14 +144,6 @@
 
 .details-restaurant__slider-list .slick-list {
   overflow: hidden;
-
-  // @media screen and (min-width: $tablet) {
-  //   max-width: 682px;
-  // }
-
-  // @media screen and (min-width: $desktop) {
-  //   max-width: 875px;
-  // }
 }
 
 .details-restaurant__slider-list .slick-track {
