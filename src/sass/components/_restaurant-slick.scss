@@ -1,21 +1,21 @@
 .restaurant-slick {
-  min-width: 0;
-  @media screen and (max-width: 413px) {
-    max-width: 290px;
-    margin-left: auto;
-  }
-
-  @media screen and (min-width: $mobile) {
-    max-width: 330px;
-    margin-left: 84px;
-  }
+  max-height: 245px;
+  max-width: 330px;
+  width: 100%;
+  margin-right: -15px;
 
   @media screen and (min-width: $tablet) {
     max-width: 428px;
-    margin-left: auto;
+    max-height: 194px;
+    margin-right: 0;
+    transform: translateY(-28px);
+    margin-bottom: -28px;
   }
   @media screen and (min-width: $desktop) {
     max-width: 550px;
+    max-height: 254px;
+    transform: translateY(-125px);
+    margin-bottom: -125px;
   }
 }
 
@@ -24,7 +24,8 @@
 }
 
 .restaurant-slick .slick-track {
-  min-width: 0;
+  max-height: 245px;
+  height: 100%;
   display: flex;
   gap: 20px;
   width: 330px;
@@ -35,6 +36,7 @@
 
   @media screen and (min-width: $desktop) {
     width: 530px;
+    max-height: 254px;
   }
 }
 
@@ -74,14 +76,14 @@
     no-repeat;
 }
 
-.restaurant-slick .slick-dotted.slick-slider {
-  margin-bottom: 16px;
+// .restaurant-slick .slick-dotted.slick-slider {
+//   margin-bottom: 16px;
 
-  @media screen and (min-width: $tablet) {
-    margin-bottom: 24px;
-  }
+//   @media screen and (min-width: $tablet) {
+//     margin-bottom: 24px;
+//   }
 
-  @media screen and (min-width: $desktop) {
-    margin-bottom: 32px;
-  }
-}
+//   @media screen and (min-width: $desktop) {
+//     margin-bottom: 32px;
+//   }
+// }
