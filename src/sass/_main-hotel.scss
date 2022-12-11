@@ -117,6 +117,7 @@
     @media screen and (min-width: $tablet) {
       font-size: 16px;
     }
+    
   }
 
   &__cover {
@@ -124,16 +125,19 @@
     box-shadow: 2px 2px 60px 2px var(--shadow-photo);
     border-radius: 2px;
     max-width: 244px;
+    max-height: 322px;
     height: 100%;
 
     @media screen and (min-width: $tablet) {
       max-width: 400px;
+      max-height: 524px;
       transform: translateY(-32px);
       margin-bottom: -32px;
     }
 
     @media screen and (min-width: $desktop) {
       max-width: 460px;
+      max-height: 574px;
       transform: translateY(-25px);
       margin-bottom: -25px;
     }
@@ -177,10 +181,12 @@
     box-shadow: 2px 2px 60px 2px var(--shadow-photo);
     border-radius: 2px;
     max-width: 200px;
+    max-height: 278px;
     height: 100%;
 
     @media screen and (min-width: $tablet) {
       max-width: 350px;
+      max-height: 500px;
       transform: translateY(-25px);
       margin-bottom: -25px;
     }
@@ -189,6 +195,7 @@
       transform: translateY(-46px);
       margin-bottom: -46px;
       max-width: 460px;
+      max-height: 574px;
     }
   }
 
