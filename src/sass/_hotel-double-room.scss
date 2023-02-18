@@ -1,0 +1,163 @@
+.hotel-double-room {
+  background-color:  #FFFDEE;
+  padding-left: auto;
+  padding-right: auto;
+}
+
+.hotel-double-room__card {
+  display: flex;
+  gap:20px;
+}
+
+
+.hotel-double-room__text-subtitle {
+  color: var(--black-color);
+  text-transform: uppercase;
+  margin-bottom: 15px;
+
+  font-family: Times New Roman, serif;
+  font-size: 24px;
+  font-style: normal;
+  line-height: 1.16;
+
+  @media screen and (min-width: $tablet) {
+    margin-right: 90px;
+    font-size: 30px;
+    height: 34px;
+    line-height: 34px;
+    letter-spacing: 0.05em;
+  }
+}
+.hotel-double-room__subtitle {
+  color: var(--tagline-color);
+  font-family: Times New Roman, serif;
+  font-size: 20px;
+  line-height: 1.15;
+  margin-top: 18px;
+  margin-bottom: 6px;
+  font-size: 20px;
+
+  @media screen and (max-width: 1023px) {
+    font-size: 20px;
+    margin-top: 18px;
+    margin-bottom: 6px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    font-size: 32px;
+    margin-top: 120px;
+    margin-bottom: 4px;
+  }
+}
+.hotel-double-room__text-title {
+  font-family: 'Film P3';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.08;
+  letter-spacing: 0.3em;
+  margin-bottom: 32px;
+  color: var(--title-color);
+
+  @media screen and (min-width: $tablet) {
+    font-size: 64px;
+    margin-bottom: 24px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    color: var(--home-text-color);
+  }
+}
+.hotel-double-room__text {
+  text-align: start;
+  width: 242px;
+  height: auto;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 32px;
+
+  color: var(--secondary-text-color);
+
+  @media screen and (min-width: $tablet) {
+    width: 400px;
+    font-size: 16px;
+    margin-right: 67px;
+  }
+}
+.hotel-double-room__btn-list {
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 32px;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: start;
+    margin-left: 2px;
+    padding-bottom: 145px;
+    padding-top: 89px;
+  }
+}
+
+.btn.hotel-double-room__btn {
+  width: 236px;
+  height: 48px;
+  border-radius: 25px;
+  border: 2px solid #f0ecd6;
+  color: #f0ecd6;
+
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-bottom: 16px;
+
+  background-color: var(--black-color);
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: var(--white-color);
+  }
+
+  @media screen and (min-width: $tablet) {
+    background-color: var(--black-color);
+
+    color: #f3c653;
+  }
+
+  @media screen and (min-width: $desktop) {
+    background-color: var(--black-color);
+    border-color: var(--white-color);
+  }
+}
+
+.imag {
+  width: 244px;
+  background: var(--section-text-color);
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+  margin-bottom: 32px;
+
+  @media screen and (min-width: $tablet) {
+    width: 400px;
+    transform: translateY(-24px);
+    box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+    margin-left: 65px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 460px;
+    transform: translateY(-24px);
+    box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+  }
+}
+
+
