@@ -2,20 +2,20 @@
   "name": "team-project-mimino",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://AnnaVS8.github.io/team-project-mimino",
+  "homepage": "https://github.com/sav-anna/team-project-mimino",
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /team-project-mimino/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AnnaVS8/team-project-mimino.git"
+    "url": "git+https://github.com/sav-anna/team-project-mimino.git"
   },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/AnnaVS8/team-project-mimino/issues"
+    "url": "https://github.com/sav-anna/team-project-mimino/issues"
   },
   "dependencies": {
     "jquery": "^3.6.1",
