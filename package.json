@@ -2,7 +2,7 @@
   "name": "team-project-mimino",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://github.com/sav-anna/team-project-mimino",
+  "homepage": "https://sav-anna.github.io/team-project-mimino/",
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /team-project-mimino/"
