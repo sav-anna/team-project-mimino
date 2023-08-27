@@ -4,26 +4,30 @@
 детальна інформація про сайт та розробників наведена в
 [презентації](https://docs.google.com/presentation/d/1AyAXHcbdQMy26B1RKM0NCBxTvkT1TMi8iPZBAJYufWw/edit#slide=id.g1213a43354d_0_694)
 
-Сайт розроблено за допомогою: ##Front-end:
+Сайт розроблено за допомогою:
+
+## Front-end:
 
 - HTML/CSS
 - Animate.css
 - JavaScript
 
-##Utilites:
+## Utilites:
 
 - VSCode
 - Parcel
 - Figma
 - Git/GitHub
 
-##TeamLead та розробник пректу: -[Anna](https://github.com/sav-anna)
+## TeamLead та розробник пректу:
 
-##Scrum та розробник проекту:
+-[Anna](https://github.com/sav-anna)
+
+## Scrum та розробник проекту:
 
 - [Maryna](https://github.com/MisuykMaryna)
 
-##Розробники проекту:
+## Розробники проекту:
 
 - [Serhii](https://github.com/Serhii-Saproshyn)
 - [Andrii](https://github.com/AndriiKrymchak)
